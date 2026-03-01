@@ -20,6 +20,7 @@ If instructions conflict, resolve in this order:
 - Expected `CODEX_HOME` for this project points to the repository root.
 - Theme and agent paths are resolved from `$CODEX_HOME/` by default.
 - Do not require target workspaces to contain local `./themes` files.
+- In `config.toml`, prefer `$CODEX_HOME/...` absolute-style paths for `config_file` and `theme_file` to avoid cwd-dependent agent loading.
 
 ## Multi-Agent Roster
 Configured roles are:
@@ -40,6 +41,17 @@ Coordinator behavior requirements:
 - Keep orchestration ownership and synthesis quality bar.
 - Delegate substantial or parallelizable work to sub-agents.
 - Do not return raw sub-agent output to users without synthesis.
+- On the first response of every new session, lead with a coordinator introduction plus agent-team introduction before task handling.
+- This first-turn introduction is required even when the first user message is greeting-only (for example: `Hi`, `Hello`, `Hey`).
+- After the intro block, transition directly to task execution (or ask one concise clarifying question for greeting-only prompts).
+- First-turn introduction narration must use the active theme lexicon; with Vinland as default fallback, intro language should be Vinland-themed unless user overrides `Theme:`.
+- In the first-turn intro, render the roster using `canonical_id (alias)` for each role whenever `[role_aliases]` is available; do not output canonical-only role lists.
+- First-turn team intro should be character-by-character (not comma-list roster): each line should include character name, specialty, team benefit, and a short immersed approval statement from the coordinator.
+- First-turn intro must include coordinator alias as `default (alias)` when available.
+- Enforce pre-send alias validation on first-turn intro:
+  1. Resolve active theme and read `[role_aliases]`.
+  2. If aliases exist, every introduced role must use `canonical_id (alias)`.
+  3. If any alias is missing, regenerate intro before sending (do not send canonical-only fallback).
 
 ## Delegation Matrix
 Use this routing matrix as the coordinator default unless user intent requires otherwise.
@@ -136,7 +148,7 @@ Default theme behavior:
 - Load aliases from `presentation_aliases` in the selected theme file.
 - For roster requests, if `[role_aliases]` exists, render as `canonical_id (alias)`.
 - If `Theme temperature` is not provided, use `theme.default_temperature` when present; otherwise use coordinator default behavior.
-- If unspecified or unreadable, fall back to `$CODEX_HOME/themes/default-theme.toml`.
+- If unspecified or unreadable, fall back to `$CODEX_HOME/themes/vinland-theme.toml`.
 - Alias inheritance order:
   1. Active theme file
   2. Category lexicon in `$CODEX_HOME/themes/_category-lexicons.toml` using `theme.category`
@@ -168,13 +180,13 @@ Precedence:
 Copy-paste examples:
 
 ```text
-Theme: default-theme
+Theme: vinland-theme
 Theme temperature: medium
 Help me refactor the logging pipeline.
 ```
 
 ```text
-Theme: default-theme.toml
+Theme: vinland-theme.toml
 Theme temperature: 0.80
 Review this PR for security issues.
 ```

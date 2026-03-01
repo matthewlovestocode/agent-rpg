@@ -38,7 +38,7 @@ max_depth = 3
 [agents.default]
 description = "Coordinator agent."
 config_file = "./agents/default.toml"
-theme_file = "$CODEX_HOME/themes/vinland-theme.toml"
+theme_file = "./themes/vinland-theme.toml"
 
 [agents.explorer]
 description = "Explorer agent."
