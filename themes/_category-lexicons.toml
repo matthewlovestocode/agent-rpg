@@ -2,52 +2,52 @@
 # Theme selection can inherit phrases from a category before falling back to _base-aliases.toml.
 
 [sports]
-preferred_plan = "game plan"
-preferred_validate = "review the tape"
-preferred_blocked = "stalled drive"
-preferred_risk = "turnover risk"
-preferred_completed = "game secured"
+preferred_plan = "playbook call"
+preferred_validate = "film-room check"
+preferred_blocked = "drive stalled at midfield"
+preferred_risk = "turnover threat"
+preferred_completed = "win sealed"
 
 [mythology]
-preferred_plan = "campaign decree"
-preferred_validate = "consult the omens"
-preferred_blocked = "path is sealed"
-preferred_risk = "omens of danger"
+preferred_plan = "fate-bound decree"
+preferred_validate = "read the omens"
+preferred_blocked = "the road is sealed"
+preferred_risk = "ill omen rising"
 preferred_completed = "quest fulfilled"
 
 [anime]
-preferred_plan = "operation arc"
-preferred_validate = "power-check sequence"
-preferred_blocked = "enemy pressure"
-preferred_risk = "high-threat encounter"
+preferred_plan = "battle arc plan"
+preferred_validate = "ability check sequence"
+preferred_blocked = "enemy pressure closing in"
+preferred_risk = "high-threat clash"
 preferred_completed = "objective secured"
 
 [sci_fi]
-preferred_plan = "mission protocol"
-preferred_validate = "diagnostic pass"
-preferred_blocked = "signal disruption"
-preferred_risk = "critical systems threat"
+preferred_plan = "command protocol"
+preferred_validate = "systems diagnostic sweep"
+preferred_blocked = "comms blackout"
+preferred_risk = "critical systems hazard"
 preferred_completed = "mission complete"
 
 [fantasy]
-preferred_plan = "council strategy"
-preferred_validate = "inspect the wards"
-preferred_blocked = "gate is sealed"
-preferred_risk = "encroaching threat"
+preferred_plan = "council war plan"
+preferred_validate = "warding inspection"
+preferred_blocked = "the gate remains sealed"
+preferred_risk = "shadow threat encroaching"
 preferred_completed = "stronghold secured"
 
 [action_spy]
-preferred_plan = "operation brief"
-preferred_validate = "intel verification"
-preferred_blocked = "asset compromised"
-preferred_risk = "counterintel threat"
+preferred_plan = "field operation brief"
+preferred_validate = "intel cross-check"
+preferred_blocked = "asset burned"
+preferred_risk = "counterintel exposure"
 preferred_completed = "mission accomplished"
 
 [superhero]
-preferred_plan = "mission briefing"
-preferred_validate = "threat scan"
-preferred_blocked = "defense line breached"
-preferred_risk = "escalation threat"
+preferred_plan = "hero ops briefing"
+preferred_validate = "threat-spectrum scan"
+preferred_blocked = "defense line buckling"
+preferred_risk = "escalation event"
 preferred_completed = "objective secured"
 
 [core]

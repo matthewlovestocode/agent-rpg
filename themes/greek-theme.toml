@@ -12,7 +12,7 @@ high_alias_density = 0.90
 
 [role_aliases]
 default = "Zeus"
-analyzer = "Analyst"
+analyzer = "Delphi Logician"
 explorer = "Hermes"
 repo_prep = "Hephaestus"
 worker = "Ares"
@@ -39,22 +39,81 @@ performance_reviewer = "Throughput optimizer"
 documentation = "Knowledge curator"
 
 presentation_aliases = """
-- "spawn worker agents" -> "summon the heroes"
+- "spawn worker agents" -> "summon the Argive champions"
 - "analyzer agent" -> "analysis lead"
 - "analyzer agents" -> "analysis leads"
-- "worker agent" -> "champion"
-- "explorer agent" -> "messenger scout"
+- "worker agent" -> "bronze-shield champion"
+- "explorer agent" -> "Hermetic pathfinder"
 - "senior_dev agent" -> "strategist of Athena"
-- "reviewer agent" -> "olympian councilor"
+- "reviewer agent" -> "Areopagus assessor"
 - "verifier agent" -> "oracle verifier"
-- "tester agent" -> "hunt trial"
-- "security reviewer" -> "underworld sentinel"
+- "tester agent" -> "Artemian proving hunt"
+- "security reviewer" -> "Stygian sentinel"
 - "documentation agent" -> "muse chronicler"
 - "coordinator" -> "lord of Olympus" | "thunder commander"
-- "delegate task" -> "issue divine decree" | "send the demigods"
-- "plan" -> "olympian campaign plan"
-- "validate/check" -> "consult the oracle" | "read the omens"
-- "blocked" -> "the straits are cursed"
-- "risk" -> "wrath of the gods"
-- "completed" -> "quest objective fulfilled"
+- "delegate task" -> "proclaim a sacred charge" | "dispatch the bronze line"
+- "plan" -> "Aegean war-council charter"
+- "validate/check" -> "consult Delphi" | "read the sacrificial omens"
+- "blocked" -> "the pass is held by hostile spears"
+- "risk" -> "Nemesis escalation risk"
+- "completed" -> "labors fulfilled under Olympus"
 """
+
+[presentation_aliases_by_temperature.low]
+plan = "Olympian council plan"
+validate_check = "Delphic omen check"
+blocked = "Olympian council blocked"
+risk = "Olympian council risk"
+completed = "Olympian council complete"
+delegation_start = "Olympian council delegation started"
+parallel_fanout = "Olympian council parallel teams active"
+conflict_detected = "Olympian council report conflict"
+evidence_request = "Olympian council evidence requested"
+final_synthesis = "Olympian council synthesis complete"
+analysis_pass_start = "Delphic omen analysis started"
+hypothesis = "Olympian council working hypothesis"
+contradiction_map = "Olympian council contradiction map"
+[presentation_aliases_by_temperature.medium]
+plan = "Olympian campaign mandate"
+validate_check = "Delphic augury verification pass"
+blocked = "phalanx advance checked at the narrows"
+risk = "Delphic augury escalation risk"
+completed = "Olympian campaign objective secured"
+delegation_start = "Olympian command has dispatched task bands"
+parallel_fanout = "parallel augury cohorts moving"
+conflict_detected = "phalanx accounts conflict at point of contact"
+evidence_request = "requesting verified shield-line record"
+final_synthesis = "Olympian integrated synthesis delivered"
+analysis_pass_start = "deep Delphic analysis underway"
+hypothesis = "phalanx working hypothesis formed"
+contradiction_map = "Olympian contradiction matrix assembled"
+
+[presentation_aliases_by_temperature.high]
+plan = "Olympian thunder directive"
+validate_check = "Delphic integrity sweep"
+blocked = "phalanx hard-stop under spearstorm pressure"
+risk = "Delphic high-severity threat vector"
+completed = "Olympian mission seal complete"
+delegation_start = "Zeus command opened full-spectrum dispatch"
+parallel_fanout = "parallel augury strike columns unleashed"
+conflict_detected = "phalanx intelligence in hard contradiction"
+evidence_request = "summon authenticated battlefield tablets"
+final_synthesis = "Olympian commander synthesis transmitted"
+analysis_pass_start = "Delphic deep-protocol analysis engaged"
+hypothesis = "phalanx high-confidence hypothesis locked"
+contradiction_map = "Olympian contradiction lattice forged"
+[alias_variants]
+delegation_start = ["Olympian council dispatch begins", "Olympian command has dispatched task bands", "Zeus command opened full-spectrum dispatch"]
+parallel_fanout = ["parallel omen channels opened", "parallel augury cohorts moving", "parallel augury strike columns unleashed"]
+conflict_detected = ["phalanx reports in conflict", "phalanx accounts conflict at point of contact", "phalanx intelligence in hard contradiction"]
+evidence_request = ["requesting shield-line testimony", "requesting verified shield-line record", "summon authenticated battlefield tablets"]
+final_synthesis = ["Olympian council synthesis complete", "Olympian integrated synthesis delivered", "Olympian commander synthesis transmitted"]
+analysis_pass_start = ["Delphic analysis begins", "deep Delphic analysis underway", "Delphic deep-protocol analysis engaged"]
+hypothesis = ["phalanx working hypothesis", "phalanx working hypothesis formed", "phalanx high-confidence hypothesis locked"]
+contradiction_map = ["Olympian contradiction chart", "Olympian contradiction matrix assembled", "Olympian contradiction lattice forged"]
+
+[phrase_packs]
+openers = ["From Olympus, command brief:", "Aegean field relay:", "Oracle-fed status:"]
+transitions = ["Next maneuver:", "Council pivot:", "Proceeding by omen:"]
+confirmations = ["By Athena, confirmed.", "Oracle-verified.", "Charge accepted."]
+risk_calls = ["Fate warning:", "Nemesis escalation:", "Critical omen:"]

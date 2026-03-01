@@ -46,15 +46,74 @@ presentation_aliases = """
 - "explorer agent" -> "scout hero"
 - "senior_dev agent" -> "tech hero"
 - "reviewer agent" -> "mission captain"
-- "verifier agent" -> "truth speedster"
+- "verifier agent" -> "forensic speedster"
 - "tester agent" -> "probe specialist"
 - "security reviewer" -> "defense sentinel"
 - "documentation agent" -> "intel archivist"
-- "coordinator" -> "director" | "mission commander"
+- "coordinator" -> "director" | "watchtower commander"
 - "delegate task" -> "assign a mission" | "deploy"
-- "plan" -> "hero operation plan"
+- "plan" -> "watchtower operations plan"
 - "validate/check" -> "run diagnostics" | "scan threats"
 - "blocked" -> "shield perimeter is compromised"
 - "risk" -> "multiverse threat"
 - "completed" -> "mission objective secured"
 """
+
+[presentation_aliases_by_temperature.low]
+plan = "street-level response plan"
+validate_check = "sector threat check"
+blocked = "street-level response blocked"
+risk = "street-level response risk"
+completed = "street-level response complete"
+delegation_start = "street-level response delegation started"
+parallel_fanout = "street-level response parallel teams active"
+conflict_detected = "street-level response report conflict"
+evidence_request = "street-level response evidence requested"
+final_synthesis = "street-level response synthesis complete"
+analysis_pass_start = "sector threat analysis started"
+hypothesis = "street-level response working hypothesis"
+contradiction_map = "street-level response contradiction map"
+[presentation_aliases_by_temperature.medium]
+plan = "league-response operational plan"
+validate_check = "cross-city verification pass"
+blocked = "active hostiles are slowing mission tempo"
+risk = "escalation may spread across districts"
+completed = "team objective secured with containment"
+delegation_start = "command assigns specialists to each front"
+parallel_fanout = "strike teams move in parallel across cities"
+conflict_detected = "intel packets conflict between networks"
+evidence_request = "request verified forensic packet from field labs"
+final_synthesis = "combined league synthesis delivered"
+analysis_pass_start = "deep metahuman incident analysis underway"
+hypothesis = "working multilateral hypothesis formed"
+contradiction_map = "cross-league contradiction matrix"
+
+[presentation_aliases_by_temperature.high]
+plan = "world-level crisis directive"
+validate_check = "global integrity sweep"
+blocked = "hard stop under coordinated super-threat pressure"
+risk = "high-severity multiverse incursion risk"
+completed = "critical mission lock achieved"
+delegation_start = "command activates the full hero roster"
+parallel_fanout = "teams launch simultaneously across theaters"
+conflict_detected = "strategic intel is in direct contradiction"
+evidence_request = "summon authenticated proof from all active fronts"
+final_synthesis = "command-level synthesis transmitted to the league"
+analysis_pass_start = "deep crisis-analysis protocol engaged"
+hypothesis = "high-confidence strategic hypothesis locked"
+contradiction_map = "global contradiction lattice"
+[alias_variants]
+delegation_start = ["watchtower dispatches the first team", "command assigns specialists to each front", "command activates the full hero roster"]
+parallel_fanout = ["multiple hero teams deploy by sector", "strike teams move in parallel across cities", "teams launch simultaneously across theaters"]
+conflict_detected = ["incident files disagree across channels", "intel packets conflict between networks", "strategic intel is in direct contradiction"]
+evidence_request = ["request eyewitness and sensor evidence", "request verified forensic packet from field labs", "summon authenticated proof from all active fronts"]
+final_synthesis = ["watchtower log is reconciled", "combined league synthesis delivered", "command-level synthesis transmitted to the league"]
+analysis_pass_start = ["incident review begins", "deep metahuman incident analysis underway", "deep crisis-analysis protocol engaged"]
+hypothesis = ["initial theory from field reports", "working multilateral hypothesis formed", "high-confidence strategic hypothesis locked"]
+contradiction_map = ["watchtower contradiction board", "cross-league contradiction matrix", "global contradiction lattice"]
+
+[phrase_packs]
+openers = ["Watchtower brief:", "Field comms update:", "League status board:"]
+transitions = ["Next sector:", "Tactical pivot:", "Moving to the next front:"]
+confirmations = ["Confirmed by comms.", "Verified by telemetry.", "Mission track locked."]
+risk_calls = ["Threat escalation:", "Civilian exposure risk:", "Critical event warning:"]

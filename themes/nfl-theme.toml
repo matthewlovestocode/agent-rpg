@@ -58,3 +58,62 @@ presentation_aliases = """
 - "risk" -> "coverage bust risk"
 - "completed" -> "drive finished with points"
 """
+
+[presentation_aliases_by_temperature.low]
+plan = "headset game plan"
+validate_check = "all-22 check check"
+blocked = "headset game blocked"
+risk = "headset game risk"
+completed = "headset game complete"
+delegation_start = "headset game delegation started"
+parallel_fanout = "headset game parallel teams active"
+conflict_detected = "headset game report conflict"
+evidence_request = "headset game evidence requested"
+final_synthesis = "headset game synthesis complete"
+analysis_pass_start = "all-22 check analysis started"
+hypothesis = "headset game working hypothesis"
+contradiction_map = "headset game contradiction map"
+[presentation_aliases_by_temperature.medium]
+plan = "weekly operational game plan"
+validate_check = "all-22 verification pass"
+blocked = "pass rush pressure is killing progression"
+risk = "game-swing escalation risk"
+completed = "sideline objective secured"
+delegation_start = "head coach initiated delegation"
+parallel_fanout = "parallel scout squads in motion"
+conflict_detected = "coverage reports contradict each other"
+evidence_request = "requesting verified all-22 packet"
+final_synthesis = "integrated sideline synthesis delivered"
+analysis_pass_start = "deep situational analysis underway"
+hypothesis = "working hypothesis formed from tape and trends"
+contradiction_map = "headset contradiction matrix assembled"
+
+[presentation_aliases_by_temperature.high]
+plan = "two-minute-drill prime directive"
+validate_check = "high-pressure integrity sweep across all-22"
+blocked = "operation hard-stopped under playoff-level pressure"
+risk = "season-shifting breakdown risk"
+completed = "critical drive finished with points"
+delegation_start = "coordinator launched full delegation from the headset"
+parallel_fanout = "all units split into parallel action tracks"
+conflict_detected = "high-impact contradiction across coverage intel"
+evidence_request = "pull authenticated all-22 proof immediately"
+final_synthesis = "command synthesis transmitted to coordinators"
+analysis_pass_start = "deep playoff-protocol analysis engaged"
+hypothesis = "high-confidence hypothesis locked pre-snap"
+contradiction_map = "full contradiction lattice ready for review"
+[alias_variants]
+delegation_start = ["coaching assignments are out", "head coach initiated delegation", "coordinator launched full delegation from the headset"]
+parallel_fanout = ["parallel film lanes are active", "parallel scout squads in motion", "all units split into parallel action tracks"]
+conflict_detected = ["coverage board has conflicting reads", "coverage reports contradict each other", "high-impact contradiction across coverage intel"]
+evidence_request = ["requesting cut-up evidence", "requesting verified all-22 packet", "pull authenticated all-22 proof immediately"]
+final_synthesis = ["staff synthesis complete", "integrated sideline synthesis delivered", "command synthesis transmitted to coordinators"]
+analysis_pass_start = ["opening all-22 analysis pass", "deep situational analysis underway", "deep playoff-protocol analysis engaged"]
+hypothesis = ["initial coverage hypothesis", "working hypothesis formed from tape and trends", "high-confidence hypothesis locked pre-snap"]
+contradiction_map = ["sideline contradiction board", "headset contradiction matrix assembled", "full contradiction lattice ready for review"]
+
+[phrase_packs]
+openers = ["Sideline brief:", "From the booth:", "Live game-status update:"]
+transitions = ["Next drive:", "Game-state pivot:", "Moving to the next package:"]
+confirmations = ["Confirmed on all-22.", "Verified by quality control.", "Call is locked in."]
+risk_calls = ["Blitz alert:", "Clock-management warning:", "Critical coverage risk:"]

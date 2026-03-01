@@ -40,8 +40,8 @@ documentation = "Knowledge curator"
 
 presentation_aliases = """
 - "spawn worker agents" -> "rally the clans"
-- "analyzer agent" -> "analysis lead"
-- "analyzer agents" -> "analysis leads"
+- "analyzer agent" -> "druid assessor"
+- "analyzer agents" -> "druid assessors"
 - "worker agent" -> "warband champion"
 - "explorer agent" -> "spear scout"
 - "senior_dev agent" -> "battle seer"
@@ -52,9 +52,68 @@ presentation_aliases = """
 - "documentation agent" -> "druid chronicler"
 - "coordinator" -> "high king" | "clan commander"
 - "delegate task" -> "issue clan orders" | "send the warband"
-- "plan" -> "tuatha campaign plan"
-- "validate/check" -> "read the ogham" | "consult the druids"
+- "plan" -> "warband campaign plan"
+- "validate/check" -> "read the ogham marks" | "consult the druid circle"
 - "blocked" -> "the ford is impassable"
-- "risk" -> "raider threat on the frontier"
+- "risk" -> "frontier raider risk"
 - "completed" -> "clan objective secured"
 """
+
+[presentation_aliases_by_temperature.low]
+plan = "clan council plan"
+validate_check = "stone-circle check check"
+blocked = "clan council blocked"
+risk = "clan council risk"
+completed = "clan council complete"
+delegation_start = "clan council delegation started"
+parallel_fanout = "clan council parallel teams active"
+conflict_detected = "clan council report conflict"
+evidence_request = "clan council evidence requested"
+final_synthesis = "clan council synthesis complete"
+analysis_pass_start = "stone-circle check analysis started"
+hypothesis = "clan council working hypothesis"
+contradiction_map = "clan council contradiction map"
+[presentation_aliases_by_temperature.medium]
+plan = "clan council campaign plan"
+validate_check = "stone-circle verification pass"
+blocked = "highland pressure blocking the crossing"
+risk = "frontier escalation risk"
+completed = "clan council objective secured"
+delegation_start = "chieftain command has sent the warbands"
+parallel_fanout = "parallel warbands ranging across the frontier"
+conflict_detected = "highland reports are contradictory"
+evidence_request = "requesting verified ogham record"
+final_synthesis = "clan council synthesis delivered"
+analysis_pass_start = "deep stone-circle analysis underway"
+hypothesis = "frontier working hypothesis formed"
+contradiction_map = "clan council contradiction matrix assembled"
+
+[presentation_aliases_by_temperature.high]
+plan = "high-king campaign directive"
+validate_check = "full stone-circle integrity sweep"
+blocked = "hard stop at the bloodied ford"
+risk = "high-severity frontier threat vector"
+completed = "campaign objective secured"
+delegation_start = "high king has opened full-warband deployment"
+parallel_fanout = "strike warbands unleashed across all routes"
+conflict_detected = "battle reports are in hard contradiction"
+evidence_request = "summon authenticated druid testimony"
+final_synthesis = "high-king synthesis transmitted"
+analysis_pass_start = "deep omen analysis protocol engaged"
+hypothesis = "high-confidence frontier hypothesis locked"
+contradiction_map = "clan council contradiction lattice forged"
+[alias_variants]
+delegation_start = ["clan banners dispatched", "chieftain command has sent the warbands", "high king has opened full-warband deployment"]
+parallel_fanout = ["multiple warbands in motion", "parallel warbands ranging across the frontier", "strike warbands unleashed across all routes"]
+conflict_detected = ["fordwatch reports conflict", "highland reports are contradictory", "battle reports are in hard contradiction"]
+evidence_request = ["requesting druid witness marks", "requesting verified ogham record", "summon authenticated druid testimony"]
+final_synthesis = ["clan council synthesis complete", "clan council synthesis delivered", "high-king synthesis transmitted"]
+analysis_pass_start = ["stone-circle analysis start", "deep stone-circle analysis underway", "deep omen analysis protocol engaged"]
+hypothesis = ["frontier hypothesis", "frontier working hypothesis formed", "high-confidence frontier hypothesis locked"]
+contradiction_map = ["clan council contradiction map", "clan council contradiction matrix assembled", "clan council contradiction lattice forged"]
+
+[phrase_packs]
+openers = ["Clan council brief:", "Warband field relay:", "Frontier watch report:"]
+transitions = ["Next march:", "Battle pivot:", "Advancing by route:"]
+confirmations = ["Confirmed.", "Verified.", "The oath stands."]
+risk_calls = ["Threat omen:", "Escalation warning:", "Critical caution:"]

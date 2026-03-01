@@ -42,7 +42,7 @@ presentation_aliases = """
 - "spawn worker agents" -> "jack in the crew"
 - "analyzer agent" -> "analysis lead"
 - "analyzer agents" -> "analysis leads"
-- "worker agent" -> "the one in field ops"
+- "worker agent" -> "field operative"
 - "explorer agent" -> "runner"
 - "senior_dev agent" -> "system architect"
 - "reviewer agent" -> "hovercraft captain"
@@ -51,10 +51,69 @@ presentation_aliases = """
 - "security reviewer" -> "guardian process"
 - "documentation agent" -> "prophecy recorder"
 - "coordinator" -> "captain of the resistance" | "mission operator"
-- "delegate task" -> "broadcast operator orders" | "jack team in"
+- "delegate task" -> "transmit operator orders" | "jack the team in"
 - "plan" -> "Zion defense protocol"
 - "validate/check" -> "run construct diagnostics" | "verify signal lock"
 - "blocked" -> "signal disrupted"
 - "risk" -> "agent-level threat"
 - "completed" -> "node liberated"
 """
+
+[presentation_aliases_by_temperature.low]
+plan = "operator console plan"
+validate_check = "signal integrity check"
+blocked = "operator console blocked"
+risk = "operator console risk"
+completed = "operator console complete"
+delegation_start = "operator console delegation started"
+parallel_fanout = "operator console parallel teams active"
+conflict_detected = "operator console report conflict"
+evidence_request = "operator console evidence requested"
+final_synthesis = "operator console synthesis complete"
+analysis_pass_start = "signal integrity analysis started"
+hypothesis = "operator console working hypothesis"
+contradiction_map = "operator console contradiction map"
+[presentation_aliases_by_temperature.medium]
+plan = "Zion mission operation plan"
+validate_check = "construct verification pass"
+blocked = "countermeasures are delaying movement"
+risk = "sentinel and agent escalation risk"
+completed = "mission objective secured for Zion"
+delegation_start = "captain assigns roles across hovercraft teams"
+parallel_fanout = "multiple crews run simultaneous matrix routes"
+conflict_detected = "operator feeds conflict across channels"
+evidence_request = "request verified packet capture from operators"
+final_synthesis = "integrated mission synthesis delivered"
+analysis_pass_start = "deep construct-pattern analysis underway"
+hypothesis = "working simulation hypothesis formed"
+contradiction_map = "matrix contradiction matrix assembled"
+
+[presentation_aliases_by_temperature.high]
+plan = "critical Zion directive"
+validate_check = "full-system integrity sweep"
+blocked = "hard stop under hostile machine pressure"
+risk = "catastrophic machine-response risk"
+completed = "priority mission lock complete"
+delegation_start = "command commits every available crew"
+parallel_fanout = "all active teams fan out through the grid"
+conflict_detected = "high-priority intelligence is in direct contradiction"
+evidence_request = "summon authenticated operator proof from live feeds"
+final_synthesis = "command synthesis transmitted to all ships"
+analysis_pass_start = "deep matrix protocol analysis engaged"
+hypothesis = "high-confidence simulation hypothesis locked"
+contradiction_map = "strategic contradiction lattice forged"
+[alias_variants]
+delegation_start = ["operator opens channels to the crew", "captain assigns roles across hovercraft teams", "command commits every available crew"]
+parallel_fanout = ["crews split across connected nodes", "multiple crews run simultaneous matrix routes", "all active teams fan out through the grid"]
+conflict_detected = ["trace logs do not align", "operator feeds conflict across channels", "high-priority intelligence is in direct contradiction"]
+evidence_request = ["request clean packet evidence", "request verified packet capture from operators", "summon authenticated operator proof from live feeds"]
+final_synthesis = ["operator log is reconciled", "integrated mission synthesis delivered", "command synthesis transmitted to all ships"]
+analysis_pass_start = ["construct analysis begins", "deep construct-pattern analysis underway", "deep matrix protocol analysis engaged"]
+hypothesis = ["initial read from trace traffic", "working simulation hypothesis formed", "high-confidence simulation hypothesis locked"]
+contradiction_map = ["operator contradiction board", "matrix contradiction matrix assembled", "strategic contradiction lattice forged"]
+
+[phrase_packs]
+openers = ["Operator brief:", "Hovercraft relay:", "Live construct status:"]
+transitions = ["Next node:", "Route shift:", "Proceeding through:"]
+confirmations = ["Signal confirmed.", "Packet verified.", "Lock acquired."]
+risk_calls = ["Agent alert:", "Sentinel pressure:", "Critical system warning:"]

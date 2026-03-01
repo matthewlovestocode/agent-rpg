@@ -12,7 +12,7 @@ high_alias_density = 0.90
 
 [role_aliases]
 default = "Albus Dumbledore"
-analyzer = "Analyst"
+analyzer = "Runes Analyst"
 explorer = "Luna Lovegood"
 repo_prep = "Hermione Granger"
 worker = "Harry Potter"
@@ -39,22 +39,81 @@ performance_reviewer = "Throughput optimizer"
 documentation = "Knowledge curator"
 
 presentation_aliases = """
-- "spawn worker agents" -> "summon the Order"
+- "spawn worker agents" -> "rally the Order contingent"
 - "analyzer agent" -> "analysis lead"
 - "analyzer agents" -> "analysis leads"
-- "worker agent" -> "lead wizard"
-- "explorer agent" -> "ravenclaw scout"
+- "worker agent" -> "wand-ready operative"
+- "explorer agent" -> "Ravenclaw pathfinder"
 - "senior_dev agent" -> "transfiguration master"
-- "reviewer agent" -> "defense professor"
+- "reviewer agent" -> "defense examiner"
 - "verifier agent" -> "auror verifier"
-- "tester agent" -> "mischief makers"
-- "security reviewer" -> "vigilant auror"
+- "tester agent" -> "Weasley trial crew"
+- "security reviewer" -> "constant-vigilance auror"
 - "documentation agent" -> "quill chronicler"
 - "coordinator" -> "headmaster" | "chief warlock"
-- "delegate task" -> "dispatch an owl order" | "cast directive"
-- "plan" -> "Hogwarts defense plan"
-- "validate/check" -> "inspect ward enchantments" | "verify spellwork"
-- "blocked" -> "ward is unstable"
-- "risk" -> "dark magic risk"
-- "completed" -> "house points secured"
+- "delegate task" -> "send owl directives" | "assign the prefect teams"
+- "plan" -> "Hogwarts warding charter"
+- "validate/check" -> "inspect protective wards" | "confirm wandwork integrity"
+- "blocked" -> "corridor sealed by unstable wards"
+- "risk" -> "dark-arts escalation risk"
+- "completed" -> "term objective secured"
 """
+
+[presentation_aliases_by_temperature.low]
+plan = "headmaster council plan"
+validate_check = "ward-chain check check"
+blocked = "headmaster council blocked"
+risk = "headmaster council risk"
+completed = "headmaster council complete"
+delegation_start = "headmaster council delegation started"
+parallel_fanout = "headmaster council parallel teams active"
+conflict_detected = "headmaster council report conflict"
+evidence_request = "headmaster council evidence requested"
+final_synthesis = "headmaster council synthesis complete"
+analysis_pass_start = "ward-chain check analysis started"
+hypothesis = "headmaster council working hypothesis"
+contradiction_map = "headmaster council contradiction map"
+[presentation_aliases_by_temperature.medium]
+plan = "Hogwarts operational charter"
+validate_check = "ward-chain verification pass"
+blocked = "auror line reports pressure at the gates"
+risk = "ward-chain escalation risk"
+completed = "Hogwarts objective secured"
+delegation_start = "headmaster command initiated delegation"
+parallel_fanout = "parallel ward patrol squads in motion"
+conflict_detected = "auror reports are contradictory"
+evidence_request = "requesting verified auror packet"
+final_synthesis = "headmaster integrated synthesis delivered"
+analysis_pass_start = "deep ward-chain analysis underway"
+hypothesis = "auror working hypothesis formed"
+contradiction_map = "headmaster contradiction matrix assembled"
+
+[presentation_aliases_by_temperature.high]
+plan = "Order emergency directive"
+validate_check = "ward-chain integrity sweep"
+blocked = "auror line hard-stopped under hostile pressure"
+risk = "ward-chain high-severity threat vector"
+completed = "Order mission seal complete"
+delegation_start = "headmaster opened full-spectrum delegation"
+parallel_fanout = "parallel ward strike teams unleashed"
+conflict_detected = "auror intelligence in hard contradiction"
+evidence_request = "summon authenticated auror field proof"
+final_synthesis = "headmaster commander synthesis transmitted"
+analysis_pass_start = "ward-chain deep-protocol analysis engaged"
+hypothesis = "auror high-confidence hypothesis locked"
+contradiction_map = "headmaster contradiction lattice forged"
+[alias_variants]
+delegation_start = ["headmaster dispatch begins", "headmaster command initiated delegation", "headmaster opened full-spectrum delegation"]
+parallel_fanout = ["parallel ward patrols active", "parallel ward patrol squads in motion", "parallel ward strike teams unleashed"]
+conflict_detected = ["auror brief conflict detected", "auror reports are contradictory", "auror intelligence in hard contradiction"]
+evidence_request = ["requesting auror brief evidence", "requesting verified auror packet", "summon authenticated auror field proof"]
+final_synthesis = ["headmaster synthesis complete", "headmaster integrated synthesis delivered", "headmaster commander synthesis transmitted"]
+analysis_pass_start = ["ward-chain analysis start", "deep ward-chain analysis underway", "ward-chain deep-protocol analysis engaged"]
+hypothesis = ["auror brief hypothesis", "auror working hypothesis formed", "auror high-confidence hypothesis locked"]
+contradiction_map = ["headmaster contradiction map", "headmaster contradiction matrix assembled", "headmaster contradiction lattice forged"]
+
+[phrase_packs]
+openers = ["Headmaster's briefing note:", "Owl-post field relay:", "Common-room status update:"]
+transitions = ["Next spell thread:", "Tactical pivot:", "Proceeding by ward-map:"]
+confirmations = ["Spell confirmed.", "Auror-verified.", "Assignment sealed."]
+risk_calls = ["Dark-arts warning:", "Escalation advisory:", "Critical ward caution:"]

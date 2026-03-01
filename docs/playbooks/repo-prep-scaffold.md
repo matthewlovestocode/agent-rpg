@@ -22,7 +22,20 @@ Expected outcome:
   - `ops/`
   - `ops/agents/`
   - `ops/agents/state/`
+  - `ops/agents/logs/`
   - `ops/agents/state/events.jsonl`
+  - `ops/agents/logs/default.jsonl`
+  - `ops/agents/logs/analyzer.jsonl`
+  - `ops/agents/logs/explorer.jsonl`
+  - `ops/agents/logs/repo_prep.jsonl`
+  - `ops/agents/logs/worker.jsonl`
+  - `ops/agents/logs/senior_dev.jsonl`
+  - `ops/agents/logs/reviewer.jsonl`
+  - `ops/agents/logs/verifier.jsonl`
+  - `ops/agents/logs/tester.jsonl`
+  - `ops/agents/logs/security_reviewer.jsonl`
+  - `ops/agents/logs/performance_reviewer.jsonl`
+  - `ops/agents/logs/documentation.jsonl`
 - preserves existing files
 - validates existing JSONL lines and reports conflicts
 

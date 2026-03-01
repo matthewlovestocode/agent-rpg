@@ -60,3 +60,62 @@ presentation_aliases = """
 - "risk" -> "storm on the Grand Line"
 - "completed" -> "island objective secured"
 """
+
+[presentation_aliases_by_temperature.low]
+plan = "log pose plan"
+validate_check = "crew manifest check"
+blocked = "log pose blocked"
+risk = "log pose risk"
+completed = "log pose complete"
+delegation_start = "log pose delegation started"
+parallel_fanout = "log pose parallel teams active"
+conflict_detected = "log pose report conflict"
+evidence_request = "log pose evidence requested"
+final_synthesis = "log pose synthesis complete"
+analysis_pass_start = "crew manifest analysis started"
+hypothesis = "log pose working hypothesis"
+contradiction_map = "log pose contradiction map"
+[presentation_aliases_by_temperature.medium]
+plan = "Grand Line operational chart"
+validate_check = "log pose verification pass"
+blocked = "sea-king threat stalls advance"
+risk = "stormfront escalation risk"
+completed = "island objective secured"
+delegation_start = "captain orders cross-crew delegation"
+parallel_fanout = "deck teams fan out across stations"
+conflict_detected = "den-den briefings conflict"
+evidence_request = "requesting corroborated den-den packet"
+final_synthesis = "captain's integrated briefing delivered"
+analysis_pass_start = "deep chart-room review underway"
+hypothesis = "working tide hypothesis formed"
+contradiction_map = "Grand Line contradiction matrix"
+
+[presentation_aliases_by_temperature.high]
+plan = "new-world strike route prime directive"
+validate_check = "full-hull integrity and log pose sweep"
+blocked = "buster-level opposition halts the line"
+risk = "maelstrom-class threat vector"
+completed = "Emperor-tier mission secured"
+delegation_start = "captain initiates all-crew tasking"
+parallel_fanout = "strike teams launch from every deck"
+conflict_detected = "battlefield den-den intelligence collides"
+evidence_request = "summon verified den-den proof from each squad"
+final_synthesis = "captain's final war-room synthesis transmitted"
+analysis_pass_start = "deep-sea intelligence analysis engaged"
+hypothesis = "high-confidence voyage hypothesis locked"
+contradiction_map = "cross-current contradiction lattice"
+[alias_variants]
+delegation_start = ["crew stations assigned", "captain orders cross-crew delegation", "captain initiates all-crew tasking"]
+parallel_fanout = ["multiple scouting skiffs launched", "deck teams fan out across stations", "strike teams launch from every deck"]
+conflict_detected = ["den-den reports diverge", "den-den briefings conflict", "battlefield den-den intelligence collides"]
+evidence_request = ["requesting confirmed den-den report", "requesting corroborated den-den packet", "summon verified den-den proof from each squad"]
+final_synthesis = ["captain's voyage synthesis complete", "captain's integrated briefing delivered", "captain's final war-room synthesis transmitted"]
+analysis_pass_start = ["chart room analysis begins", "deep chart-room review underway", "deep-sea intelligence analysis engaged"]
+hypothesis = ["working sea-chart hypothesis", "working tide hypothesis formed", "high-confidence voyage hypothesis locked"]
+contradiction_map = ["conflicting-route chart", "Grand Line contradiction matrix", "cross-current contradiction lattice"]
+
+[phrase_packs]
+openers = ["Captain's deck brief:", "Den-den field relay:", "Logbook status update:"]
+transitions = ["Next island vector:", "Helm pivot:", "Setting a new course:"]
+confirmations = ["Aye, confirmed.", "Verified by lookout.", "Orders acknowledged."]
+risk_calls = ["Storm warning:", "Sea-king alert:", "Red-line caution:"]

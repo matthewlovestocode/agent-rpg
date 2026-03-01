@@ -60,3 +60,62 @@ presentation_aliases = """
 - "risk" -> "high-probability misdirection"
 - "completed" -> "case milestone confirmed"
 """
+
+[presentation_aliases_by_temperature.low]
+plan = "investigation docket plan"
+validate_check = "evidence log check"
+blocked = "investigation docket blocked"
+risk = "investigation docket risk"
+completed = "investigation docket complete"
+delegation_start = "investigation docket delegation started"
+parallel_fanout = "investigation docket parallel teams active"
+conflict_detected = "investigation docket report conflict"
+evidence_request = "investigation docket evidence requested"
+final_synthesis = "investigation docket synthesis complete"
+analysis_pass_start = "evidence log analysis started"
+hypothesis = "investigation docket working hypothesis"
+contradiction_map = "investigation docket contradiction map"
+[presentation_aliases_by_temperature.medium]
+plan = "investigation operations plan"
+validate_check = "forensic ledger verification"
+blocked = "hostile pressure on the lead chain"
+risk = "counterintelligence escalation risk"
+completed = "investigation objective secured"
+delegation_start = "task force command initiated delegation"
+parallel_fanout = "parallel tailing teams in motion"
+conflict_detected = "field reports in contradiction"
+evidence_request = "requesting verified evidence packet"
+final_synthesis = "integrated case synthesis delivered"
+analysis_pass_start = "deep deduction cycle underway"
+hypothesis = "working theory established"
+contradiction_map = "case contradiction matrix built"
+
+[presentation_aliases_by_temperature.high]
+plan = "zero-hour case directive"
+validate_check = "chain-of-custody integrity sweep"
+blocked = "hard stop under adversarial interference"
+risk = "high-severity manipulation threat"
+completed = "operation lock confirmed"
+delegation_start = "command activated full-spectrum delegation"
+parallel_fanout = "parallel pursuit formations deployed"
+conflict_detected = "intelligence streams in hard contradiction"
+evidence_request = "summon authenticated proof from every unit"
+final_synthesis = "commander-level synthesis transmitted"
+analysis_pass_start = "deep-protocol deduction engaged"
+hypothesis = "high-confidence conclusion locked"
+contradiction_map = "contradiction lattice forged"
+[alias_variants]
+delegation_start = ["surveillance assignments issued", "task force command initiated delegation", "command activated full-spectrum delegation"]
+parallel_fanout = ["parallel surveillance cells active", "parallel tailing teams in motion", "parallel pursuit formations deployed"]
+conflict_detected = ["testimony conflict detected", "field reports in contradiction", "intelligence streams in hard contradiction"]
+evidence_request = ["requesting corroborated evidence", "requesting verified evidence packet", "summon authenticated proof from every unit"]
+final_synthesis = ["case synthesis filed", "integrated case synthesis delivered", "commander-level synthesis transmitted"]
+analysis_pass_start = ["deduction pass started", "deep deduction cycle underway", "deep-protocol deduction engaged"]
+hypothesis = ["working deduction", "working theory established", "high-confidence conclusion locked"]
+contradiction_map = ["contradiction board assembled", "case contradiction matrix built", "contradiction lattice forged"]
+
+[phrase_packs]
+openers = ["Task force briefing:", "Wiretap relay:", "Case status update:"]
+transitions = ["Next lead:", "Deduction pivot:", "Proceeding route:"]
+confirmations = ["Confirmed by file.", "Evidence verified.", "Directive acknowledged."]
+risk_calls = ["Misdirection risk:", "Escalation warning:", "Critical exposure:"]

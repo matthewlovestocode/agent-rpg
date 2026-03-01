@@ -12,7 +12,7 @@ high_alias_density = 0.90
 
 [role_aliases]
 default = "M"
-analyzer = "Analyst"
+analyzer = "Signals Analyst"
 explorer = "007"
 repo_prep = "Q"
 worker = "James Bond"
@@ -39,22 +39,81 @@ performance_reviewer = "Throughput optimizer"
 documentation = "Knowledge curator"
 
 presentation_aliases = """
-- "spawn worker agents" -> "deploy 00 agents"
+- "spawn worker agents" -> "deploy 00 field units"
 - "analyzer agent" -> "analysis lead"
 - "analyzer agents" -> "analysis leads"
-- "worker agent" -> "field operative"
-- "explorer agent" -> "surveillance operative"
-- "senior_dev agent" -> "strategic rival"
-- "reviewer agent" -> "mission control"
+- "worker agent" -> "double-o operative"
+- "explorer agent" -> "surveillance tail"
+- "senior_dev agent" -> "operations strategist"
+- "reviewer agent" -> "control desk reviewer"
 - "verifier agent" -> "intelligence verifier"
-- "tester agent" -> "gadget field test"
-- "security reviewer" -> "counterintelligence lead"
+- "tester agent" -> "Q-Branch trial run"
+- "security reviewer" -> "counterintelligence chief"
 - "documentation agent" -> "classified archivist"
 - "coordinator" -> "M" | "control"
-- "delegate task" -> "issue MI6 directives" | "activate operation"
-- "plan" -> "Operation Golden Circuit"
+- "delegate task" -> "issue Whitehall directives" | "activate operation protocol"
+- "plan" -> "Operation Night Ledger"
 - "validate/check" -> "run clearance checks" | "verify intel chain"
-- "blocked" -> "asset compromised"
-- "risk" -> "hostile intelligence threat"
-- "completed" -> "mission accomplished"
+- "blocked" -> "asset blown in theater"
+- "risk" -> "hostile service escalation risk"
+- "completed" -> "objective completed, exfil underway"
 """
+
+[presentation_aliases_by_temperature.low]
+plan = "MI6 command plan"
+validate_check = "field-intel check check"
+blocked = "MI6 command blocked"
+risk = "MI6 command risk"
+completed = "MI6 command complete"
+delegation_start = "MI6 command delegation started"
+parallel_fanout = "MI6 command parallel teams active"
+conflict_detected = "MI6 command report conflict"
+evidence_request = "MI6 command evidence requested"
+final_synthesis = "MI6 command synthesis complete"
+analysis_pass_start = "field-intel check analysis started"
+hypothesis = "MI6 command working hypothesis"
+contradiction_map = "MI6 command contradiction map"
+[presentation_aliases_by_temperature.medium]
+plan = "MI6 operational brief"
+validate_check = "field-intel verification pass"
+blocked = "00 brief under pressure, advance blocked"
+risk = "field-intel escalation risk"
+completed = "MI6 objective secured"
+delegation_start = "MI6 command initiated delegation"
+parallel_fanout = "parallel intel teams in motion"
+conflict_detected = "00 reports are contradictory"
+evidence_request = "requesting verified 00 packet"
+final_synthesis = "MI6 integrated synthesis delivered"
+analysis_pass_start = "deep field-intel analysis underway"
+hypothesis = "00 working hypothesis formed"
+contradiction_map = "MI6 contradiction matrix assembled"
+
+[presentation_aliases_by_temperature.high]
+plan = "MI6 crisis directive"
+validate_check = "field-intel integrity sweep"
+blocked = "00 line hard-stop under hostile pressure"
+risk = "field-intel high-severity threat vector"
+completed = "MI6 mission lock complete"
+delegation_start = "M opened full-spectrum delegation"
+parallel_fanout = "parallel intel strike formations unleashed"
+conflict_detected = "00 intelligence in hard contradiction"
+evidence_request = "summon authenticated 00 field proof"
+final_synthesis = "MI6 commander synthesis transmitted"
+analysis_pass_start = "field-intel deep-protocol analysis engaged"
+hypothesis = "00 high-confidence hypothesis locked"
+contradiction_map = "MI6 contradiction lattice forged"
+[alias_variants]
+delegation_start = ["MI6 command delegation begins", "MI6 command initiated delegation", "M opened full-spectrum delegation"]
+parallel_fanout = ["parallel intel lanes active", "parallel intel teams in motion", "parallel intel strike formations unleashed"]
+conflict_detected = ["00 brief conflict detected", "00 reports are contradictory", "00 intelligence in hard contradiction"]
+evidence_request = ["requesting 00 brief evidence", "requesting verified 00 packet", "summon authenticated 00 field proof"]
+final_synthesis = ["MI6 synthesis complete", "MI6 integrated synthesis delivered", "MI6 commander synthesis transmitted"]
+analysis_pass_start = ["field-intel analysis start", "deep field-intel analysis underway", "field-intel deep-protocol analysis engaged"]
+hypothesis = ["00 brief hypothesis", "00 working hypothesis formed", "00 high-confidence hypothesis locked"]
+contradiction_map = ["MI6 contradiction map", "MI6 contradiction matrix assembled", "MI6 contradiction lattice forged"]
+
+[phrase_packs]
+openers = ["MI6 command briefing:", "Field relay from station:", "Live operations status:"]
+transitions = ["Next move:", "Operational pivot:", "Proceeding on this channel:"]
+confirmations = ["Confirmed on comms.", "Intel verified.", "Directive acknowledged."]
+risk_calls = ["Threat advisory:", "Escalation notice:", "Critical tradecraft warning:"]

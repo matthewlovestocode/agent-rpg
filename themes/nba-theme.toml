@@ -58,3 +58,62 @@ presentation_aliases = """
 - "risk" -> "foul trouble risk"
 - "completed" -> "quarter closed strong"
 """
+
+[presentation_aliases_by_temperature.low]
+plan = "clipboard game plan"
+validate_check = "halfcourt read-check check"
+blocked = "clipboard game blocked"
+risk = "clipboard game risk"
+completed = "clipboard game complete"
+delegation_start = "clipboard game delegation started"
+parallel_fanout = "clipboard game parallel teams active"
+conflict_detected = "clipboard game report conflict"
+evidence_request = "clipboard game evidence requested"
+final_synthesis = "clipboard game synthesis complete"
+analysis_pass_start = "halfcourt read-check analysis started"
+hypothesis = "clipboard game working hypothesis"
+contradiction_map = "clipboard game contradiction map"
+[presentation_aliases_by_temperature.medium]
+plan = "bench-led operational game plan"
+validate_check = "full halfcourt verification sweep"
+blocked = "defense loaded up and froze progression"
+risk = "lineup mismatch escalation risk"
+completed = "game-plan objective secured"
+delegation_start = "bench staff has delegated assignments"
+parallel_fanout = "parallel scout tracks are active across units"
+conflict_detected = "assistant reports conflict on priority actions"
+evidence_request = "requesting verified possession-by-possession packet"
+final_synthesis = "integrated coaching synthesis delivered"
+analysis_pass_start = "deep matchup analysis underway"
+hypothesis = "working hypothesis set from film trends"
+contradiction_map = "coaching contradiction matrix assembled"
+
+[presentation_aliases_by_temperature.high]
+plan = "playoff-level directive from the bench"
+validate_check = "high-pressure integrity sweep of every set"
+blocked = "scheme hit a hard stop under trapping pressure"
+risk = "series-swinging turnover risk"
+completed = "critical objective closed before the final horn"
+delegation_start = "head coach triggered full bench delegation"
+parallel_fanout = "all scout channels split into parallel actions"
+conflict_detected = "high-impact intel conflict across film reports"
+evidence_request = "pull authenticated all-angle film proof immediately"
+final_synthesis = "command-level synthesis transmitted to the staff"
+analysis_pass_start = "deep playoff-protocol analysis engaged"
+hypothesis = "high-confidence hypothesis locked on matchup leverage"
+contradiction_map = "full contradiction lattice built for review"
+[alias_variants]
+delegation_start = ["rotation assignments are out", "bench staff has delegated assignments", "head coach triggered full bench delegation"]
+parallel_fanout = ["multiple units running sets in parallel", "parallel scout tracks are active across units", "all scout channels split into parallel actions"]
+conflict_detected = ["film notes disagree on the read", "assistant reports conflict on priority actions", "high-impact intel conflict across film reports"]
+evidence_request = ["requesting synced film clips", "requesting verified possession-by-possession packet", "pull authenticated all-angle film proof immediately"]
+final_synthesis = ["final rotation brief assembled", "integrated coaching synthesis delivered", "command-level synthesis transmitted to the staff"]
+analysis_pass_start = ["starting film-room analysis pass", "deep matchup analysis underway", "deep playoff-protocol analysis engaged"]
+hypothesis = ["initial scouting hypothesis", "working hypothesis set from film trends", "high-confidence hypothesis locked on matchup leverage"]
+contradiction_map = ["coverage contradiction board", "coaching contradiction matrix assembled", "full contradiction lattice built for review"]
+
+[phrase_packs]
+openers = ["Bench memo:", "From the scorer's table:", "Live sideline update:"]
+transitions = ["Next possession:", "Rotation pivot:", "Into the next action:"]
+confirmations = ["Confirmed on film.", "Verified by staff.", "Locked into the game plan."]
+risk_calls = ["Risk call:", "Late-clock warning:", "Critical mismatch alert:"]

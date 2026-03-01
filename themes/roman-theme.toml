@@ -58,3 +58,62 @@ presentation_aliases = """
 - "risk" -> "barbarian incursion risk"
 - "completed" -> "province objective secured"
 """
+
+[presentation_aliases_by_temperature.low]
+plan = "forum campaign plan"
+validate_check = "standard-by-standard check check"
+blocked = "forum campaign blocked"
+risk = "forum campaign risk"
+completed = "forum campaign complete"
+delegation_start = "forum campaign delegation started"
+parallel_fanout = "forum campaign parallel teams active"
+conflict_detected = "forum campaign report conflict"
+evidence_request = "forum campaign evidence requested"
+final_synthesis = "forum campaign synthesis complete"
+analysis_pass_start = "standard-by-standard check analysis started"
+hypothesis = "forum campaign working hypothesis"
+contradiction_map = "forum campaign contradiction map"
+[presentation_aliases_by_temperature.medium]
+plan = "senate operational decree"
+validate_check = "augury verification pass"
+blocked = "siege pressure blocks the march"
+risk = "province destabilization risk"
+completed = "province objective secured"
+delegation_start = "imperator initiates senate delegation"
+parallel_fanout = "multiple cohorts maneuver in formation"
+conflict_detected = "field dispatches contradict each other"
+evidence_request = "requesting verified courier packet"
+final_synthesis = "integrated senate synthesis delivered"
+analysis_pass_start = "deep campaign analysis underway"
+hypothesis = "working campaign hypothesis formed"
+contradiction_map = "senate contradiction matrix"
+
+[presentation_aliases_by_temperature.high]
+plan = "imperial war directive"
+validate_check = "legion integrity and standard sweep"
+blocked = "enemy line enforces a hard stop"
+risk = "high-severity rebellion vector"
+completed = "imperial mission secured"
+delegation_start = "imperator opens full legion delegation"
+parallel_fanout = "strike cohorts deploy across the frontier"
+conflict_detected = "intelligence tablets in hard contradiction"
+evidence_request = "summon authenticated courier proof from every front"
+final_synthesis = "imperator's final synthesis transmitted"
+analysis_pass_start = "deep frontier intelligence analysis engaged"
+hypothesis = "high-confidence campaign hypothesis locked"
+contradiction_map = "imperial contradiction lattice"
+[alias_variants]
+delegation_start = ["cohort assignments issued", "imperator initiates senate delegation", "imperator opens full legion delegation"]
+parallel_fanout = ["scouts and cohorts advance in parallel", "multiple cohorts maneuver in formation", "strike cohorts deploy across the frontier"]
+conflict_detected = ["dispatch tablets conflict", "field dispatches contradict each other", "intelligence tablets in hard contradiction"]
+evidence_request = ["requesting sealed dispatch tablet", "requesting verified courier packet", "summon authenticated courier proof from every front"]
+final_synthesis = ["senate synthesis complete", "integrated senate synthesis delivered", "imperator's final synthesis transmitted"]
+analysis_pass_start = ["forum analysis begins", "deep campaign analysis underway", "deep frontier intelligence analysis engaged"]
+hypothesis = ["working augury hypothesis", "working campaign hypothesis formed", "high-confidence campaign hypothesis locked"]
+contradiction_map = ["conflict-of-omens map", "senate contradiction matrix", "imperial contradiction lattice"]
+
+[phrase_packs]
+openers = ["Forum briefing:", "Courier relay:", "Legion status dispatch:"]
+transitions = ["Next maneuver:", "Senate pivot:", "Advance to the next front:"]
+confirmations = ["Confirmed by standard.", "Verified by courier.", "Decree enacted."]
+risk_calls = ["Frontier warning:", "Insurrection alert:", "Critical siege caution:"]

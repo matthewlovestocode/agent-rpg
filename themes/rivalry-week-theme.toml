@@ -58,3 +58,62 @@ presentation_aliases = """
 - "risk" -> "momentum swing risk"
 - "completed" -> "rivalry objective secured"
 """
+
+[presentation_aliases_by_temperature.low]
+plan = "opening drive plan"
+validate_check = "sideline checklist check"
+blocked = "opening drive blocked"
+risk = "opening drive risk"
+completed = "opening drive complete"
+delegation_start = "opening drive delegation started"
+parallel_fanout = "opening drive parallel teams active"
+conflict_detected = "opening drive report conflict"
+evidence_request = "opening drive evidence requested"
+final_synthesis = "opening drive synthesis complete"
+analysis_pass_start = "sideline checklist analysis started"
+hypothesis = "opening drive working hypothesis"
+contradiction_map = "opening drive contradiction map"
+[presentation_aliases_by_temperature.medium]
+plan = "halftime adjustment plan"
+validate_check = "series-by-series verification pass"
+blocked = "red-zone stand halts progress"
+risk = "escalating rivalry pressure risk"
+completed = "drive objective secured"
+delegation_start = "coordinator opens cross-unit delegation"
+parallel_fanout = "offense, defense, and specials fan out"
+conflict_detected = "booth and sideline reads conflict"
+evidence_request = "requesting verified all-22 packet"
+final_synthesis = "integrated game-day synthesis delivered"
+analysis_pass_start = "deep film-room analysis underway"
+hypothesis = "working matchup hypothesis formed"
+contradiction_map = "rivalry contradiction matrix"
+
+[presentation_aliases_by_temperature.high]
+plan = "fourth-quarter rivalry directive"
+validate_check = "full sideline integrity sweep"
+blocked = "goal-line wall forces a hard stop"
+risk = "high-severity turnover risk"
+completed = "rivalry mission locked in"
+delegation_start = "head coach launches full roster delegation"
+parallel_fanout = "all units execute simultaneous packages"
+conflict_detected = "live intel and film evidence collide"
+evidence_request = "summon authenticated replay proof from the field"
+final_synthesis = "final command-level synthesis transmitted"
+analysis_pass_start = "deep pressure-state analysis engaged"
+hypothesis = "high-confidence win-path hypothesis locked"
+contradiction_map = "rivalry contradiction lattice"
+[alias_variants]
+delegation_start = ["coaching assignments set", "coordinator opens cross-unit delegation", "head coach launches full roster delegation"]
+parallel_fanout = ["position groups take parallel reps", "offense, defense, and specials fan out", "all units execute simultaneous packages"]
+conflict_detected = ["film notes conflict", "booth and sideline reads conflict", "live intel and film evidence collide"]
+evidence_request = ["requesting timestamped film clip", "requesting verified all-22 packet", "summon authenticated replay proof from the field"]
+final_synthesis = ["head coach synthesis complete", "integrated game-day synthesis delivered", "final command-level synthesis transmitted"]
+analysis_pass_start = ["early-drive analysis start", "deep film-room analysis underway", "deep pressure-state analysis engaged"]
+hypothesis = ["first-pass matchup hypothesis", "working matchup hypothesis formed", "high-confidence win-path hypothesis locked"]
+contradiction_map = ["coverage mismatch map", "rivalry contradiction matrix", "rivalry contradiction lattice"]
+
+[phrase_packs]
+openers = ["Kickoff brief:", "Sideline relay:", "Scoreboard status:"]
+transitions = ["Next possession:", "Halftime pivot:", "Run the next package:"]
+confirmations = ["Play confirmed.", "Verified on film.", "Call is locked in."]
+risk_calls = ["Turnover warning:", "Momentum alert:", "Clock-management caution:"]

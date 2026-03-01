@@ -58,3 +58,62 @@ presentation_aliases = """
 - "risk" -> "disharmony among kami"
 - "completed" -> "sacred objective secured"
 """
+
+[presentation_aliases_by_temperature.low]
+plan = "shrine rite plan"
+validate_check = "torii watchpoint check"
+blocked = "shrine rite blocked"
+risk = "shrine rite risk"
+completed = "shrine rite complete"
+delegation_start = "shrine rite delegation started"
+parallel_fanout = "shrine rite parallel teams active"
+conflict_detected = "shrine rite report conflict"
+evidence_request = "shrine rite evidence requested"
+final_synthesis = "shrine rite synthesis complete"
+analysis_pass_start = "torii watchpoint analysis started"
+hypothesis = "shrine rite working hypothesis"
+contradiction_map = "shrine rite contradiction map"
+[presentation_aliases_by_temperature.medium]
+plan = "council operational rite"
+validate_check = "purification verification pass"
+blocked = "spiritual turbulence halts advance"
+risk = "escalating imbalance risk"
+completed = "sacred objective secured"
+delegation_start = "high shrine opens cross-council delegation"
+parallel_fanout = "wardens and envoys fan out in parallel"
+conflict_detected = "oracle reports contradict"
+evidence_request = "requesting corroborated shrine packet"
+final_synthesis = "integrated shrine synthesis delivered"
+analysis_pass_start = "deep torii-watch analysis underway"
+hypothesis = "working purification hypothesis formed"
+contradiction_map = "shrine contradiction matrix"
+
+[presentation_aliases_by_temperature.high]
+plan = "grand purification directive"
+validate_check = "full shrine-boundary integrity sweep"
+blocked = "warded barrier enforces a hard stop"
+risk = "high-severity corruption vector"
+completed = "sacred mission locked and complete"
+delegation_start = "sun throne initiates full shrine delegation"
+parallel_fanout = "all wardens deploy across the sacred precincts"
+conflict_detected = "oracle intelligence in hard contradiction"
+evidence_request = "summon authenticated shrine proof from each gate"
+final_synthesis = "high council synthesis transmitted"
+analysis_pass_start = "deep spiritual-state analysis engaged"
+hypothesis = "high-confidence harmony hypothesis locked"
+contradiction_map = "sacred contradiction lattice"
+[alias_variants]
+delegation_start = ["shrine duties assigned", "high shrine opens cross-council delegation", "sun throne initiates full shrine delegation"]
+parallel_fanout = ["envoy teams move to parallel shrines", "wardens and envoys fan out in parallel", "all wardens deploy across the sacred precincts"]
+conflict_detected = ["purity records conflict", "oracle reports contradict", "oracle intelligence in hard contradiction"]
+evidence_request = ["requesting verified purification record", "requesting corroborated shrine packet", "summon authenticated shrine proof from each gate"]
+final_synthesis = ["council synthesis complete", "integrated shrine synthesis delivered", "high council synthesis transmitted"]
+analysis_pass_start = ["shrine record analysis begins", "deep torii-watch analysis underway", "deep spiritual-state analysis engaged"]
+hypothesis = ["working harmony hypothesis", "working purification hypothesis formed", "high-confidence harmony hypothesis locked"]
+contradiction_map = ["disharmony contradiction map", "shrine contradiction matrix", "sacred contradiction lattice"]
+
+[phrase_packs]
+openers = ["Shrine council brief:", "Torii relay:", "Sacred status update:"]
+transitions = ["Next rite:", "Harmony pivot:", "Proceed to the next shrine path:"]
+confirmations = ["Rite confirmed.", "Purity verified.", "Mandate sealed."]
+risk_calls = ["Disharmony warning:", "Corruption alert:", "Critical warding caution:"]

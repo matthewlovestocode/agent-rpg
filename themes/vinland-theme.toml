@@ -60,3 +60,62 @@ presentation_aliases = """
 - "risk" -> "raid risk on the flank"
 - "completed" -> "campaign objective secured"
 """
+
+[presentation_aliases_by_temperature.low]
+plan = "thing council plan"
+validate_check = "supply and check"
+blocked = "thing council blocked"
+risk = "thing council risk"
+completed = "thing council complete"
+delegation_start = "thing council delegation started"
+parallel_fanout = "thing council parallel teams active"
+conflict_detected = "thing council report conflict"
+evidence_request = "thing council evidence requested"
+final_synthesis = "thing council synthesis complete"
+analysis_pass_start = "supply and analysis started"
+hypothesis = "thing council working hypothesis"
+contradiction_map = "thing council contradiction map"
+[presentation_aliases_by_temperature.medium]
+plan = "northern campaign operations plan"
+validate_check = "route and provisions verification pass"
+blocked = "advance stalled under coastal pressure"
+risk = "escalation risk between rival warbands"
+completed = "campaign objective secured"
+delegation_start = "council command delegation underway"
+parallel_fanout = "parallel raiding and scouting groups in motion"
+conflict_detected = "saga-ledger reports are inconsistent"
+evidence_request = "requesting verified witness packet"
+final_synthesis = "integrated council synthesis delivered"
+analysis_pass_start = "deep campaign analysis underway"
+hypothesis = "working campaign hypothesis formed"
+contradiction_map = "council contradiction matrix assembled"
+
+[presentation_aliases_by_temperature.high]
+plan = "high council war protocol"
+validate_check = "shield wall and supply integrity sweep"
+blocked = "offensive halted by fierce resistance"
+risk = "high-severity threat on the marching line"
+completed = "war objective locked and secured"
+delegation_start = "high council opened full warband delegation"
+parallel_fanout = "strike bands deployed across multiple fronts"
+conflict_detected = "field intelligence in hard contradiction"
+evidence_request = "summon authenticated proof from returning scouts"
+final_synthesis = "commander synthesis delivered to the council"
+analysis_pass_start = "deep campaign protocol analysis engaged"
+hypothesis = "high-confidence campaign hypothesis locked"
+contradiction_map = "council contradiction lattice assembled"
+[alias_variants]
+delegation_start = ["warband delegation initiated", "council command delegation underway", "high council opened full warband delegation"]
+parallel_fanout = ["multiple scouting bands active", "parallel raiding and scouting groups in motion", "strike bands deployed across multiple fronts"]
+conflict_detected = ["saga ledgers conflict", "saga-ledger reports are inconsistent", "field intelligence in hard contradiction"]
+evidence_request = ["requesting witnessed ledger entries", "requesting verified witness packet", "summon authenticated proof from returning scouts"]
+final_synthesis = ["council synthesis prepared", "integrated council synthesis delivered", "commander synthesis delivered to the council"]
+analysis_pass_start = ["campaign analysis initiated", "deep campaign analysis underway", "deep campaign protocol analysis engaged"]
+hypothesis = ["saga-ledger hypothesis", "working campaign hypothesis formed", "high-confidence campaign hypothesis locked"]
+contradiction_map = ["council contradiction map", "council contradiction matrix assembled", "council contradiction lattice assembled"]
+
+[phrase_packs]
+openers = ["Thing council status brief:", "Warband field relay:", "Longship command update:"]
+transitions = ["Next march:", "Tactical turn:", "Proceeding by route:"]
+confirmations = ["Confirmed.", "Witnessed and verified.", "Orders fixed."]
+risk_calls = ["Threat call:", "Escalation warning:", "Critical caution:"]

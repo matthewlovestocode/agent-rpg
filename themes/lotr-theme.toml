@@ -64,3 +64,62 @@ presentation_aliases = """
 - "risk" -> "shadow from Mordor"
 - "completed" -> "quest stage fulfilled"
 """
+
+[presentation_aliases_by_temperature.low]
+plan = "road-to-Mordor plan plan"
+validate_check = "ranger trail check"
+blocked = "road-to-Mordor plan blocked"
+risk = "road-to-Mordor plan risk"
+completed = "road-to-Mordor plan complete"
+delegation_start = "road-to-Mordor plan delegation started"
+parallel_fanout = "road-to-Mordor plan parallel teams active"
+conflict_detected = "road-to-Mordor plan report conflict"
+evidence_request = "road-to-Mordor plan evidence requested"
+final_synthesis = "road-to-Mordor plan synthesis complete"
+analysis_pass_start = "ranger trail analysis started"
+hypothesis = "road-to-Mordor plan working hypothesis"
+contradiction_map = "road-to-Mordor plan contradiction map"
+[presentation_aliases_by_temperature.medium]
+plan = "war-council campaign plan"
+validate_check = "warden verification on every road"
+blocked = "the pass is held by hostile eyes"
+risk = "enemy movement may cut the company off"
+completed = "the council objective is secured"
+delegation_start = "the council dispatches each fellowship band"
+parallel_fanout = "rangers ride on multiple fronts"
+conflict_detected = "field tidings from the palantiri clash"
+evidence_request = "call for corroborated witness from the marches"
+final_synthesis = "Rivendell receives a unified account"
+analysis_pass_start = "a deep read of maps and messengers begins"
+hypothesis = "a working theory from gathered tidings is formed"
+contradiction_map = "council ledger of conflicting tidings"
+
+[presentation_aliases_by_temperature.high]
+plan = "last-alliance battle plan prime directive"
+validate_check = "full watch over every gate and ford"
+blocked = "the host is halted before a dark stronghold"
+risk = "a grave shadow threatens the whole campaign"
+completed = "the council marks the charge accomplished"
+delegation_start = "the white council commits every sworn host"
+parallel_fanout = "companies move in force across all approaches"
+conflict_detected = "war reports stand in open contradiction"
+evidence_request = "bring hardened proof from wardens at the front"
+final_synthesis = "the final war brief is laid before the council"
+analysis_pass_start = "deep war-council analysis is underway"
+hypothesis = "high-confidence war reading established"
+contradiction_map = "high-council map of clashing reports"
+[alias_variants]
+delegation_start = ["the council sends companies forth", "the council dispatches each fellowship band", "the white council commits every sworn host"]
+parallel_fanout = ["scouts spread across many paths", "rangers ride on multiple fronts", "companies move in force across all approaches"]
+conflict_detected = ["palantir accounts do not agree", "field tidings from the palantiri clash", "war reports stand in open contradiction"]
+evidence_request = ["ask for sworn ranger witness", "call for corroborated witness from the marches", "bring hardened proof from wardens at the front"]
+final_synthesis = ["the council's account is joined", "Rivendell receives a unified account", "the final war brief is laid before the council"]
+analysis_pass_start = ["the map-table reading begins", "a deep read of maps and messengers begins", "deep war-council analysis is underway"]
+hypothesis = ["a first reading from the seeing-stone", "a working theory from gathered tidings is formed", "high-confidence war reading established"]
+contradiction_map = ["white-council dispute chart", "council ledger of conflicting tidings", "high-council map of clashing reports"]
+
+[phrase_packs]
+openers = ["Council dispatch:", "Rivendell field report:", "Steward's running account:"]
+transitions = ["Next road:", "By this turn:", "On the next watch:"]
+confirmations = ["Witnessed.", "So recorded.", "By oath, complete."]
+risk_calls = ["Shadow warning:", "Mordor pressure:", "High peril:"]

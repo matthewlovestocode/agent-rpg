@@ -4,6 +4,20 @@ import path from "node:path";
 import { parse as parseToml } from "toml";
 
 type Dict = Record<string, unknown>;
+const AGENT_ROLES = [
+  "default",
+  "analyzer",
+  "explorer",
+  "repo_prep",
+  "worker",
+  "senior_dev",
+  "reviewer",
+  "verifier",
+  "tester",
+  "security_reviewer",
+  "performance_reviewer",
+  "documentation"
+] as const;
 
 const filePath = path.resolve("agents/repo_prep.toml");
 
@@ -25,6 +39,7 @@ const instructions = String(parsed.developer_instructions ?? "");
 const requiredMarkers = [
   "Ops scaffold profile (source of truth):",
   "`ops/agents/state/events.jsonl`",
+  "`ops/agents/logs/default.jsonl`",
   "Required JSONL fields per line:",
   "`ts`, `event`, `task_id`, `agent`, `schema_version`, `meta`",
   "`handoff_trace`",
@@ -41,8 +56,11 @@ for (const marker of requiredMarkers) {
 }
 
 const eventsPath = path.resolve("ops/agents/state/events.jsonl");
-if (fs.existsSync(eventsPath)) {
-  const raw = fs.readFileSync(eventsPath, "utf8");
+const perAgentLogPaths = AGENT_ROLES.map((role) => path.resolve(`ops/agents/logs/${role}.jsonl`));
+const jsonlPaths = [eventsPath, ...perAgentLogPaths];
+for (const jsonlPath of jsonlPaths) {
+  if (!fs.existsSync(jsonlPath)) continue;
+  const raw = fs.readFileSync(jsonlPath, "utf8");
   const lines = raw.split(/\r?\n/).filter((l) => l.trim().length > 0);
   const requiredJsonlKeys = ["ts", "event", "task_id", "agent", "schema_version", "meta"];
   for (let i = 0; i < lines.length; i++) {
@@ -50,12 +68,12 @@ if (fs.existsSync(eventsPath)) {
       const row = JSON.parse(lines[i]) as Dict;
       for (const key of requiredJsonlKeys) {
         if (!(key in row)) {
-          console.log(`ERROR: ops/agents/state/events.jsonl line ${i + 1} missing key '${key}'`);
+          console.log(`ERROR: ${path.relative(process.cwd(), jsonlPath)} line ${i + 1} missing key '${key}'`);
           errors++;
         }
       }
     } catch {
-      console.log(`ERROR: ops/agents/state/events.jsonl line ${i + 1} is not valid JSON`);
+      console.log(`ERROR: ${path.relative(process.cwd(), jsonlPath)} line ${i + 1} is not valid JSON`);
       errors++;
     }
   }

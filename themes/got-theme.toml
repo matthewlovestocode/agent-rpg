@@ -58,3 +58,62 @@ presentation_aliases = """
 - "risk" -> "winter threat rising"
 - "completed" -> "stronghold objective secured"
 """
+
+[presentation_aliases_by_temperature.low]
+plan = "small council plan"
+validate_check = "raven ledger check"
+blocked = "small council blocked"
+risk = "small council risk"
+completed = "small council complete"
+delegation_start = "small council delegation started"
+parallel_fanout = "small council parallel teams active"
+conflict_detected = "small council report conflict"
+evidence_request = "small council evidence requested"
+final_synthesis = "small council synthesis complete"
+analysis_pass_start = "raven ledger analysis started"
+hypothesis = "small council working hypothesis"
+contradiction_map = "small council contradiction map"
+[presentation_aliases_by_temperature.medium]
+plan = "realm operations plan"
+validate_check = "watch report verification pass"
+blocked = "warfront pressure blocking advance"
+risk = "succession escalation risk"
+completed = "realm objective secured"
+delegation_start = "crown command initiated delegation"
+parallel_fanout = "parallel bannermen squads in motion"
+conflict_detected = "citadel reports are contradictory"
+evidence_request = "requesting verified citadel packet"
+final_synthesis = "integrated realm synthesis delivered"
+analysis_pass_start = "deep watch analysis underway"
+hypothesis = "working realm hypothesis formed"
+contradiction_map = "small council contradiction matrix assembled"
+
+[presentation_aliases_by_temperature.high]
+plan = "iron council directive"
+validate_check = "citadel archive integrity sweep"
+blocked = "hard stop under hostile banners"
+risk = "high-severity throne-room threat"
+completed = "crown mission lock complete"
+delegation_start = "hand of the king opened full-spectrum delegation"
+parallel_fanout = "parallel warhost formations unleashed"
+conflict_detected = "intelligence ravens in hard contradiction"
+evidence_request = "summon authenticated field proof from each holdfast"
+final_synthesis = "crown synthesis transmitted"
+analysis_pass_start = "deep-protocol council analysis engaged"
+hypothesis = "high-confidence succession hypothesis locked"
+contradiction_map = "realm contradiction lattice forged"
+[alias_variants]
+delegation_start = ["small council delegation started", "crown command initiated delegation", "hand of the king opened full-spectrum delegation"]
+parallel_fanout = ["parallel raven routes active", "parallel bannermen squads in motion", "parallel warhost formations unleashed"]
+conflict_detected = ["citadel record conflict detected", "citadel reports are contradictory", "intelligence ravens in hard contradiction"]
+evidence_request = ["requesting sworn testimony record", "requesting verified citadel packet", "summon authenticated field proof from each holdfast"]
+final_synthesis = ["small council synthesis complete", "integrated realm synthesis delivered", "crown synthesis transmitted"]
+analysis_pass_start = ["watch analysis start", "deep watch analysis underway", "deep-protocol council analysis engaged"]
+hypothesis = ["citadel hypothesis draft", "working realm hypothesis formed", "high-confidence succession hypothesis locked"]
+contradiction_map = ["realm contradiction map", "small council contradiction matrix assembled", "realm contradiction lattice forged"]
+
+[phrase_packs]
+openers = ["Small council brief:", "Raven relay:", "Realm status report:"]
+transitions = ["Next move:", "Council pivot:", "Advancing front:"]
+confirmations = ["Witness confirmed.", "Raven verified.", "Order sealed."]
+risk_calls = ["Banner threat:", "Escalation warning:", "Critical caution:"]

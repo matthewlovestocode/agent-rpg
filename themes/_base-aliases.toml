@@ -16,7 +16,7 @@ performance_reviewer = "Performance Reviewer"
 documentation = "Documentation"
 
 presentation_aliases = """
-- "spawn worker agents" -> "dispatch the team"
+- "spawn worker agents" -> "deploy the work squad"
 - "worker agent" -> "worker"
 - "worker agents" -> "workers"
 - "analyzer agent" -> "analysis lead"
@@ -40,18 +40,18 @@ presentation_aliases = """
 - "documentation agent" -> "documentation lead"
 - "documentation agents" -> "documentation leads"
 - "coordinator" -> "coordinator"
-- "delegate task" -> "assign task"
-- "plan" -> "execution plan"
-- "validate/check" -> "validate"
+- "delegate task" -> "assign the next objective"
+- "plan" -> "operation plan"
+- "validate/check" -> "run a validation pass"
 - "blocked" -> "blocked"
 - "risk" -> "risk"
 - "completed" -> "completed"
-- "delegation_start" -> "starting delegation pass"
-- "parallel_fanout" -> "parallel execution lanes engaged"
-- "conflict_detected" -> "conflicting reports detected"
-- "evidence_request" -> "requesting evidence package"
-- "final_synthesis" -> "final synthesis complete"
-- "analysis_pass_start" -> "beginning deep analysis pass"
+- "delegation_start" -> "delegation sequence starting"
+- "parallel_fanout" -> "parallel work lanes engaged"
+- "conflict_detected" -> "conflicting findings detected"
+- "evidence_request" -> "requesting evidence bundle"
+- "final_synthesis" -> "final synthesis assembled"
+- "analysis_pass_start" -> "deep analysis pass starting"
 - "hypothesis" -> "working hypothesis"
 - "contradiction_map" -> "contradiction map"
 """
@@ -63,31 +63,31 @@ blocked = "blocked"
 risk = "risk"
 completed = "done"
 delegation_start = "starting delegation"
-parallel_fanout = "parallel tasks started"
+parallel_fanout = "parallel tasks underway"
 conflict_detected = "conflict detected"
 evidence_request = "requesting evidence"
-final_synthesis = "final summary ready"
-analysis_pass_start = "starting analysis"
+final_synthesis = "summary ready"
+analysis_pass_start = "analysis starting"
 hypothesis = "initial hypothesis"
 contradiction_map = "conflict map"
 
 [presentation_aliases_by_temperature.medium]
-plan = "execution plan"
-validate_check = "validation pass"
+plan = "operation plan"
+validate_check = "validation sweep"
 blocked = "blocked by dependency"
-risk = "implementation risk"
-completed = "objective complete"
-delegation_start = "delegation sequence started"
+risk = "delivery risk"
+completed = "objective achieved"
+delegation_start = "delegation sequence underway"
 parallel_fanout = "parallel workstreams in motion"
 conflict_detected = "cross-agent conflict detected"
 evidence_request = "requesting focused evidence"
-final_synthesis = "integrated synthesis complete"
-analysis_pass_start = "analysis pass underway"
+final_synthesis = "integrated synthesis ready"
+analysis_pass_start = "analysis pass in progress"
 hypothesis = "working hypothesis"
-contradiction_map = "contradiction map assembled"
+contradiction_map = "contradiction map compiled"
 
 [presentation_aliases_by_temperature.high]
-plan = "campaign plan"
+plan = "campaign operations plan"
 validate_check = "integrity sweep"
 blocked = "advance stalled at the gate"
 risk = "threat vector"
@@ -95,19 +95,19 @@ completed = "objective secured"
 delegation_start = "war council delegation has begun"
 parallel_fanout = "multiple strike teams deployed in parallel"
 conflict_detected = "reports are in contradiction"
-evidence_request = "summon proof from the field"
+evidence_request = "summon field proof"
 final_synthesis = "campaign synthesis delivered"
 analysis_pass_start = "deep analysis protocol engaged"
 hypothesis = "battle hypothesis formed"
-contradiction_map = "contradiction map drawn"
+contradiction_map = "contradiction map charted"
 
 [alias_variants]
-delegation_start = ["starting delegation pass", "initiating delegation wave", "opening task command"]
-parallel_fanout = ["parallel execution lanes engaged", "multiple workstreams now active", "simultaneous task groups deployed"]
-conflict_detected = ["conflicting reports detected", "findings are in conflict", "agent reports diverge"]
-evidence_request = ["requesting evidence package", "collecting proof points", "asking for command logs"]
-final_synthesis = ["final synthesis complete", "integrated summary complete", "decision brief finalized"]
-analysis_pass_start = ["beginning deep analysis pass", "starting full-context read", "launching synthesis pass"]
+delegation_start = ["delegation sequence starting", "initiating delegation wave", "opening task command"]
+parallel_fanout = ["parallel work lanes engaged", "multiple workstreams now active", "simultaneous task groups deployed"]
+conflict_detected = ["conflicting findings detected", "findings are in conflict", "agent reports diverge"]
+evidence_request = ["requesting evidence bundle", "collecting proof points", "asking for command logs"]
+final_synthesis = ["final synthesis assembled", "integrated summary complete", "decision brief finalized"]
+analysis_pass_start = ["deep analysis pass starting", "starting full-context read", "launching synthesis pass"]
 hypothesis = ["working hypothesis", "initial theory", "provisional interpretation"]
 contradiction_map = ["contradiction map", "conflict matrix", "dispute map"]
 

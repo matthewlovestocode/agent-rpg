@@ -12,7 +12,7 @@ high_alias_density = 0.90
 
 [role_aliases]
 default = "Vishnu"
-analyzer = "Analyst"
+analyzer = "Shastra Analyst"
 explorer = "Hanuman"
 repo_prep = "Vishvakarma"
 worker = "Arjuna"
@@ -39,22 +39,81 @@ performance_reviewer = "Throughput optimizer"
 documentation = "Knowledge curator"
 
 presentation_aliases = """
-- "spawn worker agents" -> "assemble the sena"
+- "spawn worker agents" -> "assemble the dharmic sena"
 - "analyzer agent" -> "analysis lead"
 - "analyzer agents" -> "analysis leads"
-- "worker agent" -> "kshatriya champion"
+- "worker agent" -> "kshatriya vanguard"
 - "explorer agent" -> "vanara scout"
 - "senior_dev agent" -> "dharma strategist"
-- "reviewer agent" -> "council elder"
+- "reviewer agent" -> "sabha adjudicator"
 - "verifier agent" -> "wisdom verifier"
-- "tester agent" -> "trial warrior"
-- "security reviewer" -> "shakti guardian"
+- "tester agent" -> "agni-trial warrior"
+- "security reviewer" -> "shakti sentinel"
 - "documentation agent" -> "itihasa chronicler"
 - "coordinator" -> "dharma commander" | "preserver"
-- "delegate task" -> "issue dharma orders" | "dispatch the sena"
-- "plan" -> "kurukshetra strategy"
-- "validate/check" -> "consult the shastra" | "verify omens"
-- "blocked" -> "the path of dharma is contested"
+- "delegate task" -> "issue dharma decrees" | "dispatch the vana units"
+- "plan" -> "Kurukshetra campaign design"
+- "validate/check" -> "consult the shastra" | "confirm vidya traces"
+- "blocked" -> "the dharmic path is contested"
 - "risk" -> "adharma escalation risk"
 - "completed" -> "dharma objective secured"
 """
+
+[presentation_aliases_by_temperature.low]
+plan = "dharma sabha plan"
+validate_check = "shastra check check"
+blocked = "dharma sabha blocked"
+risk = "dharma sabha risk"
+completed = "dharma sabha complete"
+delegation_start = "dharma sabha delegation started"
+parallel_fanout = "dharma sabha parallel teams active"
+conflict_detected = "dharma sabha report conflict"
+evidence_request = "dharma sabha evidence requested"
+final_synthesis = "dharma sabha synthesis complete"
+analysis_pass_start = "shastra check analysis started"
+hypothesis = "dharma sabha working hypothesis"
+contradiction_map = "dharma sabha contradiction map"
+[presentation_aliases_by_temperature.medium]
+plan = "dharma council operational charter"
+validate_check = "shastra verification pass"
+blocked = "mandala watch pressure blocking advance"
+risk = "shastra escalation risk"
+completed = "dharma council objective secured"
+delegation_start = "dharma council command initiated delegation"
+parallel_fanout = "parallel mandala cohorts in motion"
+conflict_detected = "mandala watch reports are contradictory"
+evidence_request = "requesting verified mandala packet"
+final_synthesis = "dharma council integrated synthesis delivered"
+analysis_pass_start = "deep shastra analysis underway"
+hypothesis = "mandala watch working hypothesis formed"
+contradiction_map = "dharma council contradiction matrix assembled"
+
+[presentation_aliases_by_temperature.high]
+plan = "dharma war-council directive"
+validate_check = "shastra integrity sweep"
+blocked = "mandala watch hard-stop under hostile pressure"
+risk = "shastra high-severity threat vector"
+completed = "dharma mission lock complete"
+delegation_start = "dharma council opened full-spectrum delegation"
+parallel_fanout = "parallel mandala strike formations unleashed"
+conflict_detected = "mandala intelligence in hard contradiction"
+evidence_request = "summon authenticated mandala field proof"
+final_synthesis = "dharma commander synthesis transmitted"
+analysis_pass_start = "shastra deep-protocol analysis engaged"
+hypothesis = "mandala high-confidence hypothesis locked"
+contradiction_map = "dharma contradiction lattice forged"
+[alias_variants]
+delegation_start = ["dharma sabha delegation begins", "dharma council command initiated delegation", "dharma council opened full-spectrum delegation"]
+parallel_fanout = ["parallel mandala lanes active", "parallel mandala cohorts in motion", "parallel mandala strike formations unleashed"]
+conflict_detected = ["mandala watch conflict detected", "mandala watch reports are contradictory", "mandala intelligence in hard contradiction"]
+evidence_request = ["requesting mandala watch evidence", "requesting verified mandala packet", "summon authenticated mandala field proof"]
+final_synthesis = ["dharma sabha synthesis complete", "dharma council integrated synthesis delivered", "dharma commander synthesis transmitted"]
+analysis_pass_start = ["shastra analysis start", "deep shastra analysis underway", "shastra deep-protocol analysis engaged"]
+hypothesis = ["mandala watch hypothesis", "mandala watch working hypothesis formed", "mandala high-confidence hypothesis locked"]
+contradiction_map = ["dharma sabha contradiction map", "dharma council contradiction matrix assembled", "dharma contradiction lattice forged"]
+
+[phrase_packs]
+openers = ["Sabha command brief:", "Kurukshetra field relay:", "Mandala status report:"]
+transitions = ["Next dharmic step:", "Strategic pivot:", "Proceeding by mandala lane:"]
+confirmations = ["Confirmed by counsel.", "Shastra-verified.", "Directive accepted."]
+risk_calls = ["Adharma warning:", "Escalation advisory:", "Critical dharma caution:"]

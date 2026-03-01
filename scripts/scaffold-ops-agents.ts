@@ -3,6 +3,20 @@ import fs from "node:fs";
 import path from "node:path";
 
 type Mode = "dry_run" | "apply";
+const AGENT_ROLES = [
+  "default",
+  "analyzer",
+  "explorer",
+  "repo_prep",
+  "worker",
+  "senior_dev",
+  "reviewer",
+  "verifier",
+  "tester",
+  "security_reviewer",
+  "performance_reviewer",
+  "documentation"
+] as const;
 
 function parseArgs(argv: string[]) {
   let mode: Mode = "dry_run";
@@ -68,11 +82,14 @@ function main() {
   const opsDir = path.join(root, "ops");
   const agentsDir = path.join(opsDir, "agents");
   const stateDir = path.join(agentsDir, "state");
+  const logsDir = path.join(agentsDir, "logs");
   const eventsFile = path.join(stateDir, "events.jsonl");
+  const perAgentLogs = AGENT_ROLES.map((role) => path.join(logsDir, `${role}.jsonl`));
 
   ensureDir(opsDir, mode, created, skipped);
   ensureDir(agentsDir, mode, created, skipped);
   ensureDir(stateDir, mode, created, skipped);
+  ensureDir(logsDir, mode, created, skipped);
 
   if (fs.existsSync(eventsFile)) {
     skipped.push(eventsFile);
@@ -82,12 +99,25 @@ function main() {
     created.push(eventsFile);
   }
 
+  for (const logFile of perAgentLogs) {
+    if (fs.existsSync(logFile)) {
+      skipped.push(logFile);
+      conflicts.push(...readJsonlConflicts(logFile));
+      continue;
+    }
+    if (mode === "apply") fs.writeFileSync(logFile, "");
+    created.push(logFile);
+  }
+
   const result = {
     mode,
     root,
     profile: {
-      required_directories: ["ops/", "ops/agents/", "ops/agents/state/"],
-      required_file: "ops/agents/state/events.jsonl",
+      required_directories: ["ops/", "ops/agents/", "ops/agents/state/", "ops/agents/logs/"],
+      required_files: [
+        "ops/agents/state/events.jsonl",
+        ...AGENT_ROLES.map((role) => `ops/agents/logs/${role}.jsonl`)
+      ],
       policy: "append-only events log; never rewrite existing history unless explicitly requested"
     },
     created: created.map((p) => path.relative(root, p)),

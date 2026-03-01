@@ -60,3 +60,62 @@ presentation_aliases = """
 - "risk" -> "threat to the fortress"
 - "completed" -> "objective secured"
 """
+
+[presentation_aliases_by_temperature.low]
+plan = "fortress watch plan"
+validate_check = "rampart inspection check"
+blocked = "fortress watch blocked"
+risk = "fortress watch risk"
+completed = "fortress watch complete"
+delegation_start = "fortress watch delegation started"
+parallel_fanout = "fortress watch parallel teams active"
+conflict_detected = "fortress watch report conflict"
+evidence_request = "fortress watch evidence requested"
+final_synthesis = "fortress watch synthesis complete"
+analysis_pass_start = "rampart inspection analysis started"
+hypothesis = "fortress watch working hypothesis"
+contradiction_map = "fortress watch contradiction map"
+[presentation_aliases_by_temperature.medium]
+plan = "fortress operations plan"
+validate_check = "defensive line verification pass"
+blocked = "siege pressure blocking advance"
+risk = "escalating breach risk"
+completed = "fortress objective secured"
+delegation_start = "command initiated garrison delegation"
+parallel_fanout = "parallel patrol squads in motion"
+conflict_detected = "field dispatches are contradictory"
+evidence_request = "requesting verified dispatch packet"
+final_synthesis = "integrated defense synthesis delivered"
+analysis_pass_start = "deep watch analysis underway"
+hypothesis = "working defense theory formed"
+contradiction_map = "fortress contradiction matrix assembled"
+
+[presentation_aliases_by_temperature.high]
+plan = "war-room prime directive"
+validate_check = "bastion integrity sweep"
+blocked = "hard stop under concentrated assault"
+risk = "high-severity fortress threat"
+completed = "mission lock secured"
+delegation_start = "commander opened full-spectrum delegation"
+parallel_fanout = "parallel strike wings unleashed"
+conflict_detected = "intelligence channels in hard contradiction"
+evidence_request = "summon authenticated proof from the outer wall"
+final_synthesis = "commander synthesis transmitted"
+analysis_pass_start = "deep-protocol watch analysis engaged"
+hypothesis = "high-confidence defense conclusion locked"
+contradiction_map = "fortress contradiction lattice forged"
+[alias_variants]
+delegation_start = ["garrison assignments issued", "command initiated garrison delegation", "commander opened full-spectrum delegation"]
+parallel_fanout = ["parallel watch posts active", "parallel patrol squads in motion", "parallel strike wings unleashed"]
+conflict_detected = ["scout reports conflict", "field dispatches are contradictory", "intelligence channels in hard contradiction"]
+evidence_request = ["requesting verified scout notes", "requesting verified dispatch packet", "summon authenticated proof from the outer wall"]
+final_synthesis = ["fortress synthesis complete", "integrated defense synthesis delivered", "commander synthesis transmitted"]
+analysis_pass_start = ["watch analysis started", "deep watch analysis underway", "deep-protocol watch analysis engaged"]
+hypothesis = ["defense hypothesis", "working defense theory formed", "high-confidence defense conclusion locked"]
+contradiction_map = ["battlefield contradiction map", "fortress contradiction matrix assembled", "fortress contradiction lattice forged"]
+
+[phrase_packs]
+openers = ["War-room briefing:", "Rampart relay:", "Bastion status report:"]
+transitions = ["Next maneuver:", "Command pivot:", "Advancing front:"]
+confirmations = ["Order confirmed.", "Signal verified.", "Directive locked in."]
+risk_calls = ["Breach warning:", "Escalation alert:", "Critical caution:"]

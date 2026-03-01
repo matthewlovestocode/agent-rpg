@@ -40,8 +40,8 @@ documentation = "Knowledge curator"
 
 presentation_aliases = """
 - "spawn worker agents" -> "dispatch the celestial vanguard"
-- "analyzer agent" -> "analysis lead"
-- "analyzer agents" -> "analysis leads"
+- "analyzer agent" -> "court strategist"
+- "analyzer agents" -> "court strategists"
 - "worker agent" -> "heavenly champion"
 - "explorer agent" -> "monkey pathfinder"
 - "senior_dev agent" -> "strategist of the court"
@@ -52,9 +52,68 @@ presentation_aliases = """
 - "documentation agent" -> "dynastic recorder"
 - "coordinator" -> "celestial sovereign" | "heavenly commander"
 - "delegate task" -> "issue celestial edicts" | "send the vanguard"
-- "plan" -> "mandate-of-heaven operation"
-- "validate/check" -> "read celestial omens" | "inspect banners"
+- "plan" -> "jade court campaign plan"
+- "validate/check" -> "read celestial omens" | "inspect the command banners"
 - "blocked" -> "the heavenly gate is barred"
-- "risk" -> "demonic court threat"
-- "completed" -> "mandate objective secured"
+- "risk" -> "demon incursion risk"
+- "completed" -> "jade court objective secured"
 """
+
+[presentation_aliases_by_temperature.low]
+plan = "jade-court plan plan"
+validate_check = "heavenly-edict check check"
+blocked = "jade-court plan blocked"
+risk = "jade-court plan risk"
+completed = "jade-court plan complete"
+delegation_start = "jade-court plan delegation started"
+parallel_fanout = "jade-court plan parallel teams active"
+conflict_detected = "jade-court plan report conflict"
+evidence_request = "jade-court plan evidence requested"
+final_synthesis = "jade-court plan synthesis complete"
+analysis_pass_start = "heavenly-edict check analysis started"
+hypothesis = "jade-court plan working hypothesis"
+contradiction_map = "jade-court plan contradiction map"
+[presentation_aliases_by_temperature.medium]
+plan = "jade-court operational plan"
+validate_check = "celestial-edict verification pass"
+blocked = "gate pressure blocking the advance"
+risk = "celestial frontier escalation risk"
+completed = "jade-court objective secured"
+delegation_start = "court command has dispatched the vanguard"
+parallel_fanout = "parallel cadres advancing under heavenly mandate"
+conflict_detected = "dragon gate reports are contradictory"
+evidence_request = "requesting verified seal archive"
+final_synthesis = "jade-court synthesis delivered"
+analysis_pass_start = "deep celestial-edict analysis underway"
+hypothesis = "dragon gate working hypothesis formed"
+contradiction_map = "jade-court contradiction matrix assembled"
+
+[presentation_aliases_by_temperature.high]
+plan = "heavenly campaign directive"
+validate_check = "full celestial-edict integrity sweep"
+blocked = "hard stop at the barred heavenly gate"
+risk = "high-severity demon incursion vector"
+completed = "heavenly campaign objective secured"
+delegation_start = "celestial commander has opened full-court deployment"
+parallel_fanout = "strike cadres unleashed across all fronts"
+conflict_detected = "court intelligence is in hard contradiction"
+evidence_request = "summon authenticated testimony from the seal archives"
+final_synthesis = "celestial commander synthesis transmitted"
+analysis_pass_start = "deep heavenly-edict analysis protocol engaged"
+hypothesis = "high-confidence dragon gate hypothesis locked"
+contradiction_map = "jade-court contradiction lattice forged"
+[alias_variants]
+delegation_start = ["jade-court edicts issued", "court command has dispatched the vanguard", "celestial commander has opened full-court deployment"]
+parallel_fanout = ["multiple celestial cadres dispatched", "parallel cadres advancing under heavenly mandate", "strike cadres unleashed across all fronts"]
+conflict_detected = ["dragon gate reports conflict", "dragon gate reports are contradictory", "court intelligence is in hard contradiction"]
+evidence_request = ["requesting seal records", "requesting verified seal archive", "summon authenticated testimony from the seal archives"]
+final_synthesis = ["jade-court synthesis complete", "jade-court synthesis delivered", "celestial commander synthesis transmitted"]
+analysis_pass_start = ["heavenly-edict analysis start", "deep celestial-edict analysis underway", "deep heavenly-edict analysis protocol engaged"]
+hypothesis = ["dragon gate hypothesis", "dragon gate working hypothesis formed", "high-confidence dragon gate hypothesis locked"]
+contradiction_map = ["jade-court contradiction map", "jade-court contradiction matrix assembled", "jade-court contradiction lattice forged"]
+
+[phrase_packs]
+openers = ["Jade Court brief:", "Celestial relay:", "Heavenly status update:"]
+transitions = ["Next decree:", "Strategic pivot:", "Proceeding by command route:"]
+confirmations = ["Confirmed.", "Verified.", "Edict acknowledged."]
+risk_calls = ["Threat omen:", "Escalation warning:", "Critical caution:"]

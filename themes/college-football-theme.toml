@@ -40,8 +40,8 @@ documentation = "Knowledge curator"
 
 presentation_aliases = """
 - "spawn worker agents" -> "send out the offense"
-- "analyzer agent" -> "analysis lead"
-- "analyzer agents" -> "analysis leads"
+- "analyzer agent" -> "film-room analyst"
+- "analyzer agents" -> "film-room analysts"
 - "worker agent" -> "field general"
 - "explorer agent" -> "recruiting scout"
 - "senior_dev agent" -> "offensive coordinator"
@@ -53,8 +53,67 @@ presentation_aliases = """
 - "coordinator" -> "head coach"
 - "delegate task" -> "call the next drive" | "send in personnel"
 - "plan" -> "game script"
-- "validate/check" -> "review drive chart" | "check down-and-distance"
+- "validate/check" -> "review the drive chart" | "check down and distance"
 - "blocked" -> "stalled at midfield"
-- "risk" -> "turnover on downs risk"
-- "completed" -> "touchdown drive complete"
+- "risk" -> "turnover risk"
+- "completed" -> "scoring drive complete"
 """
+
+[presentation_aliases_by_temperature.low]
+plan = "sideline game plan"
+validate_check = "drive-chart check check"
+blocked = "sideline game blocked"
+risk = "sideline game risk"
+completed = "sideline game complete"
+delegation_start = "sideline game delegation started"
+parallel_fanout = "sideline game parallel teams active"
+conflict_detected = "sideline game report conflict"
+evidence_request = "sideline game evidence requested"
+final_synthesis = "sideline game synthesis complete"
+analysis_pass_start = "drive-chart check analysis started"
+hypothesis = "sideline game working hypothesis"
+contradiction_map = "sideline game contradiction map"
+[presentation_aliases_by_temperature.medium]
+plan = "sideline operational plan"
+validate_check = "playbook verification pass"
+blocked = "defensive pressure stalling the drive"
+risk = "momentum-shift escalation risk"
+completed = "sideline objective secured"
+delegation_start = "headset command has sent in personnel packages"
+parallel_fanout = "parallel units executing across the play sheet"
+conflict_detected = "game-tape reports are contradictory"
+evidence_request = "requesting verified tape sequence"
+final_synthesis = "sideline synthesis delivered"
+analysis_pass_start = "deep playbook analysis underway"
+hypothesis = "game-tape working hypothesis formed"
+contradiction_map = "sideline contradiction matrix assembled"
+
+[presentation_aliases_by_temperature.high]
+plan = "championship drive directive"
+validate_check = "full playbook integrity sweep"
+blocked = "hard stop in the red zone"
+risk = "high-severity turnover vector"
+completed = "game-winning objective secured"
+delegation_start = "head coach has opened full sideline deployment"
+parallel_fanout = "all units executing in parallel tempo"
+conflict_detected = "booth intelligence is in hard contradiction"
+evidence_request = "summon authenticated sideline film proof"
+final_synthesis = "head coach synthesis transmitted"
+analysis_pass_start = "deep playbook analysis protocol engaged"
+hypothesis = "high-confidence game-tape hypothesis locked"
+contradiction_map = "sideline contradiction lattice forged"
+[alias_variants]
+delegation_start = ["sideline call sheet dispatched", "headset command has sent in personnel packages", "head coach has opened full sideline deployment"]
+parallel_fanout = ["multiple units rotating in", "parallel units executing across the play sheet", "all units executing in parallel tempo"]
+conflict_detected = ["film-room notes conflict", "game-tape reports are contradictory", "booth intelligence is in hard contradiction"]
+evidence_request = ["requesting game-tape clips", "requesting verified tape sequence", "summon authenticated sideline film proof"]
+final_synthesis = ["sideline synthesis complete", "sideline synthesis delivered", "head coach synthesis transmitted"]
+analysis_pass_start = ["drive-chart analysis start", "deep playbook analysis underway", "deep playbook analysis protocol engaged"]
+hypothesis = ["game-tape hypothesis", "game-tape working hypothesis formed", "high-confidence game-tape hypothesis locked"]
+contradiction_map = ["sideline contradiction map", "sideline contradiction matrix assembled", "sideline contradiction lattice forged"]
+
+[phrase_packs]
+openers = ["Sideline brief:", "Booth-to-field relay:", "Drive status update:"]
+transitions = ["Next series:", "Playcall pivot:", "Proceeding by package:"]
+confirmations = ["Confirmed.", "Verified.", "Playcall locked."]
+risk_calls = ["Threat call:", "Momentum warning:", "Critical caution:"]

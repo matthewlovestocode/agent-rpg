@@ -58,3 +58,62 @@ presentation_aliases = """
 - "risk" -> "dark side interference"
 - "completed" -> "sector secured"
 """
+
+[presentation_aliases_by_temperature.low]
+plan = "sector operations plan"
+validate_check = "astromech confirmation check"
+blocked = "sector operations blocked"
+risk = "sector operations risk"
+completed = "sector operations complete"
+delegation_start = "sector operations delegation started"
+parallel_fanout = "sector operations parallel teams active"
+conflict_detected = "sector operations report conflict"
+evidence_request = "sector operations evidence requested"
+final_synthesis = "sector operations synthesis complete"
+analysis_pass_start = "astromech confirmation analysis started"
+hypothesis = "sector operations working hypothesis"
+contradiction_map = "sector operations contradiction map"
+[presentation_aliases_by_temperature.medium]
+plan = "galactic operations campaign plan"
+validate_check = "navigation and intel verification pass"
+blocked = "advance blocked by hostile pressure"
+risk = "escalation risk across contested lanes"
+completed = "campaign objective secured"
+delegation_start = "command council delegation underway"
+parallel_fanout = "parallel squadrons and cells in motion"
+conflict_detected = "rebel briefings report contradictions"
+evidence_request = "requesting verified holonet intelligence packet"
+final_synthesis = "integrated command synthesis delivered"
+analysis_pass_start = "deep strategic analysis underway"
+hypothesis = "working operational hypothesis formed"
+contradiction_map = "command contradiction matrix assembled"
+
+[presentation_aliases_by_temperature.high]
+plan = "grand campaign command protocol"
+validate_check = "fleetwide integrity and readiness sweep"
+blocked = "offensive halted by concentrated resistance"
+risk = "high-severity threat across core lanes"
+completed = "mission objective locked and secured"
+delegation_start = "high command opened full-spectrum delegation"
+parallel_fanout = "strike groups deployed across multiple fronts"
+conflict_detected = "intelligence channels in hard contradiction"
+evidence_request = "summon authenticated proof from frontline relays"
+final_synthesis = "commander synthesis transmitted to the council"
+analysis_pass_start = "deep protocol analysis fully engaged"
+hypothesis = "high-confidence campaign hypothesis locked"
+contradiction_map = "command contradiction lattice assembled"
+[alias_variants]
+delegation_start = ["rebel command delegation initiated", "command council delegation underway", "high command opened full-spectrum delegation"]
+parallel_fanout = ["multiple cells active in parallel", "parallel squadrons and cells in motion", "strike groups deployed across multiple fronts"]
+conflict_detected = ["field briefs contain conflicts", "rebel briefings report contradictions", "intelligence channels in hard contradiction"]
+evidence_request = ["requesting authenticated field logs", "requesting verified holonet intelligence packet", "summon authenticated proof from frontline relays"]
+final_synthesis = ["holonet synthesis prepared", "integrated command synthesis delivered", "commander synthesis transmitted to the council"]
+analysis_pass_start = ["strategic analysis initiated", "deep strategic analysis underway", "deep protocol analysis fully engaged"]
+hypothesis = ["field-brief hypothesis", "working operational hypothesis formed", "high-confidence campaign hypothesis locked"]
+contradiction_map = ["holonet contradiction map", "command contradiction matrix assembled", "command contradiction lattice assembled"]
+
+[phrase_packs]
+openers = ["Holonet operations brief:", "Frontline relay update:", "Council status report:"]
+transitions = ["Next lane:", "Strategic pivot:", "Proceeding to sector:"]
+confirmations = ["Confirmed.", "Telemetry verified.", "Orders acknowledged."]
+risk_calls = ["Threat advisory:", "Escalation alert:", "Critical caution:"]

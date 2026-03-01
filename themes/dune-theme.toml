@@ -58,3 +58,62 @@ presentation_aliases = """
 - "risk" -> "Harkonnen ambush risk"
 - "completed" -> "sietch objective secured"
 """
+
+[presentation_aliases_by_temperature.low]
+plan = "sietch council plan"
+validate_check = "water-ring check check"
+blocked = "sietch council blocked"
+risk = "sietch council risk"
+completed = "sietch council complete"
+delegation_start = "sietch council delegation started"
+parallel_fanout = "sietch council parallel teams active"
+conflict_detected = "sietch council report conflict"
+evidence_request = "sietch council evidence requested"
+final_synthesis = "sietch council synthesis complete"
+analysis_pass_start = "water-ring check analysis started"
+hypothesis = "sietch council working hypothesis"
+contradiction_map = "sietch council contradiction map"
+[presentation_aliases_by_temperature.medium]
+plan = "arrakis campaign operations plan"
+validate_check = "spice-harvest verification pass"
+blocked = "corridor pressure blocking advance"
+risk = "Harkonnen escalation risk"
+completed = "arrakis objective secured"
+delegation_start = "house command initiated delegation"
+parallel_fanout = "parallel Fedaykin squads in motion"
+conflict_detected = "sietch reports are contradictory"
+evidence_request = "requesting verified sietch packet"
+final_synthesis = "integrated Arrakis synthesis delivered"
+analysis_pass_start = "deep spice-route analysis underway"
+hypothesis = "working mentat hypothesis formed"
+contradiction_map = "arrakis contradiction matrix assembled"
+
+[presentation_aliases_by_temperature.high]
+plan = "imperial campaign directive"
+validate_check = "spice-route integrity sweep"
+blocked = "hard stop under enemy pressure"
+risk = "high-severity Arrakis threat vector"
+completed = "campaign lock complete"
+delegation_start = "war council opened full-spectrum delegation"
+parallel_fanout = "parallel desert strike formations unleashed"
+conflict_detected = "intelligence channels in hard contradiction"
+evidence_request = "summon authenticated field proof from each sietch"
+final_synthesis = "war-council synthesis transmitted"
+analysis_pass_start = "deep-protocol mentat analysis engaged"
+hypothesis = "high-confidence prescience hypothesis locked"
+contradiction_map = "arrakis contradiction lattice forged"
+[alias_variants]
+delegation_start = ["naib council delegation start", "house command initiated delegation", "war council opened full-spectrum delegation"]
+parallel_fanout = ["parallel scout paths active", "parallel Fedaykin squads in motion", "parallel desert strike formations unleashed"]
+conflict_detected = ["sietch report conflict detected", "sietch reports are contradictory", "intelligence channels in hard contradiction"]
+evidence_request = ["requesting corroborated sietch evidence", "requesting verified sietch packet", "summon authenticated field proof from each sietch"]
+final_synthesis = ["arrakis synthesis complete", "integrated Arrakis synthesis delivered", "war-council synthesis transmitted"]
+analysis_pass_start = ["spice-route analysis start", "deep spice-route analysis underway", "deep-protocol mentat analysis engaged"]
+hypothesis = ["mentat hypothesis draft", "working mentat hypothesis formed", "high-confidence prescience hypothesis locked"]
+contradiction_map = ["arrakis contradiction map", "arrakis contradiction matrix assembled", "arrakis contradiction lattice forged"]
+
+[phrase_packs]
+openers = ["Sietch command brief:", "Desert relay:", "Arrakis status report:"]
+transitions = ["Next course:", "Council pivot:", "Proceeding dune-line:"]
+confirmations = ["Confirmed by mentat.", "Signal verified.", "Directive sealed."]
+risk_calls = ["Spice-route threat:", "House escalation:", "Critical warning:"]

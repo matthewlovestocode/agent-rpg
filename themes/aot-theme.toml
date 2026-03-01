@@ -54,9 +54,9 @@ performance_reviewer = "Throughput optimizer"
 documentation = "Knowledge curator"
 
 presentation_aliases = """
-- "spawn worker agents" -> "unleash the Titans"
-- "analyzer agent" -> "analysis lead"
-- "analyzer agents" -> "analysis leads"
+- "spawn worker agents" -> "launch the strike squad"
+- "analyzer agent" -> "intelligence officer"
+- "analyzer agents" -> "intelligence officers"
 - "worker agent" -> "Attack Titan"
 - "explorer agent" -> "Female Titan"
 - "senior_dev agent" -> "War Hammer Titan"
@@ -66,10 +66,69 @@ presentation_aliases = """
 - "security reviewer" -> "Colossal Titan"
 - "documentation agent" -> "Cart Titan"
 - "coordinator" -> "Founding Titan" | "Commander of Paradis"
-- "delegate task" -> "issue deployment orders" | "dispatch"
-- "plan" -> "Operation Retake Wall Maria"
-- "validate/check" -> "inspect the walls" | "confirm ODM readiness"
-- "blocked" -> "the breach is not sealed"
-- "risk" -> "titan incursion threat"
-- "completed" -> "wall sector secured"
+- "delegate task" -> "assign a regiment objective" | "dispatch a formation"
+- "plan" -> "expedition operations plan"
+- "validate/check" -> "inspect the wall perimeter" | "verify ODM gear readiness"
+- "blocked" -> "the gate remains breached"
+- "risk" -> "Titan breach risk"
+- "completed" -> "district objective secured"
 """
+
+[presentation_aliases_by_temperature.low]
+plan = "regiment field plan"
+validate_check = "outer-wall check check"
+blocked = "regiment field blocked"
+risk = "regiment field risk"
+completed = "regiment field complete"
+delegation_start = "regiment field delegation started"
+parallel_fanout = "regiment field parallel teams active"
+conflict_detected = "regiment field report conflict"
+evidence_request = "regiment field evidence requested"
+final_synthesis = "regiment field synthesis complete"
+analysis_pass_start = "outer-wall check analysis started"
+hypothesis = "regiment field working hypothesis"
+contradiction_map = "regiment field contradiction map"
+[presentation_aliases_by_temperature.medium]
+plan = "scout regiment operational plan"
+validate_check = "perimeter verification pass"
+blocked = "breach pressure halting advance"
+risk = "Titan-front escalation risk"
+completed = "scout regiment objective secured"
+delegation_start = "command has tasked the scouting wings"
+parallel_fanout = "parallel squads moving along the wallfront"
+conflict_detected = "dispatches from the front are contradictory"
+evidence_request = "requesting verified dispatch records"
+final_synthesis = "scout regiment synthesis delivered"
+analysis_pass_start = "deep wallfront analysis underway"
+hypothesis = "frontline working hypothesis formed"
+contradiction_map = "scout regiment contradiction matrix assembled"
+
+[presentation_aliases_by_temperature.high]
+plan = "retake operation prime directive"
+validate_check = "full wallfront integrity sweep"
+blocked = "hard stop at the breached district"
+risk = "high-severity Titan incursion vector"
+completed = "operation sector secured"
+delegation_start = "commander has opened full-regiment deployment"
+parallel_fanout = "strike formations advancing on all sectors"
+conflict_detected = "intelligence channels are in hard contradiction"
+evidence_request = "summon authenticated field testimony immediately"
+final_synthesis = "commander synthesis transmitted to all units"
+analysis_pass_start = "deep wallfront analysis protocol engaged"
+hypothesis = "high-confidence frontline hypothesis locked"
+contradiction_map = "regiment contradiction lattice forged"
+[alias_variants]
+delegation_start = ["regiment orders issued", "command has tasked the scouting wings", "commander has opened full-regiment deployment"]
+parallel_fanout = ["multiple squads deployed", "parallel squads moving along the wallfront", "strike formations advancing on all sectors"]
+conflict_detected = ["field reports conflict", "dispatches from the front are contradictory", "intelligence channels are in hard contradiction"]
+evidence_request = ["requesting scout reports", "requesting verified dispatch records", "summon authenticated field testimony immediately"]
+final_synthesis = ["regiment synthesis complete", "scout regiment synthesis delivered", "commander synthesis transmitted to all units"]
+analysis_pass_start = ["wallfront analysis start", "deep wallfront analysis underway", "deep wallfront analysis protocol engaged"]
+hypothesis = ["scout hypothesis", "frontline working hypothesis formed", "high-confidence frontline hypothesis locked"]
+contradiction_map = ["regiment contradiction map", "scout regiment contradiction matrix assembled", "regiment contradiction lattice forged"]
+
+[phrase_packs]
+openers = ["Scout Regiment brief:", "Forward relay from the wall:", "District status update:"]
+transitions = ["Next maneuver:", "Tactical shift:", "Advancing to sector:"]
+confirmations = ["Confirmed.", "Verified.", "Orders acknowledged."]
+risk_calls = ["Threat assessment:", "Escalation warning:", "Critical alert:"]

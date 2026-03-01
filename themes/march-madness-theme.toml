@@ -46,15 +46,74 @@ presentation_aliases = """
 - "explorer agent" -> "bracket scout"
 - "senior_dev agent" -> "tournament strategist"
 - "reviewer agent" -> "committee analyst"
-- "verifier agent" -> "assistant verification"
-- "tester agent" -> "bench rotation"
+- "verifier agent" -> "assistant coach on review"
+- "tester agent" -> "bench unit"
 - "security reviewer" -> "defensive stopper"
 - "documentation agent" -> "bracketologist"
 - "coordinator" -> "tournament coach"
 - "delegate task" -> "set the bracket strategy" | "send in the next unit"
 - "plan" -> "survive-and-advance plan"
 - "validate/check" -> "review matchup sheet" | "check upset probabilities"
-- "blocked" -> "on upset alert"
+- "blocked" -> "stalled in a full-court press"
 - "risk" -> "elimination risk"
 - "completed" -> "round advanced"
 """
+
+[presentation_aliases_by_temperature.low]
+plan = "opening-tip game plan"
+validate_check = "box score check"
+blocked = "opening-tip game blocked"
+risk = "opening-tip game risk"
+completed = "opening-tip game complete"
+delegation_start = "opening-tip game delegation started"
+parallel_fanout = "opening-tip game parallel teams active"
+conflict_detected = "opening-tip game report conflict"
+evidence_request = "opening-tip game evidence requested"
+final_synthesis = "opening-tip game synthesis complete"
+analysis_pass_start = "box score analysis started"
+hypothesis = "opening-tip game working hypothesis"
+contradiction_map = "opening-tip game contradiction map"
+[presentation_aliases_by_temperature.medium]
+plan = "survive-and-advance operation plan"
+validate_check = "matchup verification pass"
+blocked = "the offense is stalled by pressure defense"
+risk = "foul trouble and turnover risk rising"
+completed = "the target seed line is secured"
+delegation_start = "coaches assign every matchup responsibility"
+parallel_fanout = "multiple lineups execute at once"
+conflict_detected = "scouting reports conflict across regions"
+evidence_request = "request verified clips and possession logs"
+final_synthesis = "selection-room brief is fully integrated"
+analysis_pass_start = "deep film and metrics review is active"
+hypothesis = "working tournament read is formed"
+contradiction_map = "selection-board contradiction matrix"
+
+[presentation_aliases_by_temperature.high]
+plan = "championship-week directive"
+validate_check = "full-bracket integrity sweep"
+blocked = "hard stop under relentless full-court pressure"
+risk = "season-ending upset threat is severe"
+completed = "win-and-advance objective achieved"
+delegation_start = "head coach deploys every prepared unit"
+parallel_fanout = "all bracket lanes are running live"
+conflict_detected = "regional intel is in direct conflict"
+evidence_request = "bring authenticated film and stat evidence now"
+final_synthesis = "final tournament synthesis is delivered to the bench"
+analysis_pass_start = "elite-depth tournament analysis engaged"
+hypothesis = "high-confidence tournament hypothesis locked"
+contradiction_map = "championship contradiction lattice"
+[alias_variants]
+delegation_start = ["the staff sets the first rotation", "coaches assign every matchup responsibility", "head coach deploys every prepared unit"]
+parallel_fanout = ["units run in parallel possessions", "multiple lineups execute at once", "all bracket lanes are running live"]
+conflict_detected = ["film notes and stat sheet disagree", "scouting reports conflict across regions", "regional intel is in direct conflict"]
+evidence_request = ["ask for possession-by-possession proof", "request verified clips and possession logs", "bring authenticated film and stat evidence now"]
+final_synthesis = ["the staff wraps the full game readout", "selection-room brief is fully integrated", "final tournament synthesis is delivered to the bench"]
+analysis_pass_start = ["pregame breakdown begins", "deep film and metrics review is active", "elite-depth tournament analysis engaged"]
+hypothesis = ["first read from film study", "working tournament read is formed", "high-confidence tournament hypothesis locked"]
+contradiction_map = ["bracket conflict board", "selection-board contradiction matrix", "championship contradiction lattice"]
+
+[phrase_packs]
+openers = ["Locker-room brief:", "Sideline update:", "Live bracket status:"]
+transitions = ["Next possession:", "Rotation change:", "Across the next matchup:"]
+confirmations = ["Count it.", "Verified on tape.", "Play call confirmed."]
+risk_calls = ["Upset alert:", "Foul-trouble warning:", "Clock-pressure risk:"]

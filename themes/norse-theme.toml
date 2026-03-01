@@ -58,3 +58,62 @@ presentation_aliases = """
 - "risk" -> "giant host threat"
 - "completed" -> "hall objective secured"
 """
+
+[presentation_aliases_by_temperature.low]
+plan = "war-council plan plan"
+validate_check = "rune-reading check check"
+blocked = "war-council plan blocked"
+risk = "war-council plan risk"
+completed = "war-council plan complete"
+delegation_start = "war-council plan delegation started"
+parallel_fanout = "war-council plan parallel teams active"
+conflict_detected = "war-council plan report conflict"
+evidence_request = "war-council plan evidence requested"
+final_synthesis = "war-council plan synthesis complete"
+analysis_pass_start = "rune-reading check analysis started"
+hypothesis = "war-council plan working hypothesis"
+contradiction_map = "war-council plan contradiction map"
+[presentation_aliases_by_temperature.medium]
+plan = "shieldwall operational plan"
+validate_check = "runic verification pass"
+blocked = "enemy pressure is halting advance"
+risk = "realm-border escalation risk"
+completed = "council objective secured"
+delegation_start = "the All-Father has initiated delegation"
+parallel_fanout = "parallel warbands now in motion"
+conflict_detected = "longhall intelligence is contradictory"
+evidence_request = "requesting verified witness-and-rune packet"
+final_synthesis = "integrated war-council synthesis delivered"
+analysis_pass_start = "deep omen analysis underway"
+hypothesis = "working hypothesis formed from gathered omens"
+contradiction_map = "council contradiction matrix assembled"
+
+[presentation_aliases_by_temperature.high]
+plan = "Ragnarok-contingency prime directive"
+validate_check = "high-pressure integrity sweep of every rune path"
+blocked = "the war-host hit a hard stop under hostile force"
+risk = "Asgard-level existential risk"
+completed = "critical hall objective secured"
+delegation_start = "the war-council opened full delegation"
+parallel_fanout = "all warbands deployed in parallel formation"
+conflict_detected = "high-impact contradiction across longhall intelligence"
+evidence_request = "summon authenticated proof from ravens and runes"
+final_synthesis = "command synthesis carried to the high seat"
+analysis_pass_start = "deep prophecy-protocol analysis engaged"
+hypothesis = "high-confidence omen hypothesis locked"
+contradiction_map = "full contradiction lattice forged for council review"
+[alias_variants]
+delegation_start = ["raven-borne orders are dispatched", "the All-Father has initiated delegation", "the war-council opened full delegation"]
+parallel_fanout = ["parallel rune-paths are active", "parallel warbands now in motion", "all warbands deployed in parallel formation"]
+conflict_detected = ["longhall accounts are in conflict", "longhall intelligence is contradictory", "high-impact contradiction across longhall intelligence"]
+evidence_request = ["requesting sworn witness runes", "requesting verified witness-and-rune packet", "summon authenticated proof from ravens and runes"]
+final_synthesis = ["council synthesis complete", "integrated war-council synthesis delivered", "command synthesis carried to the high seat"]
+analysis_pass_start = ["opening rune analysis pass", "deep omen analysis underway", "deep prophecy-protocol analysis engaged"]
+hypothesis = ["first omen hypothesis", "working hypothesis formed from gathered omens", "high-confidence omen hypothesis locked"]
+contradiction_map = ["council contradiction board", "council contradiction matrix assembled", "full contradiction lattice forged for council review"]
+
+[phrase_packs]
+openers = ["War-council brief:", "Raven relay:", "Live hall report:"]
+transitions = ["Next omen:", "Battleline pivot:", "Advancing by rune-path:"]
+confirmations = ["Confirmed by witness.", "Verified by rune.", "Decree is bound."]
+risk_calls = ["Realm-risk call:", "Escalation omen:", "Critical warding alert:"]

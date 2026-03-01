@@ -58,3 +58,62 @@ presentation_aliases = """
 - "risk" -> "prime directive conflict"
 - "completed" -> "mission log complete"
 """
+
+[presentation_aliases_by_temperature.low]
+plan = "bridge operations plan"
+validate_check = "sensor confirmation check"
+blocked = "bridge operations blocked"
+risk = "bridge operations risk"
+completed = "bridge operations complete"
+delegation_start = "bridge operations delegation started"
+parallel_fanout = "bridge operations parallel teams active"
+conflict_detected = "bridge operations report conflict"
+evidence_request = "bridge operations evidence requested"
+final_synthesis = "bridge operations synthesis complete"
+analysis_pass_start = "sensor confirmation analysis started"
+hypothesis = "bridge operations working hypothesis"
+contradiction_map = "bridge operations contradiction map"
+[presentation_aliases_by_temperature.medium]
+plan = "bridge tactical operations plan"
+validate_check = "full diagnostic and confirmation sweep"
+blocked = "mission progress blocked by interference"
+risk = "escalation risk on the current sector"
+completed = "bridge objective secured"
+delegation_start = "command crew delegation underway"
+parallel_fanout = "parallel duty teams now in motion"
+conflict_detected = "captain's log reports are inconsistent"
+evidence_request = "requesting verified bridge telemetry packet"
+final_synthesis = "integrated bridge synthesis delivered"
+analysis_pass_start = "deep science analysis underway"
+hypothesis = "captain's log working hypothesis formed"
+contradiction_map = "bridge contradiction matrix assembled"
+
+[presentation_aliases_by_temperature.high]
+plan = "fleet priority command protocol"
+validate_check = "starship integrity sweep"
+blocked = "advance halted by hostile contact"
+risk = "high-severity threat on the tactical board"
+completed = "fleet objective secured"
+delegation_start = "senior command opened full delegation"
+parallel_fanout = "task groups deployed across the sector"
+conflict_detected = "intel channels report hard contradiction"
+evidence_request = "summon authenticated mission evidence immediately"
+final_synthesis = "commander synthesis transmitted to command"
+analysis_pass_start = "deep protocol analysis fully engaged"
+hypothesis = "high-confidence operational hypothesis locked"
+contradiction_map = "fleet contradiction lattice assembled"
+[alias_variants]
+delegation_start = ["bridge delegation initiated", "command crew delegation underway", "senior command opened full delegation"]
+parallel_fanout = ["multiple away teams active", "parallel duty teams now in motion", "task groups deployed across the sector"]
+conflict_detected = ["captain's log entries conflict", "captain's log reports are inconsistent", "intel channels report hard contradiction"]
+evidence_request = ["requesting authenticated log extracts", "requesting verified bridge telemetry packet", "summon authenticated mission evidence immediately"]
+final_synthesis = ["bridge synthesis prepared", "integrated bridge synthesis delivered", "commander synthesis transmitted to command"]
+analysis_pass_start = ["science analysis initiated", "deep science analysis underway", "deep protocol analysis fully engaged"]
+hypothesis = ["captain's log hypothesis", "captain's log working hypothesis formed", "high-confidence operational hypothesis locked"]
+contradiction_map = ["bridge contradiction map", "bridge contradiction matrix assembled", "fleet contradiction lattice assembled"]
+
+[phrase_packs]
+openers = ["Bridge status bulletin:", "Starfleet operations relay:", "Command deck update:"]
+transitions = ["Next course:", "Tactical pivot:", "Proceeding to:"]
+confirmations = ["Confirmed.", "Telemetry verified.", "Directive acknowledged."]
+risk_calls = ["Threat advisory:", "Escalation alert:", "Critical caution:"]
