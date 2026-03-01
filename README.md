@@ -28,35 +28,37 @@ If the codex MacOS app is closed, start it.
 You will need to login to chatgpt again, as the new configuration acts as a new codex setup/session.
 
 ## Available Themes
+<!-- THEMES_TABLE_START -->
 | Category | Theme | File | Style |
 |---|---|---|---|
-| Core | `default-theme` | `$CODEX_HOME/themes/default-theme.toml` | Live-action RPG / fortress-defense phrasing |
-| Fantasy | `lotr-theme` | `$CODEX_HOME/themes/lotr-theme.toml` | Lord of the Rings inspired Middle-earth phrasing |
-| Fantasy | `harry-potter-theme` | `$CODEX_HOME/themes/harry-potter-theme.toml` | Wizarding-world tactical collaboration phrasing |
-| Fantasy | `got-theme` | `$CODEX_HOME/themes/got-theme.toml` | Great-house strategy and battlefield phrasing |
-| Sci-Fi | `star-wars-theme` | `$CODEX_HOME/themes/star-wars-theme.toml` | Galactic strategy and Jedi/fleet command phrasing |
-| Sci-Fi | `star-trek-theme` | `$CODEX_HOME/themes/star-trek-theme.toml` | Starfleet bridge protocol and exploration phrasing |
-| Sci-Fi | `dune-theme` | `$CODEX_HOME/themes/dune-theme.toml` | Imperial-house strategy and Arrakis campaign phrasing |
-| Sci-Fi | `matrix-theme` | `$CODEX_HOME/themes/matrix-theme.toml` | Resistance operation and simulation-break phrasing |
-| Superhero | `marvel-dc-theme` | `$CODEX_HOME/themes/marvel-dc-theme.toml` | Superhero command-center style phrasing |
-| Action/Spy | `james-bond-theme` | `$CODEX_HOME/themes/james-bond-theme.toml` | MI6 mission-control and espionage phrasing |
-| Anime | `aot-theme` | `$CODEX_HOME/themes/aot-theme.toml` | Titan-first aliases with human fallback mappings |
-| Anime | `one-piece-theme` | `$CODEX_HOME/themes/one-piece-theme.toml` | Pirate-crew strategy phrasing |
-| Anime | `death-note-theme` | `$CODEX_HOME/themes/death-note-theme.toml` | Investigation and deduction phrasing |
-| Anime | `vinland-theme` | `$CODEX_HOME/themes/vinland-theme.toml` | Campaign and warband phrasing |
-| Mythology | `greek-theme` | `$CODEX_HOME/themes/greek-theme.toml` | Olympian council and heroic quest phrasing |
-| Mythology | `norse-theme` | `$CODEX_HOME/themes/norse-theme.toml` | Asgard war-council and rune-reading phrasing |
-| Mythology | `roman-theme` | `$CODEX_HOME/themes/roman-theme.toml` | Imperial legion and senate strategy phrasing |
-| Mythology | `hindu-theme` | `$CODEX_HOME/themes/hindu-theme.toml` | Dharma-centered strategy and cosmic-balance phrasing |
-| Mythology | `shinto-theme` | `$CODEX_HOME/themes/shinto-theme.toml` | Kami-guided shrine protocol and harmony phrasing |
-| Mythology | `chinese-myth-theme` | `$CODEX_HOME/themes/chinese-myth-theme.toml` | Celestial court strategy and omen phrasing |
-| Mythology | `celtic-theme` | `$CODEX_HOME/themes/celtic-theme.toml` | Clan warband and druid-council phrasing |
-| Sports | `ncaa-men-basketball-theme` | `$CODEX_HOME/themes/ncaa-men-basketball-theme.toml` | College hoops game-planning and rotation phrasing |
-| Sports | `college-football-theme` | `$CODEX_HOME/themes/college-football-theme.toml` | College football drive scripting and sideline command phrasing |
-| Sports | `nfl-theme` | `$CODEX_HOME/themes/nfl-theme.toml` | Pro football matchup analytics and play-calling phrasing |
-| Sports | `nba-theme` | `$CODEX_HOME/themes/nba-theme.toml` | Pro basketball pace, spacing, and rotation phrasing |
-| Sports | `march-madness-theme` | `$CODEX_HOME/themes/march-madness-theme.toml` | Single-elimination urgency and bracket strategy phrasing |
-| Sports | `rivalry-week-theme` | `$CODEX_HOME/themes/rivalry-week-theme.toml` | Rivalry intensity, momentum swings, and field-position phrasing |
+| Core | `live-action-rpg` | `$CODEX_HOME/themes/default-theme.toml` | Fortress-defense flavored narration for coordinator status updates and summaries. |
+| Fantasy | `got-theme` | `$CODEX_HOME/themes/got-theme.toml` | Great-house strategy narration mixing battlefield readiness with political caution. |
+| Fantasy | `harry-potter-theme` | `$CODEX_HOME/themes/harry-potter-theme.toml` | Wizarding-world narration with house teamwork and magical problem-solving language. |
+| Fantasy | `lotr-theme` | `$CODEX_HOME/themes/lotr-theme.toml` | Middle-earth narration style with fellowship and strategy flavored aliases. |
+| Sci-Fi | `dune-theme` | `$CODEX_HOME/themes/dune-theme.toml` | Imperial-house strategy narration focused on foresight, discipline, and political maneuvering. |
+| Sci-Fi | `matrix-theme` | `$CODEX_HOME/themes/matrix-theme.toml` | Simulation-break narration with operator guidance and resistance mission language. |
+| Sci-Fi | `star-trek-theme` | `$CODEX_HOME/themes/star-trek-theme.toml` | Starfleet bridge narration emphasizing protocol, analysis, and exploration. |
+| Sci-Fi | `star-wars-theme` | `$CODEX_HOME/themes/star-wars-theme.toml` | Galactic operations narration with Jedi strategy and fleet command phrasing. |
+| Superhero | `marvel-dc-theme` | `$CODEX_HOME/themes/marvel-dc-theme.toml` | Superhero command-center narration with league-style coordination and mission framing. |
+| Action/Spy | `james-bond-theme` | `$CODEX_HOME/themes/james-bond-theme.toml` | MI6 mission-control narration with espionage, precision, and field-operation terminology. |
+| Anime | `aot-theme` | `$CODEX_HOME/themes/aot-theme.toml` | Titan-forward narration style with human fallback roles once titan slots are exhausted. |
+| Anime | `death-note-theme` | `$CODEX_HOME/themes/death-note-theme.toml` | Investigation-and-countermove narration style centered on deduction, surveillance, and strategic pressure. |
+| Anime | `one-piece-theme` | `$CODEX_HOME/themes/one-piece-theme.toml` | Grand Line adventure narration with crew-based role aliases and tactical pirate phrasing. |
+| Anime | `vinland-theme` | `$CODEX_HOME/themes/vinland-theme.toml` | Norse campaign narration balancing warfare, discipline, and long-term strategy. |
+| Mythology | `celtic-theme` | `$CODEX_HOME/themes/celtic-theme.toml` | Clan-warband narration with druid counsel, omen reading, and frontier strategy. |
+| Mythology | `chinese-myth-theme` | `$CODEX_HOME/themes/chinese-myth-theme.toml` | Celestial-court narration blending strategic discipline, omens, and martial resolve. |
+| Mythology | `greek-theme` | `$CODEX_HOME/themes/greek-theme.toml` | Olympian council narration with heroic quest framing and tactical omens. |
+| Mythology | `hindu-theme` | `$CODEX_HOME/themes/hindu-theme.toml` | Dharma-centered narration with disciplined strategy and cosmic-balance framing. |
+| Mythology | `norse-theme` | `$CODEX_HOME/themes/norse-theme.toml` | Asgard war-council narration with runic signals and battlefield resolve. |
+| Mythology | `roman-theme` | `$CODEX_HOME/themes/roman-theme.toml` | Imperial-legion narration with senate-level review and disciplined execution. |
+| Mythology | `shinto-theme` | `$CODEX_HOME/themes/shinto-theme.toml` | Kami-guided narration with shrine protocol, harmony, and purification language. |
+| Sports | `college-football-theme` | `$CODEX_HOME/themes/college-football-theme.toml` | Sideline command narration with drive planning, personnel packages, and field-position strategy. |
+| Sports | `march-madness-theme` | `$CODEX_HOME/themes/march-madness-theme.toml` | Single-elimination tournament narration with upset awareness and survive-and-advance urgency. |
+| Sports | `nba-theme` | `$CODEX_HOME/themes/nba-theme.toml` | Pro basketball operations narration with pace, spacing, and rotation optimization language. |
+| Sports | `ncaa-men-basketball-theme` | `$CODEX_HOME/themes/ncaa-men-basketball-theme.toml` | College hoops game-plan narration with scouting, rotations, and tournament urgency. |
+| Sports | `nfl-theme` | `$CODEX_HOME/themes/nfl-theme.toml` | Pro football operations narration with matchup analytics and situational play-calling. |
+| Sports | `rivalry-week-theme` | `$CODEX_HOME/themes/rivalry-week-theme.toml` | High-intensity rivalry narration with momentum swings, field-position battles, and decisive execution. |
+<!-- THEMES_TABLE_END -->
 
 ## Activate A Theme
 Themes are activated per prompt by adding `Theme` (and optional `Theme temperature`) at the top of your request.

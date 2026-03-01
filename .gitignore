@@ -8,6 +8,8 @@
 !/README.md
 !/docs/
 !/docs/**
+!/.github/
+!/.github/**
 
 # Global configuration
 !/AGENTS.md
