@@ -52,6 +52,9 @@ jobs:
       - name: Delegation smoke check
         run: npm run agents:smoke
 
+      - name: Repo prep contract check
+        run: npm run repo-prep:check
+
   readme-sync:
     runs-on: ubuntu-latest
     steps:

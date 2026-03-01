@@ -151,6 +151,13 @@ Execution defaults:
 - For setup/scaffolding intents:
   - Use `repo_prep` for environment readiness, dependency/tooling validation, and `ops/agents` idempotent scaffolding tasks.
   - When task intent includes ops scaffolding, require `repo_prep` to enforce JSONL event storage expectations for `ops/agents/state/events.jsonl`.
+  - Use this handoff shape for `repo_prep`:
+    - `goal`: create missing setup/scaffold outcomes only
+    - `scope`: explicit in/out boundaries (default in: `ops/agents/**`; out: product sources)
+    - `files`: include `ops/`, `ops/agents/`, `ops/agents/state/events.jsonl`
+    - `constraints`: create-only-if-missing, no overwrite without explicit approval, JSONL field contract
+    - `done_criteria`: profile exists + created/skipped/conflicts explicitly reported
+    - `return_format`: include standard schema plus `handoff_trace`
 - Final quality gates before user delivery:
   1. Requested acceptance criteria are explicitly checked.
   2. Test status is known (passed/failed/not run with reason).

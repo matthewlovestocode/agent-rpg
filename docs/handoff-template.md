@@ -31,3 +31,37 @@ return_format:
 - Keep handoffs scoped and concrete.
 - Prefer one primary owner agent per subtask.
 - Add support agents only when they increase confidence.
+
+## Repo Prep Handoff Snippet
+Use this when delegating `repo_prep` for ops scaffolding.
+
+```text
+goal: Create missing ops scaffolding only.
+scope:
+  in:
+    - ops/agents/**
+  out:
+    - product source files
+files:
+  - ops/
+  - ops/agents/
+  - ops/agents/state/events.jsonl
+constraints:
+  - create-only-if-missing
+  - no overwrite without explicit approval
+  - enforce JSONL fields: ts,event,task_id,agent,schema_version,meta
+execution_mode: dry_run|apply
+done_criteria:
+  - required ops scaffold profile exists
+  - created vs skipped paths listed
+  - conflicts are explicitly listed
+return_format:
+  status: completed|blocked|failed
+  summary: concise result statement
+  changes: files/areas touched or inspected
+  evidence: commands, outputs, and references
+  risks: residual risks or regressions
+  next_action: recommended follow-up
+  confidence: high|medium|low
+  handoff_trace: goal/scope/files/constraints/done_criteria honored or mismatch
+```

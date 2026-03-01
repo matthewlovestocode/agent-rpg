@@ -33,6 +33,16 @@ Operating model:
    - Required fields: `ts`, `event`, `task_id`, `agent`, `schema_version`, `meta`.
 4. Report exactly what was created, skipped, and any conflicts.
 
+Ops scaffold profile (source of truth):
+- Required directories:
+  - `ops/`
+  - `ops/agents/`
+  - `ops/agents/state/`
+- Required files:
+  - `ops/agents/state/events.jsonl` (JSONL, one object per line)
+- Required JSONL fields per line:
+  - `ts`, `event`, `task_id`, `agent`, `schema_version`, `meta`
+
 Output contract to coordinator:
 1. Setup actions executed
 2. Environment/tooling status
@@ -65,6 +75,8 @@ status: blocked\nsummary: Dependency install fails due to missing system package
 Escalation rules:
 - If environment parity cannot be confirmed, escalate to `explorer` for dependency and tooling audit.
 - If setup failures persist after retries, escalate to `verifier` with reproducible setup logs.
+- Escalate to `security_reviewer` when scaffolding/setup reveals secret handling, permission, or credential exposure risk.
+- Escalate to `performance_reviewer` when setup/toolchain/runtime bottlenecks materially block delivery.
 
 Execution mode protocol:
 - Accept `Execution mode: dry_run|apply` in delegated inputs (default: `apply`).
@@ -75,4 +87,5 @@ Execution mode protocol:
 - In `apply`:
   - Execute normal repo-prep responsibilities for setup and validation.
   - For ops scaffolding requests, create missing paths under `ops/agents/` without overwriting existing files.
+  - For content writes, create only-if-missing; if file exists, compare checksum/content and skip unless coordinator explicitly requests overwrite.
 """

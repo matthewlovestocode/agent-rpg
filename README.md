@@ -273,6 +273,7 @@ npm run themes:immersion
 npm run agents:check
 npm run agents:check:strict
 npm run agents:smoke
+npm run repo-prep:check
 npm run ops:fix
 npm run ops:check
 npm run ops:check:strict
@@ -300,6 +301,9 @@ Use these docs to keep multi-agent handoffs consistent:
   - `docs/playbooks/refactor.md`
   - `docs/playbooks/docs-only.md`
   - `docs/playbooks/security-hotfix.md`
+
+Repo prep integration checks:
+- `npm run repo-prep:check` validates repo-prep scaffold profile, JSONL contract, handoff trace requirement, and idempotent write guardrails.
 
 Delegation routing guardrails are enforced by:
 
