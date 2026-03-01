@@ -5,11 +5,34 @@ import { parse as parseToml } from "toml";
 
 type Dict = Record<string, unknown>;
 
+const strict = process.argv.includes("--strict");
 const agentsDir = path.resolve("agents");
 const requiredTopLevel = ["model", "model_reasoning_effort", "sandbox_mode", "theme_file", "developer_instructions"];
-const requiredInstructionMarkersByAgent: Record<string, string[]> = {
-  default: ["Execution mode protocol:", "Conflict-resolution tie-break defaults:", "Final quality gates before user delivery:"],
+
+const requiredMarkersBase: Record<"default" | "subagent", string[]> = {
+  default: [
+    "Execution mode protocol:",
+    "Conflict-resolution tie-break defaults:",
+    "Final quality gates before user delivery:"
+  ],
   subagent: ["Required return schema:", "Execution mode protocol:", "confidence"]
+};
+
+const requiredMarkersStrict: Record<"default" | "subagent", string[]> = {
+  default: [
+    "Delegation payload contract:",
+    "Sub-agent return schema:",
+    "Runtime alias resolution sequence:",
+    "Execution mode protocol:",
+    "Final quality gates before user delivery:",
+    "Conflict-resolution tie-break defaults:"
+  ],
+  subagent: [
+    "Required return schema:",
+    "Execution mode protocol:",
+    "confidence",
+    "If `confidence` is `low`"
+  ]
 };
 
 let totalErrors = 0;
@@ -34,8 +57,10 @@ for (const file of files) {
   }
 
   const instructions = String(parsed.developer_instructions ?? "");
-  const agentType = path.basename(file, ".toml") === "default" ? "default" : "subagent";
-  for (const marker of requiredInstructionMarkersByAgent[agentType]) {
+  const agentType: "default" | "subagent" = path.basename(file, ".toml") === "default" ? "default" : "subagent";
+  const required = strict ? requiredMarkersStrict[agentType] : requiredMarkersBase[agentType];
+
+  for (const marker of required) {
     if (!instructions.includes(marker)) errors.push(`missing developer_instructions marker '${marker}'`);
   }
 
@@ -46,5 +71,5 @@ for (const file of files) {
   }
 }
 
-console.log(`\nChecked ${files.length} agent files. Errors: ${totalErrors}.`);
+console.log(`\nChecked ${files.length} agent files. Errors: ${totalErrors}. Mode: ${strict ? "strict" : "standard"}.`);
 process.exit(totalErrors > 0 ? 1 : 0);
