@@ -31,7 +31,7 @@ You will need to login to chatgpt again, as the new configuration acts as a new 
 <!-- THEMES_TABLE_START -->
 | Category | Theme | File | Style |
 |---|---|---|---|
-| Core | `live-action-rpg` | `$CODEX_HOME/themes/default-theme.toml` | Fortress-defense flavored narration for coordinator status updates and summaries. |
+| Core | `default-theme` | `$CODEX_HOME/themes/default-theme.toml` | Fortress-defense flavored narration for coordinator status updates and summaries. |
 | Fantasy | `got-theme` | `$CODEX_HOME/themes/got-theme.toml` | Great-house strategy narration mixing battlefield readiness with political caution. |
 | Fantasy | `harry-potter-theme` | `$CODEX_HOME/themes/harry-potter-theme.toml` | Wizarding-world narration with house teamwork and magical problem-solving language. |
 | Fantasy | `lotr-theme` | `$CODEX_HOME/themes/lotr-theme.toml` | Middle-earth narration style with fellowship and strategy flavored aliases. |
@@ -63,9 +63,24 @@ You will need to login to chatgpt again, as the new configuration acts as a new 
 ## Activate A Theme
 Themes are activated per prompt by adding `Theme` (and optional `Theme temperature`) at the top of your request.
 
+<!-- THEMES_EXAMPLES_START -->
 `default-theme`:
 ```text
 Theme: default-theme
+Theme temperature: high
+List the agent roster.
+```
+
+`got-theme`:
+```text
+Theme: got-theme
+Theme temperature: high
+List the agent roster.
+```
+
+`harry-potter-theme`:
+```text
+Theme: harry-potter-theme
 Theme temperature: high
 List the agent roster.
 ```
@@ -74,7 +89,49 @@ List the agent roster.
 ```text
 Theme: lotr-theme
 Theme temperature: high
-Review this PR for security issues.
+List the agent roster.
+```
+
+`dune-theme`:
+```text
+Theme: dune-theme
+Theme temperature: high
+List the agent roster.
+```
+
+`matrix-theme`:
+```text
+Theme: matrix-theme
+Theme temperature: high
+List the agent roster.
+```
+
+`star-trek-theme`:
+```text
+Theme: star-trek-theme
+Theme temperature: high
+List the agent roster.
+```
+
+`star-wars-theme`:
+```text
+Theme: star-wars-theme
+Theme temperature: high
+List the agent roster.
+```
+
+`marvel-dc-theme`:
+```text
+Theme: marvel-dc-theme
+Theme temperature: high
+List the agent roster.
+```
+
+`james-bond-theme`:
+```text
+Theme: james-bond-theme
+Theme temperature: high
+List the agent roster.
 ```
 
 `aot-theme`:
@@ -84,25 +141,39 @@ Theme temperature: high
 List the agent roster.
 ```
 
-`one-piece-theme`:
-```text
-Theme: one-piece-theme
-Theme temperature: high
-Plan the implementation as a phased rollout.
-```
-
 `death-note-theme`:
 ```text
 Theme: death-note-theme
 Theme temperature: high
-Review this PR for security issues.
+List the agent roster.
+```
+
+`one-piece-theme`:
+```text
+Theme: one-piece-theme
+Theme temperature: high
+List the agent roster.
 ```
 
 `vinland-theme`:
 ```text
 Theme: vinland-theme
 Theme temperature: high
-Propose a step-by-step migration strategy.
+List the agent roster.
+```
+
+`celtic-theme`:
+```text
+Theme: celtic-theme
+Theme temperature: high
+List the agent roster.
+```
+
+`chinese-myth-theme`:
+```text
+Theme: chinese-myth-theme
+Theme temperature: high
+List the agent roster.
 ```
 
 `greek-theme`:
@@ -112,46 +183,53 @@ Theme temperature: high
 List the agent roster.
 ```
 
+`hindu-theme`:
+```text
+Theme: hindu-theme
+Theme temperature: high
+List the agent roster.
+```
+
 `norse-theme`:
 ```text
 Theme: norse-theme
 Theme temperature: high
-Plan a rollout with fallback checkpoints.
+List the agent roster.
 ```
 
 `roman-theme`:
 ```text
 Theme: roman-theme
 Theme temperature: high
-Create a phased migration plan.
-```
-
-`hindu-theme`:
-```text
-Theme: hindu-theme
-Theme temperature: high
-Review this architecture for risks.
+List the agent roster.
 ```
 
 `shinto-theme`:
 ```text
 Theme: shinto-theme
 Theme temperature: high
-Summarize next steps and blockers.
+List the agent roster.
 ```
 
-`chinese-myth-theme`:
+`college-football-theme`:
 ```text
-Theme: chinese-myth-theme
+Theme: college-football-theme
 Theme temperature: high
-Draft a validation checklist.
+List the agent roster.
 ```
 
-`celtic-theme`:
+`march-madness-theme`:
 ```text
-Theme: celtic-theme
+Theme: march-madness-theme
 Theme temperature: high
-Break this project into parallel workstreams.
+List the agent roster.
+```
+
+`nba-theme`:
+```text
+Theme: nba-theme
+Theme temperature: high
+List the agent roster.
 ```
 
 `ncaa-men-basketball-theme`:
@@ -161,40 +239,20 @@ Theme temperature: high
 List the agent roster.
 ```
 
-`college-football-theme`:
-```text
-Theme: college-football-theme
-Theme temperature: high
-Build a phased execution game plan.
-```
-
 `nfl-theme`:
 ```text
 Theme: nfl-theme
 Theme temperature: high
-Review this implementation for execution risk.
-```
-
-`nba-theme`:
-```text
-Theme: nba-theme
-Theme temperature: high
-Suggest rotation-style parallel workstreams.
-```
-
-`march-madness-theme`:
-```text
-Theme: march-madness-theme
-Theme temperature: high
-Prioritize tasks for survive-and-advance delivery.
+List the agent roster.
 ```
 
 `rivalry-week-theme`:
 ```text
 Theme: rivalry-week-theme
 Theme temperature: high
-Summarize blockers and momentum shifts.
+List the agent roster.
 ```
+<!-- THEMES_EXAMPLES_END -->
 
 Numeric temperature example:
 ```text
