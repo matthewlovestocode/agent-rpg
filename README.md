@@ -273,6 +273,8 @@ npm run themes:immersion
 npm run agents:check
 npm run agents:check:strict
 npm run agents:smoke
+npm run repo-prep:scaffold:dry-run -- --root .
+npm run repo-prep:scaffold:apply -- --root .
 npm run repo-prep:check
 npm run ops:fix
 npm run ops:check
@@ -301,6 +303,7 @@ Use these docs to keep multi-agent handoffs consistent:
   - `docs/playbooks/refactor.md`
   - `docs/playbooks/docs-only.md`
   - `docs/playbooks/security-hotfix.md`
+  - `docs/playbooks/repo-prep-scaffold.md`
 
 Repo prep integration checks:
 - `npm run repo-prep:check` validates repo-prep scaffold profile, JSONL contract, handoff trace requirement, and idempotent write guardrails.

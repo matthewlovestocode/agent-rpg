@@ -40,6 +40,27 @@ for (const marker of requiredMarkers) {
   }
 }
 
+const eventsPath = path.resolve("ops/agents/state/events.jsonl");
+if (fs.existsSync(eventsPath)) {
+  const raw = fs.readFileSync(eventsPath, "utf8");
+  const lines = raw.split(/\r?\n/).filter((l) => l.trim().length > 0);
+  const requiredJsonlKeys = ["ts", "event", "task_id", "agent", "schema_version", "meta"];
+  for (let i = 0; i < lines.length; i++) {
+    try {
+      const row = JSON.parse(lines[i]) as Dict;
+      for (const key of requiredJsonlKeys) {
+        if (!(key in row)) {
+          console.log(`ERROR: ops/agents/state/events.jsonl line ${i + 1} missing key '${key}'`);
+          errors++;
+        }
+      }
+    } catch {
+      console.log(`ERROR: ops/agents/state/events.jsonl line ${i + 1} is not valid JSON`);
+      errors++;
+    }
+  }
+}
+
 if (errors > 0) {
   console.log(`\nRepo prep contract check failed with ${errors} error(s).`);
   process.exit(1);

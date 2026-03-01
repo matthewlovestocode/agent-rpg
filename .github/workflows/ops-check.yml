@@ -55,6 +55,9 @@ jobs:
       - name: Repo prep contract check
         run: npm run repo-prep:check
 
+      - name: Repo prep scaffold dry-run fixture
+        run: npm run repo-prep:scaffold:dry-run -- --root tmp/fixtures/repo-prep-empty
+
   readme-sync:
     runs-on: ubuntu-latest
     steps:

@@ -42,6 +42,9 @@ Ops scaffold profile (source of truth):
   - `ops/agents/state/events.jsonl` (JSONL, one object per line)
 - Required JSONL fields per line:
   - `ts`, `event`, `task_id`, `agent`, `schema_version`, `meta`
+- Events log policy:
+  - Append-only history for `events.jsonl`.
+  - Never rewrite or truncate existing event history unless coordinator explicitly requests it.
 
 Output contract to coordinator:
 1. Setup actions executed

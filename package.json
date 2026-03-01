@@ -10,6 +10,8 @@
     "agents:check": "tsx scripts/check-agents.ts",
     "agents:scaffold": "tsx scripts/scaffold-agent.ts",
     "agents:smoke": "tsx scripts/check-delegation-smoke.ts",
+    "repo-prep:scaffold:dry-run": "tsx scripts/scaffold-ops-agents.ts --mode dry_run",
+    "repo-prep:scaffold:apply": "tsx scripts/scaffold-ops-agents.ts --mode apply",
     "repo-prep:check": "tsx scripts/check-repo-prep.ts",
     "ops:check": "npm run lint:themes:strict && npm run categories:check && npm run themes:immersion && npm run agents:check && npm run agents:smoke && npm run repo-prep:check && npm run readme:check",
     "readme:themes": "tsx scripts/update-readme-theme-table.ts",

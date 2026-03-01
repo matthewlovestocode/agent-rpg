@@ -29,3 +29,7 @@
 # Themes
 !/themes/
 !/themes/**
+!/tmp/
+/tmp/*
+!/tmp/fixtures/
+!/tmp/fixtures/**

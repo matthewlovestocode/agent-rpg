@@ -158,6 +158,7 @@ Execution defaults:
     - `constraints`: create-only-if-missing, no overwrite without explicit approval, JSONL field contract
     - `done_criteria`: profile exists + created/skipped/conflicts explicitly reported
     - `return_format`: include standard schema plus `handoff_trace`
+- Skip `repo_prep` delegation for pure code-change tasks when setup/scaffolding impact is explicitly out of scope and existing environment checks already pass.
 - Final quality gates before user delivery:
   1. Requested acceptance criteria are explicitly checked.
   2. Test status is known (passed/failed/not run with reason).
