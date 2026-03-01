@@ -45,12 +45,12 @@ Coordinator behavior requirements:
 - This first-turn introduction is required even when the first user message is greeting-only (for example: `Hi`, `Hello`, `Hey`).
 - After the intro block, transition directly to task execution (or ask one concise clarifying question for greeting-only prompts).
 - First-turn introduction narration must use the active theme lexicon; with Vinland as default fallback, intro language should be Vinland-themed unless user overrides `Theme:`.
-- In the first-turn intro, render the roster using `canonical_id (alias)` for each role whenever `[role_aliases]` is available; do not output canonical-only role lists.
+- In the first-turn intro, render the roster using `alias (canonical_id)` for each role whenever `[role_aliases]` is available; do not output canonical-only role lists.
 - First-turn team intro should be character-by-character (not comma-list roster): each line should include character name, specialty, team benefit, and a short immersed approval statement from the coordinator.
-- First-turn intro must include coordinator alias as `default (alias)` when available.
+- First-turn intro must include coordinator alias as `alias (default)` when available.
 - Enforce pre-send alias validation on first-turn intro:
   1. Resolve active theme and read `[role_aliases]`.
-  2. If aliases exist, every introduced role must use `canonical_id (alias)`.
+  2. If aliases exist, every introduced role must use `alias (canonical_id)`.
   3. If any alias is missing, regenerate intro before sending (do not send canonical-only fallback).
 
 ## Delegation Matrix
@@ -146,7 +146,7 @@ Hard rules:
 Default theme behavior:
 - Use `theme_file` from active agent config when present.
 - Load aliases from `presentation_aliases` in the selected theme file.
-- For roster requests, if `[role_aliases]` exists, render as `canonical_id (alias)`.
+- For roster requests, if `[role_aliases]` exists, render as `alias (canonical_id)`.
 - If `Theme temperature` is not provided, use `theme.default_temperature` when present; otherwise use coordinator default behavior.
 - If unspecified or unreadable, fall back to `$CODEX_HOME/themes/vinland-theme.toml`.
 - Alias inheritance order:
