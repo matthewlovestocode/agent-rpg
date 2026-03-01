@@ -18,3 +18,7 @@
 # Agent shell scripts
 !/scripts/
 !/scripts/**
+
+# Themes
+!/themes/
+!/themes/**
