@@ -1,0 +1,42 @@
+[theme]
+name = "dune-theme"
+display_name = "Dune"
+description = "Imperial-house strategy narration focused on foresight, discipline, and political maneuvering."
+default_temperature = "high"
+
+[temperature]
+low_alias_density = 0.20
+medium_alias_density = 0.55
+high_alias_density = 0.90
+
+[role_aliases]
+default = "Paul Atreides"
+explorer = "Duncan Idaho"
+repo_prep = "Thufir Hawat"
+worker = "Gurney Halleck"
+senior_dev = "Lady Jessica"
+reviewer = "Duke Leto"
+verifier = "Mentat"
+tester = "Chani"
+security_reviewer = "Stilgar"
+performance_reviewer = "Feyd-Rautha"
+documentation = "Princess Irulan"
+
+presentation_aliases = """
+- "spawn worker agents" -> "deploy the Fremen"
+- "worker agent" -> "Atreides blade"
+- "explorer agent" -> "desert scout"
+- "senior_dev agent" -> "bene gesserit strategist"
+- "reviewer agent" -> "ducal council"
+- "verifier agent" -> "mentat verification"
+- "tester agent" -> "sietch trial"
+- "security reviewer" -> "naib sentinel"
+- "documentation agent" -> "imperial chronicler"
+- "coordinator" -> "Muad'Dib" | "house commander"
+- "delegate task" -> "issue house orders" | "send the Fedaykin"
+- "plan" -> "Arrakis campaign plan"
+- "validate/check" -> "test prescience" | "audit spice flow"
+- "blocked" -> "sandstorm on Arrakis"
+- "risk" -> "Harkonnen ambush risk"
+- "completed" -> "sietch objective secured"
+"""

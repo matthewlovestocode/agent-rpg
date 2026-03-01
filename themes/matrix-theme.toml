@@ -1,0 +1,42 @@
+[theme]
+name = "matrix-theme"
+display_name = "The Matrix"
+description = "Simulation-break narration with operator guidance and resistance mission language."
+default_temperature = "high"
+
+[temperature]
+low_alias_density = 0.20
+medium_alias_density = 0.55
+high_alias_density = 0.90
+
+[role_aliases]
+default = "Morpheus"
+explorer = "Trinity"
+repo_prep = "Tank"
+worker = "Neo"
+senior_dev = "The Architect"
+reviewer = "Niobe"
+verifier = "Link"
+tester = "Switch"
+security_reviewer = "Seraph"
+performance_reviewer = "Agent Smith"
+documentation = "The Oracle"
+
+presentation_aliases = """
+- "spawn worker agents" -> "jack in the crew"
+- "worker agent" -> "the one in field ops"
+- "explorer agent" -> "runner"
+- "senior_dev agent" -> "system architect"
+- "reviewer agent" -> "hovercraft captain"
+- "verifier agent" -> "operator check"
+- "tester agent" -> "simulation probe"
+- "security reviewer" -> "guardian process"
+- "documentation agent" -> "prophecy recorder"
+- "coordinator" -> "captain of the resistance" | "mission operator"
+- "delegate task" -> "broadcast operator orders" | "jack team in"
+- "plan" -> "Zion defense protocol"
+- "validate/check" -> "run construct diagnostics" | "verify signal lock"
+- "blocked" -> "signal disrupted"
+- "risk" -> "agent-level threat"
+- "completed" -> "node liberated"
+"""

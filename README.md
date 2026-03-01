@@ -28,18 +28,22 @@ If the codex MacOS app is closed, start it.
 You will need to login to chatgpt again, as the new configuration acts as a new codex setup/session.
 
 ## Available Themes
-- `default-theme` (`$CODEX_HOME/themes/default-theme.toml`)
-  - Live-action RPG / fortress-defense style phrasing.
-- `lotr-theme` (`$CODEX_HOME/themes/lotr-theme.toml`)
-  - Lord of the Rings inspired Middle-earth phrasing.
-- `aot-theme` (`$CODEX_HOME/themes/aot-theme.toml`)
-  - Attack on Titan inspired style with Titan-first aliases and human fallback mappings.
-- `one-piece-theme` (`$CODEX_HOME/themes/one-piece-theme.toml`)
-  - One Piece inspired pirate-crew strategy phrasing.
-- `death-note-theme` (`$CODEX_HOME/themes/death-note-theme.toml`)
-  - Death Note inspired investigation and deduction phrasing.
-- `vinland-theme` (`$CODEX_HOME/themes/vinland-theme.toml`)
-  - Vinland Saga inspired campaign and warband phrasing.
+| Category | Theme | File | Style |
+|---|---|---|---|
+| Core | `default-theme` | `$CODEX_HOME/themes/default-theme.toml` | Live-action RPG / fortress-defense phrasing |
+| Fantasy | `lotr-theme` | `$CODEX_HOME/themes/lotr-theme.toml` | Lord of the Rings inspired Middle-earth phrasing |
+| Fantasy | `harry-potter-theme` | `$CODEX_HOME/themes/harry-potter-theme.toml` | Wizarding-world tactical collaboration phrasing |
+| Fantasy | `got-theme` | `$CODEX_HOME/themes/got-theme.toml` | Great-house strategy and battlefield phrasing |
+| Sci-Fi | `star-wars-theme` | `$CODEX_HOME/themes/star-wars-theme.toml` | Galactic strategy and Jedi/fleet command phrasing |
+| Sci-Fi | `star-trek-theme` | `$CODEX_HOME/themes/star-trek-theme.toml` | Starfleet bridge protocol and exploration phrasing |
+| Sci-Fi | `dune-theme` | `$CODEX_HOME/themes/dune-theme.toml` | Imperial-house strategy and Arrakis campaign phrasing |
+| Sci-Fi | `matrix-theme` | `$CODEX_HOME/themes/matrix-theme.toml` | Resistance operation and simulation-break phrasing |
+| Superhero | `marvel-dc-theme` | `$CODEX_HOME/themes/marvel-dc-theme.toml` | Superhero command-center style phrasing |
+| Action/Spy | `james-bond-theme` | `$CODEX_HOME/themes/james-bond-theme.toml` | MI6 mission-control and espionage phrasing |
+| Anime | `aot-theme` | `$CODEX_HOME/themes/aot-theme.toml` | Titan-first aliases with human fallback mappings |
+| Anime | `one-piece-theme` | `$CODEX_HOME/themes/one-piece-theme.toml` | Pirate-crew strategy phrasing |
+| Anime | `death-note-theme` | `$CODEX_HOME/themes/death-note-theme.toml` | Investigation and deduction phrasing |
+| Anime | `vinland-theme` | `$CODEX_HOME/themes/vinland-theme.toml` | Campaign and warband phrasing |
 
 ## Activate A Theme
 Themes are activated per prompt by adding `Theme` (and optional `Theme temperature`) at the top of your request.

@@ -1,0 +1,42 @@
+[theme]
+name = "star-wars-theme"
+display_name = "Star Wars"
+description = "Galactic operations narration with Jedi strategy and fleet command phrasing."
+default_temperature = "high"
+
+[temperature]
+low_alias_density = 0.20
+medium_alias_density = 0.55
+high_alias_density = 0.90
+
+[role_aliases]
+default = "Yoda"
+explorer = "Ahsoka Tano"
+repo_prep = "R2-D2"
+worker = "Luke Skywalker"
+senior_dev = "Obi-Wan Kenobi"
+reviewer = "Leia Organa"
+verifier = "C-3PO"
+tester = "Han Solo"
+security_reviewer = "Mace Windu"
+performance_reviewer = "Anakin Skywalker"
+documentation = "Jocasta Nu"
+
+presentation_aliases = """
+- "spawn worker agents" -> "deploy the squadron"
+- "worker agent" -> "Jedi operative"
+- "explorer agent" -> "pathfinder"
+- "senior_dev agent" -> "Jedi master"
+- "reviewer agent" -> "senate advisor"
+- "verifier agent" -> "protocol analyst"
+- "tester agent" -> "smuggler probe"
+- "security reviewer" -> "temple guardian"
+- "documentation agent" -> "archive keeper"
+- "coordinator" -> "Jedi council lead" | "fleet commander"
+- "delegate task" -> "issue holonet orders" | "dispatch wing"
+- "plan" -> "rebellion campaign plan"
+- "validate/check" -> "run astromech diagnostics" | "verify hyperlane"
+- "blocked" -> "hyperlane is unstable"
+- "risk" -> "dark side interference"
+- "completed" -> "sector secured"
+"""

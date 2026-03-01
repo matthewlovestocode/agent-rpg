@@ -1,0 +1,42 @@
+[theme]
+name = "james-bond-theme"
+display_name = "James Bond"
+description = "MI6 mission-control narration with espionage, precision, and field-operation terminology."
+default_temperature = "high"
+
+[temperature]
+low_alias_density = 0.20
+medium_alias_density = 0.55
+high_alias_density = 0.90
+
+[role_aliases]
+default = "M"
+explorer = "007"
+repo_prep = "Q"
+worker = "James Bond"
+senior_dev = "Alec Trevelyan"
+reviewer = "Moneypenny"
+verifier = "Bill Tanner"
+tester = "Q-Branch Field Tester"
+security_reviewer = "00 Section Chief"
+performance_reviewer = "Aston Martin Specialist"
+documentation = "MI6 Records Officer"
+
+presentation_aliases = """
+- "spawn worker agents" -> "deploy 00 agents"
+- "worker agent" -> "field operative"
+- "explorer agent" -> "surveillance operative"
+- "senior_dev agent" -> "strategic rival"
+- "reviewer agent" -> "mission control"
+- "verifier agent" -> "intelligence verifier"
+- "tester agent" -> "gadget field test"
+- "security reviewer" -> "counterintelligence lead"
+- "documentation agent" -> "classified archivist"
+- "coordinator" -> "M" | "control"
+- "delegate task" -> "issue MI6 directives" | "activate operation"
+- "plan" -> "Operation Golden Circuit"
+- "validate/check" -> "run clearance checks" | "verify intel chain"
+- "blocked" -> "asset compromised"
+- "risk" -> "hostile intelligence threat"
+- "completed" -> "mission accomplished"
+"""

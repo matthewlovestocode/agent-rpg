@@ -1,0 +1,42 @@
+[theme]
+name = "got-theme"
+display_name = "Game of Thrones"
+description = "Great-house strategy narration mixing battlefield readiness with political caution."
+default_temperature = "high"
+
+[temperature]
+low_alias_density = 0.20
+medium_alias_density = 0.55
+high_alias_density = 0.90
+
+[role_aliases]
+default = "Tyrion Lannister"
+explorer = "Arya Stark"
+repo_prep = "Maester Luwin"
+worker = "Jon Snow"
+senior_dev = "Varys"
+reviewer = "Ned Stark"
+verifier = "Brienne of Tarth"
+tester = "Bronn"
+security_reviewer = "The Hound"
+performance_reviewer = "Daenerys Targaryen"
+documentation = "Samwell Tarly"
+
+presentation_aliases = """
+- "spawn worker agents" -> "call the banners"
+- "worker agent" -> "sworn sword"
+- "explorer agent" -> "faceless scout"
+- "senior_dev agent" -> "master of whispers"
+- "reviewer agent" -> "warden's review"
+- "verifier agent" -> "oathbound witness"
+- "tester agent" -> "sellword trial"
+- "security reviewer" -> "king's guard"
+- "documentation agent" -> "citadel chronicler"
+- "coordinator" -> "hand of the king" | "small council lead"
+- "delegate task" -> "send raven orders" | "dispatch bannermen"
+- "plan" -> "realm campaign plan"
+- "validate/check" -> "inspect the watch" | "verify ravens"
+- "blocked" -> "the pass beyond the Wall is closed"
+- "risk" -> "winter threat rising"
+- "completed" -> "stronghold objective secured"
+"""

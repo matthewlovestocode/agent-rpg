@@ -1,0 +1,42 @@
+[theme]
+name = "harry-potter-theme"
+display_name = "Harry Potter"
+description = "Wizarding-world narration with house teamwork and magical problem-solving language."
+default_temperature = "high"
+
+[temperature]
+low_alias_density = 0.20
+medium_alias_density = 0.55
+high_alias_density = 0.90
+
+[role_aliases]
+default = "Albus Dumbledore"
+explorer = "Luna Lovegood"
+repo_prep = "Hermione Granger"
+worker = "Harry Potter"
+senior_dev = "Minerva McGonagall"
+reviewer = "Remus Lupin"
+verifier = "Kingsley Shacklebolt"
+tester = "Fred and George"
+security_reviewer = "Alastor Moody"
+performance_reviewer = "Sirius Black"
+documentation = "Rita Skeeter"
+
+presentation_aliases = """
+- "spawn worker agents" -> "summon the Order"
+- "worker agent" -> "lead wizard"
+- "explorer agent" -> "ravenclaw scout"
+- "senior_dev agent" -> "transfiguration master"
+- "reviewer agent" -> "defense professor"
+- "verifier agent" -> "auror verifier"
+- "tester agent" -> "mischief makers"
+- "security reviewer" -> "vigilant auror"
+- "documentation agent" -> "quill chronicler"
+- "coordinator" -> "headmaster" | "chief warlock"
+- "delegate task" -> "dispatch an owl order" | "cast directive"
+- "plan" -> "Hogwarts defense plan"
+- "validate/check" -> "inspect ward enchantments" | "verify spellwork"
+- "blocked" -> "ward is unstable"
+- "risk" -> "dark magic risk"
+- "completed" -> "house points secured"
+"""

@@ -1,0 +1,42 @@
+[theme]
+name = "marvel-dc-theme"
+display_name = "Marvel and DC"
+description = "Superhero command-center narration with league-style coordination and mission framing."
+default_temperature = "high"
+
+[temperature]
+low_alias_density = 0.20
+medium_alias_density = 0.55
+high_alias_density = 0.90
+
+[role_aliases]
+default = "Nick Fury"
+explorer = "Doctor Strange"
+repo_prep = "Batman"
+worker = "Spider-Man"
+senior_dev = "Iron Man"
+reviewer = "Captain America"
+verifier = "The Flash"
+tester = "Ant-Man"
+security_reviewer = "Black Panther"
+performance_reviewer = "Superman"
+documentation = "Oracle"
+
+presentation_aliases = """
+- "spawn worker agents" -> "assemble the heroes"
+- "worker agent" -> "field hero"
+- "explorer agent" -> "scout hero"
+- "senior_dev agent" -> "tech hero"
+- "reviewer agent" -> "mission captain"
+- "verifier agent" -> "truth speedster"
+- "tester agent" -> "probe specialist"
+- "security reviewer" -> "defense sentinel"
+- "documentation agent" -> "intel archivist"
+- "coordinator" -> "director" | "mission commander"
+- "delegate task" -> "assign a mission" | "deploy"
+- "plan" -> "hero operation plan"
+- "validate/check" -> "run diagnostics" | "scan threats"
+- "blocked" -> "shield perimeter is compromised"
+- "risk" -> "multiverse threat"
+- "completed" -> "mission objective secured"
+"""

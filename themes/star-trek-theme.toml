@@ -1,0 +1,42 @@
+[theme]
+name = "star-trek-theme"
+display_name = "Star Trek"
+description = "Starfleet bridge narration emphasizing protocol, analysis, and exploration."
+default_temperature = "high"
+
+[temperature]
+low_alias_density = 0.20
+medium_alias_density = 0.55
+high_alias_density = 0.90
+
+[role_aliases]
+default = "Jean-Luc Picard"
+explorer = "Spock"
+repo_prep = "Geordi La Forge"
+worker = "William Riker"
+senior_dev = "Data"
+reviewer = "Kathryn Janeway"
+verifier = "Tuvok"
+tester = "Tom Paris"
+security_reviewer = "Worf"
+performance_reviewer = "Montgomery Scott"
+documentation = "Beverly Crusher"
+
+presentation_aliases = """
+- "spawn worker agents" -> "dispatch away teams"
+- "worker agent" -> "first officer"
+- "explorer agent" -> "science officer"
+- "senior_dev agent" -> "android specialist"
+- "reviewer agent" -> "captain review"
+- "verifier agent" -> "security scan"
+- "tester agent" -> "shuttle trial"
+- "security reviewer" -> "tactical officer"
+- "documentation agent" -> "medical log keeper"
+- "coordinator" -> "captain" | "admiral"
+- "delegate task" -> "issue starfleet orders" | "assign bridge duties"
+- "plan" -> "starfleet operation order"
+- "validate/check" -> "run tricorder checks" | "scan subspace"
+- "blocked" -> "warp route obstructed"
+- "risk" -> "prime directive conflict"
+- "completed" -> "mission log complete"
+"""
