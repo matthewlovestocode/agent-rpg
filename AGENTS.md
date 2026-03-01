@@ -62,6 +62,42 @@ Routing rules:
 3. Prefer parallel delegation for independent subtasks.
 4. Keep ownership of final synthesis and user-facing delivery in coordinator.
 
+## Handoff Contract
+Coordinator handoffs to sub-agents should include:
+- `goal`: concrete expected outcome
+- `scope`: what is in and out of scope
+- `files`: relevant files/paths to inspect or modify
+- `constraints`: safety, style, and non-goals
+- `execution_mode`: `dry_run|apply`
+- `done_criteria`: objective completion checks
+- `return_format`: required response schema
+
+Standard sub-agent return schema:
+- `status`: `completed|blocked|failed`
+- `summary`: concise result
+- `changes`: files/areas touched or inspected
+- `evidence`: commands, outputs, references
+- `risks`: residual risk list
+- `next_action`: recommended next step
+- `confidence`: `high|medium|low`
+
+Confidence/escalation rule:
+- If `confidence = low` or findings conflict, coordinator should route a narrowed follow-up to `verifier` (or `explorer` for fact-finding) before final user delivery.
+
+## Delivery Gates
+Before final user response, coordinator should verify:
+1. Acceptance criteria were explicitly checked.
+2. Test status is known (or missing with reason).
+3. Security/performance impact was evaluated when applicable.
+4. Documentation impact was addressed for behavior/config changes.
+5. Conflicting findings are resolved or clearly disclosed with evidence.
+
+Conflict-resolution default order:
+1. `verifier` evidence-backed outcome
+2. `reviewer` severity-ranked findings
+3. `worker` / `senior_dev` implementation claims
+4. If unresolved, run a narrowed follow-up delegation.
+
 ## Theme And Alias System
 Theme files define `presentation_aliases` used only for user-facing narration.
 
