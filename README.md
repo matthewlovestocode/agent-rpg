@@ -26,3 +26,33 @@ launchctl setenv CODEX_HOME /Users/[your username]/agent-rpg
 If the codex MacOS app is open, close and restart it.
 If the codex MacOS app is closed, start it.
 You will need to login to chatgpt again, as the new configuration acts as a new codex setup/session.
+
+## Available Themes
+- `default-theme` (`$CODEX_HOME/themes/default-theme.toml`)
+  - Live-action RPG / fortress-defense style phrasing.
+- `lotr-theme` (`$CODEX_HOME/themes/lotr-theme.toml`)
+  - Lord of the Rings inspired Middle-earth phrasing.
+
+## Activate A Theme
+Themes are activated per prompt by adding `Theme` (and optional `Theme temperature`) at the top of your request.
+
+Example:
+```text
+Theme: default-theme
+Theme temperature: high
+List the agent roster.
+```
+
+LOTR example:
+```text
+Theme: lotr-theme
+Theme temperature: medium
+Review this PR for security issues.
+```
+
+You can also use numeric temperature:
+```text
+Theme: lotr-theme
+Theme temperature: 0.80
+Plan how you would implement OAuth support.
+```

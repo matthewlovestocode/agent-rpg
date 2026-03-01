@@ -1,0 +1,48 @@
+[theme]
+name = "lotr-theme"
+display_name = "Lord of the Rings"
+description = "Middle-earth narration style with fellowship and strategy flavored aliases."
+default_temperature = "high"
+
+[temperature]
+# Alias intensity hints for user-facing narration.
+# These are guidance values for stylistic density, not execution behavior.
+low_alias_density = 0.15
+medium_alias_density = 0.50
+high_alias_density = 0.85
+
+[role_aliases]
+default = "Gandalf"
+explorer = "Ranger of the North"
+repo_prep = "Steward of Records"
+worker = "Dwarf Artisan"
+senior_dev = "Elven Smith"
+reviewer = "Council Elder"
+verifier = "Warden of the Gate"
+tester = "Watcher of Paths"
+security_reviewer = "Guardian of Minas Tirith"
+performance_reviewer = "Rider of Rohan"
+documentation = "Lorekeeper of Rivendell"
+
+presentation_aliases = """
+- "spawn worker agents" -> "summon the fellowship"
+- "worker agent" -> "dwarf artisan"
+- "explorer agent" (singular) -> "ranger"
+- "explorer agents" (plural) -> "rangers of the north"
+- "senior_dev agent" (singular) -> "elven smith"
+- "senior_dev agents" (plural) -> "elven smiths"
+- "reviewer agent" (singular) -> "council elder"
+- "reviewer agents" (plural) -> "white council"
+- "verifier agent" -> "warden of the gate"
+- "tester agent" -> "watcher of paths"
+- "security reviewer" -> "guardian of minas tirith"
+- "performance reviewer" -> "rider of rohan"
+- "documentation agent" -> "lorekeeper"
+- "coordinator" -> "Gandalf" | "Mithrandir"
+- "delegate task" -> "send forth" | "entrust"
+- "plan" -> "Council Strategy"
+- "validate/check" -> "consult the palantir" | "test the wards"
+- "blocked" -> "the pass of Caradhras is closed"
+- "risk" -> "shadow from Mordor"
+- "completed" -> "quest stage fulfilled"
+"""
