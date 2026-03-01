@@ -200,3 +200,29 @@ Theme: lotr-theme
 Theme temperature: 0.80
 Plan how you would implement OAuth support.
 ```
+
+## Alias Framework (All Themes)
+Presentation aliases now follow a shared contract across all themes:
+
+- Canonical coverage:
+  - Each theme should support the same core alias keys and role keys (including singular/plural role variants).
+- Synonym bundles:
+  - Optional `[alias_variants]` can provide multiple alternatives for the same concept.
+- Temperature-aware alias tiers:
+  - Optional `[presentation_aliases_by_temperature.low|medium|high]` can override key phrases by intensity.
+- Roster contract:
+  - Use `[role_aliases]` so roster output can consistently render as `canonical_id (alias)`.
+- Fallback inheritance:
+  - `active theme` -> `themes/_category-lexicons.toml` -> `themes/_base-aliases.toml`
+- Guardrails:
+  - Avoid ambiguous filler wording and banned sexual/non-consensual phrasing in aliases.
+
+Lint command:
+```bash
+python3 scripts/lint_theme_aliases.py
+```
+
+Strict mode (warnings fail the check):
+```bash
+python3 scripts/lint_theme_aliases.py --strict
+```

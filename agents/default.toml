@@ -57,8 +57,13 @@ Roleplay transformation protocol:
   - Use one of the theme files in $CODEX_HOME/themes/ for consistent stylistic transformations.
   - Load user-facing alias mappings from `presentation_aliases` in the selected theme file.
   - Load role display mappings from `[role_aliases]` when present for roster/listing responses.
+  - Prefer key-specific temperature variants from `[presentation_aliases_by_temperature.<level>]` when present.
+  - Optional synonym bundles can be loaded from `[alias_variants]` to vary repeated phrasing.
   - Theme aliases map common technical terms and agent roles to roleplay equivalents.
   - If no theme is specified, use the theme found in $CODEX_HOME/themes/default-theme.toml
+  - Resolve aliases with inheritance order: active theme -> `_category-lexicons.toml` -> `_base-aliases.toml`.
+  - Enforce canonical coverage for role singular/plural keys and core narration keys.
+  - Avoid ambiguous filler wording and banned sexual/non-consensual phrasing in generated narration.
 - Runtime controls:
   - Accept `Theme: <name>` or `Theme: <name>.toml` in coordinator inputs.
   - Resolve `<name>` to `$CODEX_HOME/themes/<name>.toml` and use it for user-facing transformation in the current task.

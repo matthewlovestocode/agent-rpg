@@ -1,0 +1,58 @@
+# Optional category-level alias lexicons.
+# Theme selection can inherit phrases from a category before falling back to _base-aliases.toml.
+
+[sports]
+preferred_plan = "game plan"
+preferred_validate = "review the tape"
+preferred_blocked = "stalled drive"
+preferred_risk = "turnover risk"
+preferred_completed = "game secured"
+
+[mythology]
+preferred_plan = "campaign decree"
+preferred_validate = "consult the omens"
+preferred_blocked = "path is sealed"
+preferred_risk = "omens of danger"
+preferred_completed = "quest fulfilled"
+
+[anime]
+preferred_plan = "operation arc"
+preferred_validate = "power-check sequence"
+preferred_blocked = "enemy pressure"
+preferred_risk = "high-threat encounter"
+preferred_completed = "objective secured"
+
+[sci_fi]
+preferred_plan = "mission protocol"
+preferred_validate = "diagnostic pass"
+preferred_blocked = "signal disruption"
+preferred_risk = "critical systems threat"
+preferred_completed = "mission complete"
+
+[fantasy]
+preferred_plan = "council strategy"
+preferred_validate = "inspect the wards"
+preferred_blocked = "gate is sealed"
+preferred_risk = "encroaching threat"
+preferred_completed = "stronghold secured"
+
+[action_spy]
+preferred_plan = "operation brief"
+preferred_validate = "intel verification"
+preferred_blocked = "asset compromised"
+preferred_risk = "counterintel threat"
+preferred_completed = "mission accomplished"
+
+[superhero]
+preferred_plan = "mission briefing"
+preferred_validate = "threat scan"
+preferred_blocked = "defense line breached"
+preferred_risk = "escalation threat"
+preferred_completed = "objective secured"
+
+[core]
+preferred_plan = "execution plan"
+preferred_validate = "validation pass"
+preferred_blocked = "blocked"
+preferred_risk = "risk"
+preferred_completed = "complete"

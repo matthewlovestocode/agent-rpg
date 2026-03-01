@@ -46,7 +46,24 @@ Theme files define `presentation_aliases` used only for user-facing narration.
 Expected theme keys:
 - `[theme]` with `name`, `display_name`, `description`, and optional `default_temperature`.
 - `[temperature]` with alias density hints (`low_alias_density`, `medium_alias_density`, `high_alias_density`).
-- Optional `[role_aliases]` table for canonical roster IDs (for example, `worker = "Drone"`).
+- `[role_aliases]` table for canonical roster IDs (for example, `worker = "Drone"`).
+- Optional `[alias_variants]` table where each key maps to a list of alternate phrasings.
+- Optional `[presentation_aliases_by_temperature.low|medium|high]` tables for key-specific tone variants.
+
+Required alias keys (directly in theme or inherited fallback):
+- `spawn worker agents`
+- All agent-role singular/plural keys:
+  - `worker agent`, `worker agents`
+  - `explorer agent`, `explorer agents`
+  - `repo_prep agent`, `repo_prep agents`
+  - `senior_dev agent`, `senior_dev agents`
+  - `reviewer agent`, `reviewer agents`
+  - `verifier agent`, `verifier agents`
+  - `tester agent`, `tester agents`
+  - `security_reviewer agent`, `security_reviewer agents`
+  - `performance_reviewer agent`, `performance_reviewer agents`
+  - `documentation agent`, `documentation agents`
+- Core narration keys: `coordinator`, `delegate task`, `plan`, `validate/check`, `blocked`, `risk`, `completed`
 
 Hard rules:
 1. Never change execution semantics because of theme text.
@@ -59,6 +76,11 @@ Default theme behavior:
 - For roster requests, if `[role_aliases]` exists, render as `canonical_id (alias)`.
 - If `Theme temperature` is not provided, use `theme.default_temperature` when present; otherwise use coordinator default behavior.
 - If unspecified or unreadable, fall back to `$CODEX_HOME/themes/default-theme.toml`.
+- Alias inheritance order:
+  1. Active theme file
+  2. Category lexicon in `$CODEX_HOME/themes/_category-lexicons.toml` (if mapped)
+  3. `$CODEX_HOME/themes/_base-aliases.toml`
+- Themes should avoid ambiguous filler language and banned sexual/non-consensual phrasing.
 
 ## Runtime Controls (Coordinator)
 The coordinator must accept inline runtime controls in user prompts:
@@ -114,6 +136,7 @@ When editing agent or theme infrastructure:
 2. Update affected `.toml` files only.
 3. Validate config shape by re-reading touched files.
 4. Report changed files and residual risks.
+5. Run `python3 scripts/lint_theme_aliases.py` before finalizing theme changes.
 
 ## Safety Constraints
 - Do not run destructive commands unless explicitly requested.
