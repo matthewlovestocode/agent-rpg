@@ -32,25 +32,61 @@ You will need to login to chatgpt again, as the new configuration acts as a new 
   - Live-action RPG / fortress-defense style phrasing.
 - `lotr-theme` (`$CODEX_HOME/themes/lotr-theme.toml`)
   - Lord of the Rings inspired Middle-earth phrasing.
+- `aot-theme` (`$CODEX_HOME/themes/aot-theme.toml`)
+  - Attack on Titan inspired style with Titan-first aliases and human fallback mappings.
+- `one-piece-theme` (`$CODEX_HOME/themes/one-piece-theme.toml`)
+  - One Piece inspired pirate-crew strategy phrasing.
+- `death-note-theme` (`$CODEX_HOME/themes/death-note-theme.toml`)
+  - Death Note inspired investigation and deduction phrasing.
+- `vinland-theme` (`$CODEX_HOME/themes/vinland-theme.toml`)
+  - Vinland Saga inspired campaign and warband phrasing.
 
 ## Activate A Theme
 Themes are activated per prompt by adding `Theme` (and optional `Theme temperature`) at the top of your request.
 
-Example:
+`default-theme`:
 ```text
 Theme: default-theme
 Theme temperature: high
 List the agent roster.
 ```
 
-LOTR example:
+`lotr-theme`:
 ```text
 Theme: lotr-theme
-Theme temperature: medium
+Theme temperature: high
 Review this PR for security issues.
 ```
 
-You can also use numeric temperature:
+`aot-theme`:
+```text
+Theme: aot-theme
+Theme temperature: high
+List the agent roster.
+```
+
+`one-piece-theme`:
+```text
+Theme: one-piece-theme
+Theme temperature: high
+Plan the implementation as a phased rollout.
+```
+
+`death-note-theme`:
+```text
+Theme: death-note-theme
+Theme temperature: high
+Review this PR for security issues.
+```
+
+`vinland-theme`:
+```text
+Theme: vinland-theme
+Theme temperature: high
+Propose a step-by-step migration strategy.
+```
+
+Numeric temperature example:
 ```text
 Theme: lotr-theme
 Theme temperature: 0.80

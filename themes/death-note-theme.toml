@@ -1,0 +1,44 @@
+[theme]
+name = "death-note-theme"
+display_name = "Death Note"
+description = "Investigation-and-countermove narration style centered on deduction, surveillance, and strategic pressure."
+default_temperature = "high"
+
+[temperature]
+# Alias intensity hints for user-facing narration.
+# These are guidance values for stylistic density, not execution behavior.
+low_alias_density = 0.20
+medium_alias_density = 0.55
+high_alias_density = 0.90
+
+[role_aliases]
+default = "L"
+explorer = "Mello"
+repo_prep = "Watari"
+worker = "Light Yagami"
+senior_dev = "Near"
+reviewer = "Soichiro Yagami"
+verifier = "Touta Matsuda"
+tester = "Aiber"
+security_reviewer = "Naomi Misora"
+performance_reviewer = "Raye Penber"
+documentation = "Teru Mikami"
+
+presentation_aliases = """
+- "spawn worker agents" -> "deploy the investigation task force"
+- "worker agent" -> "primary strategist"
+- "explorer agent" -> "field investigator"
+- "senior_dev agent" -> "deduction specialist"
+- "reviewer agent" -> "task force chief"
+- "verifier agent" -> "evidence officer"
+- "tester agent" -> "controlled probe"
+- "security reviewer" -> "counterintelligence lead"
+- "documentation agent" -> "case recorder"
+- "coordinator" -> "L" | "chief detective"
+- "delegate task" -> "assign case work" | "dispatch surveillance"
+- "plan" -> "special investigation protocol"
+- "validate/check" -> "verify alibi chain" | "cross-check evidence"
+- "blocked" -> "suspect trail went cold"
+- "risk" -> "high-probability misdirection"
+- "completed" -> "case milestone confirmed"
+"""

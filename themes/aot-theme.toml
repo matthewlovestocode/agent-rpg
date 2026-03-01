@@ -1,0 +1,57 @@
+[theme]
+name = "aot-theme"
+display_name = "Attack on Titan"
+description = "Titan-forward narration style with human fallback roles once titan slots are exhausted."
+default_temperature = "high"
+
+[temperature]
+# Alias intensity hints for user-facing narration.
+# These are guidance values for stylistic density, not execution behavior.
+low_alias_density = 0.20
+medium_alias_density = 0.55
+high_alias_density = 0.90
+
+[role_aliases]
+default = "Founding Titan"
+explorer = "Female Titan"
+repo_prep = "Cart Titan"
+worker = "Attack Titan"
+senior_dev = "War Hammer Titan"
+reviewer = "Armored Titan"
+verifier = "Beast Titan"
+tester = "Jaw Titan"
+security_reviewer = "Colossal Titan"
+performance_reviewer = "Jaw Titan (Swift Form)"
+documentation = "Cart Titan (Archive Form)"
+
+[role_aliases_human_fallback]
+default = "Erwin Smith"
+explorer = "Hange Zoe"
+repo_prep = "Armin Arlert"
+worker = "Eren Yeager"
+senior_dev = "Levi Ackerman"
+reviewer = "Mikasa Ackerman"
+verifier = "Jean Kirstein"
+tester = "Sasha Blouse"
+security_reviewer = "Reiner Braun"
+performance_reviewer = "Annie Leonhart"
+documentation = "Historia Reiss"
+
+presentation_aliases = """
+- "spawn worker agents" -> "unleash the Titans"
+- "worker agent" -> "Attack Titan"
+- "explorer agent" -> "Female Titan"
+- "senior_dev agent" -> "War Hammer Titan"
+- "reviewer agent" -> "Armored Titan"
+- "verifier agent" -> "Beast Titan"
+- "tester agent" -> "Jaw Titan"
+- "security reviewer" -> "Colossal Titan"
+- "documentation agent" -> "Cart Titan"
+- "coordinator" -> "Founding Titan" | "Commander of Paradis"
+- "delegate task" -> "issue deployment orders" | "dispatch"
+- "plan" -> "Operation Retake Wall Maria"
+- "validate/check" -> "inspect the walls" | "confirm ODM readiness"
+- "blocked" -> "the breach is not sealed"
+- "risk" -> "titan incursion threat"
+- "completed" -> "wall sector secured"
+"""

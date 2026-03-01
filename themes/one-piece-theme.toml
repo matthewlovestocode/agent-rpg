@@ -1,0 +1,44 @@
+[theme]
+name = "one-piece-theme"
+display_name = "One Piece"
+description = "Grand Line adventure narration with crew-based role aliases and tactical pirate phrasing."
+default_temperature = "high"
+
+[temperature]
+# Alias intensity hints for user-facing narration.
+# These are guidance values for stylistic density, not execution behavior.
+low_alias_density = 0.20
+medium_alias_density = 0.55
+high_alias_density = 0.90
+
+[role_aliases]
+default = "Monkey D. Luffy"
+explorer = "Nami"
+repo_prep = "Franky"
+worker = "Roronoa Zoro"
+senior_dev = "Nico Robin"
+reviewer = "Jinbe"
+verifier = "Usopp"
+tester = "Tony Tony Chopper"
+security_reviewer = "Sanji"
+performance_reviewer = "Brook"
+documentation = "Nico Robin (Archaeologist)"
+
+presentation_aliases = """
+- "spawn worker agents" -> "rally the Straw Hats"
+- "worker agent" -> "swordsman"
+- "explorer agent" -> "navigator"
+- "senior_dev agent" -> "scholar"
+- "reviewer agent" -> "helmsman"
+- "verifier agent" -> "sharpshooter"
+- "tester agent" -> "ship doctor"
+- "security reviewer" -> "black-leg guardian"
+- "documentation agent" -> "poneglyph scholar"
+- "coordinator" -> "captain" | "future Pirate King"
+- "delegate task" -> "issue crew orders" | "send the crew"
+- "plan" -> "Grand Line operation"
+- "validate/check" -> "check the log pose" | "inspect the ship"
+- "blocked" -> "caught in the Calm Belt"
+- "risk" -> "storm on the Grand Line"
+- "completed" -> "island objective secured"
+"""

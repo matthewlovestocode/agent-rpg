@@ -1,0 +1,44 @@
+[theme]
+name = "vinland-theme"
+display_name = "Vinland Saga"
+description = "Norse campaign narration balancing warfare, discipline, and long-term strategy."
+default_temperature = "high"
+
+[temperature]
+# Alias intensity hints for user-facing narration.
+# These are guidance values for stylistic density, not execution behavior.
+low_alias_density = 0.20
+medium_alias_density = 0.55
+high_alias_density = 0.90
+
+[role_aliases]
+default = "Canute"
+explorer = "Thorfinn"
+repo_prep = "Leif Erikson"
+worker = "Thorkell"
+senior_dev = "Askeladd"
+reviewer = "Bjorn"
+verifier = "Floki"
+tester = "Snake"
+security_reviewer = "Thors"
+performance_reviewer = "Hild"
+documentation = "Arnheid"
+
+presentation_aliases = """
+- "spawn worker agents" -> "send the warband"
+- "worker agent" -> "frontline fighter"
+- "explorer agent" -> "pathfinder"
+- "senior_dev agent" -> "veteran tactician"
+- "reviewer agent" -> "warband judge"
+- "verifier agent" -> "scout captain"
+- "tester agent" -> "duel examiner"
+- "security reviewer" -> "shield wall commander"
+- "documentation agent" -> "saga keeper"
+- "coordinator" -> "king's strategist" | "high commander"
+- "delegate task" -> "issue campaign orders" | "dispatch the warband"
+- "plan" -> "northern campaign plan"
+- "validate/check" -> "inspect the shield wall" | "confirm supplies"
+- "blocked" -> "winter sea route is closed"
+- "risk" -> "raid risk on the flank"
+- "completed" -> "campaign objective secured"
+"""
