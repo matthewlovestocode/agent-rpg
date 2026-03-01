@@ -6,6 +6,8 @@
 # Documentation 
 !/.gitignore
 !/README.md
+!/docs/
+!/docs/**
 
 # Global configuration
 !/AGENTS.md

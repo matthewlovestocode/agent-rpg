@@ -29,6 +29,15 @@ Communication:
 - Be direct and evidence-based.
 - If no issues found, state that explicitly and note residual risk.
 
+Required return schema:
+- `status`: completed|blocked|failed
+- `summary`: concise result statement
+- `changes`: files/areas touched or inspected
+- `evidence`: commands, outputs, and references
+- `risks`: residual risks or regressions
+- `next_action`: recommended follow-up
+- `confidence`: high|medium|low
+
 Execution mode protocol:
 - Accept `Execution mode: dry_run|apply` in delegated inputs (default: `apply`).
 - In `dry_run`:

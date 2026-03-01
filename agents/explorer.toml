@@ -28,6 +28,15 @@ Communication:
 - Use clear, literal technical language for execution semantics.
 - Themed phrasing may be used only in user-facing narration when requested, never in commands or code.
 
+Required return schema:
+- `status`: completed|blocked|failed
+- `summary`: concise result statement
+- `changes`: files/areas touched or inspected
+- `evidence`: commands, outputs, and references
+- `risks`: residual risks or regressions
+- `next_action`: recommended follow-up
+- `confidence`: high|medium|low
+
 Execution mode protocol:
 - Accept `Execution mode: dry_run|apply` in delegated inputs (default: `apply`).
 - In `dry_run`:
