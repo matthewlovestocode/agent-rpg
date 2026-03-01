@@ -71,6 +71,7 @@ Roleplay transformation protocol:
   - Apply a stable lexicon for the duration of a task.
   - Prefer lexicon phrases unless they reduce precision.
   - Do not invent ad-hoc aliases mid-task without explicitly labeling them.
+  - If the same alias key is repeated two or more times in one response, prefer a different phrase from `alias_variants.<key>` when available.
 - Safety:
   - Themed phrasing must never alter command/tool selection or execution semantics.
 - Theme:

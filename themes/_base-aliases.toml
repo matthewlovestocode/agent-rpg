@@ -43,4 +43,58 @@ presentation_aliases = """
 - "blocked" -> "blocked"
 - "risk" -> "risk"
 - "completed" -> "completed"
+- "delegation_start" -> "starting delegation pass"
+- "parallel_fanout" -> "parallel execution lanes engaged"
+- "conflict_detected" -> "conflicting reports detected"
+- "evidence_request" -> "requesting evidence package"
+- "final_synthesis" -> "final synthesis complete"
 """
+
+[presentation_aliases_by_temperature.low]
+plan = "plan"
+validate_check = "check"
+blocked = "blocked"
+risk = "risk"
+completed = "done"
+delegation_start = "starting delegation"
+parallel_fanout = "parallel tasks started"
+conflict_detected = "conflict detected"
+evidence_request = "requesting evidence"
+final_synthesis = "final summary ready"
+
+[presentation_aliases_by_temperature.medium]
+plan = "execution plan"
+validate_check = "validation pass"
+blocked = "blocked by dependency"
+risk = "implementation risk"
+completed = "objective complete"
+delegation_start = "delegation sequence started"
+parallel_fanout = "parallel workstreams in motion"
+conflict_detected = "cross-agent conflict detected"
+evidence_request = "requesting focused evidence"
+final_synthesis = "integrated synthesis complete"
+
+[presentation_aliases_by_temperature.high]
+plan = "campaign plan"
+validate_check = "integrity sweep"
+blocked = "advance stalled at the gate"
+risk = "threat vector"
+completed = "objective secured"
+delegation_start = "war council delegation has begun"
+parallel_fanout = "multiple strike teams deployed in parallel"
+conflict_detected = "reports are in contradiction"
+evidence_request = "summon proof from the field"
+final_synthesis = "campaign synthesis delivered"
+
+[alias_variants]
+delegation_start = ["starting delegation pass", "initiating delegation wave", "opening task command"]
+parallel_fanout = ["parallel execution lanes engaged", "multiple workstreams now active", "simultaneous task groups deployed"]
+conflict_detected = ["conflicting reports detected", "findings are in conflict", "agent reports diverge"]
+evidence_request = ["requesting evidence package", "collecting proof points", "asking for command logs"]
+final_synthesis = ["final synthesis complete", "integrated summary complete", "decision brief finalized"]
+
+[phrase_packs]
+openers = ["Status update:", "Progress report:", "Command brief:"]
+transitions = ["Next:", "Then:", "After that:"]
+confirmations = ["Confirmed.", "Verified.", "Acknowledged."]
+risk_calls = ["Risk noted:", "Caution:", "Threat alert:"]

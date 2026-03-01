@@ -269,6 +269,7 @@ npm run readme:themes
 npm run readme:check
 npm run lint:themes:strict
 npm run categories:check
+npm run themes:immersion
 npm run agents:check
 npm run agents:check:strict
 npm run agents:smoke
@@ -314,10 +315,15 @@ Presentation aliases now follow a shared contract across all themes:
   - Optional `[alias_variants]` can provide multiple alternatives for the same concept.
 - Temperature-aware alias tiers:
   - Optional `[presentation_aliases_by_temperature.low|medium|high]` can override key phrases by intensity.
+- Immersion event slots:
+  - Support keys such as `delegation_start`, `parallel_fanout`, `conflict_detected`, `evidence_request`, `final_synthesis` for richer coordinator narration.
 - Roster contract:
   - Use `[role_aliases]` so roster output can consistently render as `canonical_id (alias)`.
 - Fallback inheritance:
   - `active theme` -> `themes/_category-lexicons.toml` -> `themes/_base-aliases.toml`
+- Phrase diversity:
+  - Use `[alias_variants]` to provide multiple choices for repeated narration keys.
+  - Use `[phrase_packs]` (`openers`, `transitions`, `confirmations`, `risk_calls`) for consistent tone variety.
 - Guardrails:
   - Avoid ambiguous filler wording and banned sexual/non-consensual phrasing in aliases.
 
@@ -330,3 +336,33 @@ Strict mode (warnings fail the check):
 ```bash
 npm run lint:themes:strict
 ```
+
+Immersion check (coverage + quality signals):
+```bash
+npm run themes:immersion
+```
+
+## Immersion Tuning
+Use this pattern in a theme for richer language control:
+
+```toml
+[presentation_aliases_by_temperature.high]
+delegation_start = "war council delegation has begun"
+parallel_fanout = "multiple strike teams deployed in parallel"
+conflict_detected = "reports are in contradiction"
+evidence_request = "summon proof from the field"
+final_synthesis = "campaign synthesis delivered"
+validate_check = "integrity sweep"
+
+[alias_variants]
+delegation_start = ["starting delegation pass", "initiating delegation wave", "opening task command"]
+
+[phrase_packs]
+openers = ["Status update:", "Progress report:", "Command brief:"]
+transitions = ["Next:", "Then:", "After that:"]
+confirmations = ["Confirmed.", "Verified.", "Acknowledged."]
+risk_calls = ["Risk noted:", "Caution:", "Threat alert:"]
+```
+
+Coordinator runtime behavior:
+- If an alias key repeats 2+ times in one response, coordinator should pull alternatives from `alias_variants.<key>` when available.

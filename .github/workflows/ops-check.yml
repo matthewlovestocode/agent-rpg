@@ -28,6 +28,9 @@ jobs:
       - name: Check theme categories
         run: npm run categories:check
 
+      - name: Theme immersion check
+        run: npm run themes:immersion
+
   agents:
     runs-on: ubuntu-latest
     steps:
