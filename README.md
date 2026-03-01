@@ -271,8 +271,22 @@ npm run lint:themes:strict
 npm run categories:check
 npm run agents:check
 npm run agents:check:strict
+npm run agents:smoke
 npm run ops:fix
 npm run ops:check
+npm run ops:check:strict
+```
+
+Scaffold a new sub-agent with required dry-run/apply and return-schema sections:
+
+```bash
+npm run agents:scaffold -- <agent_id>
+```
+
+Scaffold a coordinator template (for bootstrapping only):
+
+```bash
+npm run agents:scaffold -- <agent_id> --coordinator
 ```
 
 ## Coordinator And Delegation
@@ -285,6 +299,11 @@ Use these docs to keep multi-agent handoffs consistent:
   - `docs/playbooks/refactor.md`
   - `docs/playbooks/docs-only.md`
   - `docs/playbooks/security-hotfix.md`
+
+Delegation routing guardrails are enforced by:
+
+- `npm run agents:check:strict` for marker/contract checks across all agent files
+- `npm run agents:smoke` for coordinator role references, routing markers, and per-role handoff shape
 
 ## Alias Framework (All Themes)
 Presentation aliases now follow a shared contract across all themes:

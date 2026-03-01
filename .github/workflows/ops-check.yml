@@ -46,6 +46,9 @@ jobs:
       - name: Check agent contracts (strict)
         run: npm run agents:check:strict
 
+      - name: Delegation smoke check
+        run: npm run agents:smoke
+
   readme-sync:
     runs-on: ubuntu-latest
     steps:

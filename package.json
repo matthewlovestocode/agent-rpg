@@ -8,13 +8,15 @@
     "lint:themes:strict": "tsx scripts/lint-theme-aliases.ts --strict",
     "list:themes": "tsx scripts/list-themes.ts",
     "agents:check": "tsx scripts/check-agents.ts",
-    "ops:check": "npm run lint:themes:strict && npm run categories:check && npm run agents:check && npm run readme:check",
+    "agents:scaffold": "tsx scripts/scaffold-agent.ts",
+    "agents:smoke": "tsx scripts/check-delegation-smoke.ts",
+    "ops:check": "npm run lint:themes:strict && npm run categories:check && npm run agents:check && npm run agents:smoke && npm run readme:check",
     "readme:themes": "tsx scripts/update-readme-theme-table.ts",
     "readme:check": "tsx scripts/check-readme-theme-sync.ts",
     "agents:check:strict": "tsx scripts/check-agents.ts --strict",
-    "ops:fix": "npm run readme:themes && npm run lint:themes && npm run categories:check && npm run agents:check",
+    "ops:fix": "npm run readme:themes && npm run lint:themes && npm run categories:check && npm run agents:check && npm run agents:smoke",
     "categories:check": "tsx scripts/check-theme-categories.ts",
-    "ops:check:strict": "npm run lint:themes:strict && npm run categories:check && npm run agents:check:strict && npm run readme:check"
+    "ops:check:strict": "npm run lint:themes:strict && npm run categories:check && npm run agents:check:strict && npm run agents:smoke && npm run readme:check"
   },
   "devDependencies": {
     "@types/node": "^22.13.10",
