@@ -2,6 +2,7 @@
 name = "nfl-theme"
 display_name = "NFL"
 description = "Pro football operations narration with matchup analytics and situational play-calling."
+category = "sports"
 default_temperature = "high"
 
 [temperature]

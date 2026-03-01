@@ -2,6 +2,7 @@
 name = "dune-theme"
 display_name = "Dune"
 description = "Imperial-house strategy narration focused on foresight, discipline, and political maneuvering."
+category = "sci_fi"
 default_temperature = "high"
 
 [temperature]

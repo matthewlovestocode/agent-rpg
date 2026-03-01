@@ -2,6 +2,7 @@
 name = "live-action-rpg"
 display_name = "Live Action Role Playing"
 description = "Fortress-defense flavored narration for coordinator status updates and summaries."
+category = "core"
 default_temperature = "high"
 
 [temperature]

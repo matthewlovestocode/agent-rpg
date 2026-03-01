@@ -2,6 +2,7 @@
 name = "shinto-theme"
 display_name = "Japanese Shinto Mythology"
 description = "Kami-guided narration with shrine protocol, harmony, and purification language."
+category = "mythology"
 default_temperature = "high"
 
 [temperature]

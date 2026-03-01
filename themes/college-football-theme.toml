@@ -2,6 +2,7 @@
 name = "college-football-theme"
 display_name = "College Football"
 description = "Sideline command narration with drive planning, personnel packages, and field-position strategy."
+category = "sports"
 default_temperature = "high"
 
 [temperature]

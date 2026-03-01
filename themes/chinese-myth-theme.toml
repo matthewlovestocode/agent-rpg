@@ -2,6 +2,7 @@
 name = "chinese-myth-theme"
 display_name = "Chinese Mythology"
 description = "Celestial-court narration blending strategic discipline, omens, and martial resolve."
+category = "mythology"
 default_temperature = "high"
 
 [temperature]

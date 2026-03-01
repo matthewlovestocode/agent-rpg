@@ -2,6 +2,7 @@
 name = "lotr-theme"
 display_name = "Lord of the Rings"
 description = "Middle-earth narration style with fellowship and strategy flavored aliases."
+category = "fantasy"
 default_temperature = "high"
 
 [temperature]

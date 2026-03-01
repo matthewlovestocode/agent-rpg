@@ -2,6 +2,7 @@
 name = "marvel-dc-theme"
 display_name = "Marvel and DC"
 description = "Superhero command-center narration with league-style coordination and mission framing."
+category = "superhero"
 default_temperature = "high"
 
 [temperature]

@@ -2,6 +2,7 @@
 name = "norse-theme"
 display_name = "Norse Mythology"
 description = "Asgard war-council narration with runic signals and battlefield resolve."
+category = "mythology"
 default_temperature = "high"
 
 [temperature]

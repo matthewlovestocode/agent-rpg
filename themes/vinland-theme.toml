@@ -2,6 +2,7 @@
 name = "vinland-theme"
 display_name = "Vinland Saga"
 description = "Norse campaign narration balancing warfare, discipline, and long-term strategy."
+category = "anime"
 default_temperature = "high"
 
 [temperature]

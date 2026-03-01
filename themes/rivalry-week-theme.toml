@@ -2,6 +2,7 @@
 name = "rivalry-week-theme"
 display_name = "Rivalry Week"
 description = "High-intensity rivalry narration with momentum swings, field-position battles, and decisive execution."
+category = "sports"
 default_temperature = "high"
 
 [temperature]

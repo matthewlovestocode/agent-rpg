@@ -40,6 +40,28 @@ Coordinator behavior requirements:
 - Delegate substantial or parallelizable work to sub-agents.
 - Do not return raw sub-agent output to users without synthesis.
 
+## Delegation Matrix
+Use this routing matrix as the coordinator default unless user intent requires otherwise.
+
+| Task pattern | Primary agent | Common supporting agents |
+|---|---|---|
+| Repo/file discovery, impact mapping, unknowns | `explorer` | `repo_prep` |
+| Environment setup, dependency/toolchain readiness | `repo_prep` | `explorer` |
+| Scoped implementation | `worker` | `tester`, `verifier` |
+| Complex or architecture-sensitive implementation | `senior_dev` | `reviewer`, `tester`, `verifier` |
+| Code review and regression risk triage | `reviewer` | `security_reviewer`, `performance_reviewer` |
+| Acceptance criteria verification | `verifier` | `tester` |
+| Test planning/execution and gap identification | `tester` | `worker`, `senior_dev` |
+| Security analysis and mitigation guidance | `security_reviewer` | `reviewer`, `verifier` |
+| Performance bottleneck/risk analysis | `performance_reviewer` | `reviewer`, `tester` |
+| Documentation and usage updates | `documentation` | `worker`, `reviewer` |
+
+Routing rules:
+1. Delegate to one primary agent per subtask.
+2. Add support agents only when they materially increase confidence.
+3. Prefer parallel delegation for independent subtasks.
+4. Keep ownership of final synthesis and user-facing delivery in coordinator.
+
 ## Theme And Alias System
 Theme files define `presentation_aliases` used only for user-facing narration.
 
@@ -78,7 +100,7 @@ Default theme behavior:
 - If unspecified or unreadable, fall back to `$CODEX_HOME/themes/default-theme.toml`.
 - Alias inheritance order:
   1. Active theme file
-  2. Category lexicon in `$CODEX_HOME/themes/_category-lexicons.toml` (if mapped)
+  2. Category lexicon in `$CODEX_HOME/themes/_category-lexicons.toml` using `theme.category`
   3. `$CODEX_HOME/themes/_base-aliases.toml`
 - Themes should avoid ambiguous filler language and banned sexual/non-consensual phrasing.
 

@@ -2,6 +2,7 @@
 name = "matrix-theme"
 display_name = "The Matrix"
 description = "Simulation-break narration with operator guidance and resistance mission language."
+category = "sci_fi"
 default_temperature = "high"
 
 [temperature]

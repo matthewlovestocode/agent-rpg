@@ -2,6 +2,7 @@
 name = "harry-potter-theme"
 display_name = "Harry Potter"
 description = "Wizarding-world narration with house teamwork and magical problem-solving language."
+category = "fantasy"
 default_temperature = "high"
 
 [temperature]

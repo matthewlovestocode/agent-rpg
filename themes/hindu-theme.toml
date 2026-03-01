@@ -2,6 +2,7 @@
 name = "hindu-theme"
 display_name = "Hindu Mythology"
 description = "Dharma-centered narration with disciplined strategy and cosmic-balance framing."
+category = "mythology"
 default_temperature = "high"
 
 [temperature]

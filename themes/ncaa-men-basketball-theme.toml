@@ -2,6 +2,7 @@
 name = "ncaa-men-basketball-theme"
 display_name = "NCAA Men's Basketball"
 description = "College hoops game-plan narration with scouting, rotations, and tournament urgency."
+category = "sports"
 default_temperature = "high"
 
 [temperature]

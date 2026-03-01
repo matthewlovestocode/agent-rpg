@@ -2,6 +2,7 @@
 name = "james-bond-theme"
 display_name = "James Bond"
 description = "MI6 mission-control narration with espionage, precision, and field-operation terminology."
+category = "action_spy"
 default_temperature = "high"
 
 [temperature]

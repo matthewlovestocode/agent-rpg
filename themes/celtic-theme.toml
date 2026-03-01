@@ -2,6 +2,7 @@
 name = "celtic-theme"
 display_name = "Celtic Mythology"
 description = "Clan-warband narration with druid counsel, omen reading, and frontier strategy."
+category = "mythology"
 default_temperature = "high"
 
 [temperature]

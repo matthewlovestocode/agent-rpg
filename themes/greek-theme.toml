@@ -2,6 +2,7 @@
 name = "greek-theme"
 display_name = "Greek Mythology"
 description = "Olympian council narration with heroic quest framing and tactical omens."
+category = "mythology"
 default_temperature = "high"
 
 [temperature]

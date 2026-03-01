@@ -2,6 +2,7 @@
 name = "star-trek-theme"
 display_name = "Star Trek"
 description = "Starfleet bridge narration emphasizing protocol, analysis, and exploration."
+category = "sci_fi"
 default_temperature = "high"
 
 [temperature]

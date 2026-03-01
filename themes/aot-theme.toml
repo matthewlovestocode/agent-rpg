@@ -2,6 +2,7 @@
 name = "aot-theme"
 display_name = "Attack on Titan"
 description = "Titan-forward narration style with human fallback roles once titan slots are exhausted."
+category = "anime"
 default_temperature = "high"
 
 [temperature]

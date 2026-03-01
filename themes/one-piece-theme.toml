@@ -2,6 +2,7 @@
 name = "one-piece-theme"
 display_name = "One Piece"
 description = "Grand Line adventure narration with crew-based role aliases and tactical pirate phrasing."
+category = "anime"
 default_temperature = "high"
 
 [temperature]

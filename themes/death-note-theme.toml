@@ -2,6 +2,7 @@
 name = "death-note-theme"
 display_name = "Death Note"
 description = "Investigation-and-countermove narration style centered on deduction, surveillance, and strategic pressure."
+category = "anime"
 default_temperature = "high"
 
 [temperature]

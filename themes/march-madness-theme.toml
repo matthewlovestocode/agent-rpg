@@ -2,6 +2,7 @@
 name = "march-madness-theme"
 display_name = "March Madness"
 description = "Single-elimination tournament narration with upset awareness and survive-and-advance urgency."
+category = "sports"
 default_temperature = "high"
 
 [temperature]

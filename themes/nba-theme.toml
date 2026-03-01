@@ -2,6 +2,7 @@
 name = "nba-theme"
 display_name = "NBA"
 description = "Pro basketball operations narration with pace, spacing, and rotation optimization language."
+category = "sports"
 default_temperature = "high"
 
 [temperature]

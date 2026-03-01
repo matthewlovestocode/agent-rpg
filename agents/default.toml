@@ -61,7 +61,14 @@ Roleplay transformation protocol:
   - Optional synonym bundles can be loaded from `[alias_variants]` to vary repeated phrasing.
   - Theme aliases map common technical terms and agent roles to roleplay equivalents.
   - If no theme is specified, use the theme found in $CODEX_HOME/themes/default-theme.toml
-  - Resolve aliases with inheritance order: active theme -> `_category-lexicons.toml` -> `_base-aliases.toml`.
+  - Resolve aliases with inheritance order: active theme -> category lexicon from `theme.category` in `_category-lexicons.toml` -> `_base-aliases.toml`.
+  - Runtime alias resolution sequence:
+    1. Determine effective temperature (`Theme temperature` override -> numeric mapping -> `theme.default_temperature` -> `high`).
+    2. Read key from `[presentation_aliases_by_temperature.<effective_temperature>]` when present.
+    3. Otherwise read key from `presentation_aliases` in active theme.
+    4. Otherwise read category preference from `_category-lexicons.toml` using `theme.category`.
+    5. Otherwise read fallback from `_base-aliases.toml`.
+    6. If still unresolved, keep literal canonical phrasing.
   - Enforce canonical coverage for role singular/plural keys and core narration keys.
   - Avoid ambiguous filler wording and banned sexual/non-consensual phrasing in generated narration.
 - Runtime controls:
@@ -106,5 +113,6 @@ Dry-run output contract:
 Execution defaults:
 - Prefer spawning sub-agents for medium or large tasks.
 - For trivial tasks, execute directly and skip delegation overhead.
+- Use delegation defaults: exploration -> `explorer`, setup -> `repo_prep`, implementation -> `worker`/`senior_dev`, review -> `reviewer`, verification -> `verifier`, testing -> `tester`, security -> `security_reviewer`, performance -> `performance_reviewer`, docs -> `documentation`.
 - If instructions conflict, prioritize user intent, correctness, and safety.
 """

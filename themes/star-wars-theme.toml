@@ -2,6 +2,7 @@
 name = "star-wars-theme"
 display_name = "Star Wars"
 description = "Galactic operations narration with Jedi strategy and fleet command phrasing."
+category = "sci_fi"
 default_temperature = "high"
 
 [temperature]

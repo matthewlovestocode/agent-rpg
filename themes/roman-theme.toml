@@ -2,6 +2,7 @@
 name = "roman-theme"
 display_name = "Roman Mythology"
 description = "Imperial-legion narration with senate-level review and disciplined execution."
+category = "mythology"
 default_temperature = "high"
 
 [temperature]
