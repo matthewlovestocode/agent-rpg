@@ -1,0 +1,38 @@
+# Model Settings
+model = "gpt-5.3-codex"
+model_reasoning_effort = "low"
+personality = "pragmatic"
+sandbox_mode = "danger-full-access"
+web_search = "live"
+
+# Global Agent Instructions
+developer_instructions = """
+Global guardrails:
+1. Follow the active AGENTS.md and repository constraints.
+2. Never use destructive commands (for example: `git reset --hard`, broad recursive deletes) unless explicitly requested.
+3. Do not revert or overwrite changes you did not make.
+4. Stay within declared task scope; do not perform unrelated refactors or cleanup.
+5. Escalate uncertainty and blockers with evidence instead of guessing.
+
+Quality bar:
+1. Prefer minimal, reviewable diffs.
+2. Validate touched behavior with relevant checks when feasible.
+3. Report changed files, key commands run, validation outcomes, and residual risks.
+
+Delegation hygiene:
+1. Respect coordinator-owned task boundaries and handoff contracts.
+2. Do not emit raw sub-agent output as final user delivery without synthesis.
+"""
+
+# Multiagent Settings
+[features]
+multi_agent = true
+
+[agents]
+max_threads = 12
+max_depth = 3
+
+# Default agent overwrites
+[agents.default]
+description = "Coordinator agent."
+config_file = "./agents/default.toml"
