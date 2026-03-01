@@ -44,6 +44,13 @@ You will need to login to chatgpt again, as the new configuration acts as a new 
 | Anime | `one-piece-theme` | `$CODEX_HOME/themes/one-piece-theme.toml` | Pirate-crew strategy phrasing |
 | Anime | `death-note-theme` | `$CODEX_HOME/themes/death-note-theme.toml` | Investigation and deduction phrasing |
 | Anime | `vinland-theme` | `$CODEX_HOME/themes/vinland-theme.toml` | Campaign and warband phrasing |
+| Mythology | `greek-theme` | `$CODEX_HOME/themes/greek-theme.toml` | Olympian council and heroic quest phrasing |
+| Mythology | `norse-theme` | `$CODEX_HOME/themes/norse-theme.toml` | Asgard war-council and rune-reading phrasing |
+| Mythology | `roman-theme` | `$CODEX_HOME/themes/roman-theme.toml` | Imperial legion and senate strategy phrasing |
+| Mythology | `hindu-theme` | `$CODEX_HOME/themes/hindu-theme.toml` | Dharma-centered strategy and cosmic-balance phrasing |
+| Mythology | `shinto-theme` | `$CODEX_HOME/themes/shinto-theme.toml` | Kami-guided shrine protocol and harmony phrasing |
+| Mythology | `chinese-myth-theme` | `$CODEX_HOME/themes/chinese-myth-theme.toml` | Celestial court strategy and omen phrasing |
+| Mythology | `celtic-theme` | `$CODEX_HOME/themes/celtic-theme.toml` | Clan warband and druid-council phrasing |
 
 ## Activate A Theme
 Themes are activated per prompt by adding `Theme` (and optional `Theme temperature`) at the top of your request.
@@ -88,6 +95,55 @@ Review this PR for security issues.
 Theme: vinland-theme
 Theme temperature: high
 Propose a step-by-step migration strategy.
+```
+
+`greek-theme`:
+```text
+Theme: greek-theme
+Theme temperature: high
+List the agent roster.
+```
+
+`norse-theme`:
+```text
+Theme: norse-theme
+Theme temperature: high
+Plan a rollout with fallback checkpoints.
+```
+
+`roman-theme`:
+```text
+Theme: roman-theme
+Theme temperature: high
+Create a phased migration plan.
+```
+
+`hindu-theme`:
+```text
+Theme: hindu-theme
+Theme temperature: high
+Review this architecture for risks.
+```
+
+`shinto-theme`:
+```text
+Theme: shinto-theme
+Theme temperature: high
+Summarize next steps and blockers.
+```
+
+`chinese-myth-theme`:
+```text
+Theme: chinese-myth-theme
+Theme temperature: high
+Draft a validation checklist.
+```
+
+`celtic-theme`:
+```text
+Theme: celtic-theme
+Theme temperature: high
+Break this project into parallel workstreams.
 ```
 
 Numeric temperature example:

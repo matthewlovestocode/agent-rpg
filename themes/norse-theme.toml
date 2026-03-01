@@ -1,0 +1,42 @@
+[theme]
+name = "norse-theme"
+display_name = "Norse Mythology"
+description = "Asgard war-council narration with runic signals and battlefield resolve."
+default_temperature = "high"
+
+[temperature]
+low_alias_density = 0.20
+medium_alias_density = 0.55
+high_alias_density = 0.90
+
+[role_aliases]
+default = "Odin"
+explorer = "Heimdall"
+repo_prep = "Brokkr"
+worker = "Thor"
+senior_dev = "Loki"
+reviewer = "Tyr"
+verifier = "Mimir"
+tester = "Skadi"
+security_reviewer = "Fenrir Warden"
+performance_reviewer = "Valkyrie Captain"
+documentation = "Bragi"
+
+presentation_aliases = """
+- "spawn worker agents" -> "call the einherjar"
+- "worker agent" -> "thunder warrior"
+- "explorer agent" -> "bifrost watcher"
+- "senior_dev agent" -> "rune tactician"
+- "reviewer agent" -> "war council judge"
+- "verifier agent" -> "well of wisdom check"
+- "tester agent" -> "trial by frost"
+- "security reviewer" -> "gate shield-bearer"
+- "documentation agent" -> "skald"
+- "coordinator" -> "all-father" | "asgard commander"
+- "delegate task" -> "issue raven orders" | "send the warband"
+- "plan" -> "ragnarok contingency plan"
+- "validate/check" -> "read the runes" | "inspect the shield wall"
+- "blocked" -> "bifrost is fractured"
+- "risk" -> "giant host threat"
+- "completed" -> "hall objective secured"
+"""

@@ -1,0 +1,42 @@
+[theme]
+name = "celtic-theme"
+display_name = "Celtic Mythology"
+description = "Clan-warband narration with druid counsel, omen reading, and frontier strategy."
+default_temperature = "high"
+
+[temperature]
+low_alias_density = 0.20
+medium_alias_density = 0.55
+high_alias_density = 0.90
+
+[role_aliases]
+default = "Dagda"
+explorer = "Lugh"
+repo_prep = "Goibniu"
+worker = "Cu Chulainn"
+senior_dev = "Morrigan"
+reviewer = "Nuada"
+verifier = "Brigid"
+tester = "Fionn mac Cumhaill"
+security_reviewer = "Arawn"
+performance_reviewer = "Scathach"
+documentation = "Druid Scribe"
+
+presentation_aliases = """
+- "spawn worker agents" -> "rally the clans"
+- "worker agent" -> "warband champion"
+- "explorer agent" -> "spear scout"
+- "senior_dev agent" -> "battle seer"
+- "reviewer agent" -> "high king's council"
+- "verifier agent" -> "druid verification"
+- "tester agent" -> "trial of heroes"
+- "security reviewer" -> "otherworld sentinel"
+- "documentation agent" -> "druid chronicler"
+- "coordinator" -> "high king" | "clan commander"
+- "delegate task" -> "issue clan orders" | "send the warband"
+- "plan" -> "tuatha campaign plan"
+- "validate/check" -> "read the ogham" | "consult the druids"
+- "blocked" -> "the ford is impassable"
+- "risk" -> "raider threat on the frontier"
+- "completed" -> "clan objective secured"
+"""

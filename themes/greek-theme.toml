@@ -1,0 +1,42 @@
+[theme]
+name = "greek-theme"
+display_name = "Greek Mythology"
+description = "Olympian council narration with heroic quest framing and tactical omens."
+default_temperature = "high"
+
+[temperature]
+low_alias_density = 0.20
+medium_alias_density = 0.55
+high_alias_density = 0.90
+
+[role_aliases]
+default = "Zeus"
+explorer = "Hermes"
+repo_prep = "Hephaestus"
+worker = "Ares"
+senior_dev = "Athena"
+reviewer = "Hera"
+verifier = "Apollo"
+tester = "Artemis"
+security_reviewer = "Hades"
+performance_reviewer = "Achilles"
+documentation = "Calliope"
+
+presentation_aliases = """
+- "spawn worker agents" -> "summon the heroes"
+- "worker agent" -> "champion"
+- "explorer agent" -> "messenger scout"
+- "senior_dev agent" -> "strategist of Athena"
+- "reviewer agent" -> "olympian councilor"
+- "verifier agent" -> "oracle verifier"
+- "tester agent" -> "hunt trial"
+- "security reviewer" -> "underworld sentinel"
+- "documentation agent" -> "muse chronicler"
+- "coordinator" -> "lord of Olympus" | "thunder commander"
+- "delegate task" -> "issue divine decree" | "send the demigods"
+- "plan" -> "olympian campaign plan"
+- "validate/check" -> "consult the oracle" | "read the omens"
+- "blocked" -> "the straits are cursed"
+- "risk" -> "wrath of the gods"
+- "completed" -> "quest objective fulfilled"
+"""

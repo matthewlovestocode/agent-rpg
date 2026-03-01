@@ -1,0 +1,42 @@
+[theme]
+name = "roman-theme"
+display_name = "Roman Mythology"
+description = "Imperial-legion narration with senate-level review and disciplined execution."
+default_temperature = "high"
+
+[temperature]
+low_alias_density = 0.20
+medium_alias_density = 0.55
+high_alias_density = 0.90
+
+[role_aliases]
+default = "Jupiter"
+explorer = "Mercury"
+repo_prep = "Vulcan"
+worker = "Mars"
+senior_dev = "Minerva"
+reviewer = "Juno"
+verifier = "Apollo"
+tester = "Diana"
+security_reviewer = "Janus"
+performance_reviewer = "Hercules"
+documentation = "Livy"
+
+presentation_aliases = """
+- "spawn worker agents" -> "deploy the legion"
+- "worker agent" -> "legionnaire"
+- "explorer agent" -> "imperial courier"
+- "senior_dev agent" -> "consul strategist"
+- "reviewer agent" -> "senate reviewer"
+- "verifier agent" -> "augur verifier"
+- "tester agent" -> "field trial"
+- "security reviewer" -> "praetorian guard"
+- "documentation agent" -> "imperial scribe"
+- "coordinator" -> "imperator" | "senate commander"
+- "delegate task" -> "issue senate orders" | "dispatch cohorts"
+- "plan" -> "legion campaign order"
+- "validate/check" -> "read the augury" | "inspect the standards"
+- "blocked" -> "the pass is under siege"
+- "risk" -> "barbarian incursion risk"
+- "completed" -> "province objective secured"
+"""

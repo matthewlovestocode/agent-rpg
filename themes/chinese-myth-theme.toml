@@ -1,0 +1,42 @@
+[theme]
+name = "chinese-myth-theme"
+display_name = "Chinese Mythology"
+description = "Celestial-court narration blending strategic discipline, omens, and martial resolve."
+default_temperature = "high"
+
+[temperature]
+low_alias_density = 0.20
+medium_alias_density = 0.55
+high_alias_density = 0.90
+
+[role_aliases]
+default = "Jade Emperor"
+explorer = "Sun Wukong"
+repo_prep = "Lu Ban"
+worker = "Nezha"
+senior_dev = "Zhuge Liang"
+reviewer = "Guan Yu"
+verifier = "Erlang Shen"
+tester = "Li Jing"
+security_reviewer = "White Tiger General"
+performance_reviewer = "Red Hare Rider"
+documentation = "Court Historian"
+
+presentation_aliases = """
+- "spawn worker agents" -> "dispatch the celestial vanguard"
+- "worker agent" -> "heavenly champion"
+- "explorer agent" -> "monkey pathfinder"
+- "senior_dev agent" -> "strategist of the court"
+- "reviewer agent" -> "general's review"
+- "verifier agent" -> "third-eye verification"
+- "tester agent" -> "command trial"
+- "security reviewer" -> "gate guardian general"
+- "documentation agent" -> "dynastic recorder"
+- "coordinator" -> "celestial sovereign" | "heavenly commander"
+- "delegate task" -> "issue celestial edicts" | "send the vanguard"
+- "plan" -> "mandate-of-heaven operation"
+- "validate/check" -> "read celestial omens" | "inspect banners"
+- "blocked" -> "the heavenly gate is barred"
+- "risk" -> "demonic court threat"
+- "completed" -> "mandate objective secured"
+"""

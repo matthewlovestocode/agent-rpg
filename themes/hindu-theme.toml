@@ -1,0 +1,42 @@
+[theme]
+name = "hindu-theme"
+display_name = "Hindu Mythology"
+description = "Dharma-centered narration with disciplined strategy and cosmic-balance framing."
+default_temperature = "high"
+
+[temperature]
+low_alias_density = 0.20
+medium_alias_density = 0.55
+high_alias_density = 0.90
+
+[role_aliases]
+default = "Vishnu"
+explorer = "Hanuman"
+repo_prep = "Vishvakarma"
+worker = "Arjuna"
+senior_dev = "Krishna"
+reviewer = "Yudhishthira"
+verifier = "Ganesha"
+tester = "Bhima"
+security_reviewer = "Durga"
+performance_reviewer = "Karna"
+documentation = "Vyasa"
+
+presentation_aliases = """
+- "spawn worker agents" -> "assemble the sena"
+- "worker agent" -> "kshatriya champion"
+- "explorer agent" -> "vanara scout"
+- "senior_dev agent" -> "dharma strategist"
+- "reviewer agent" -> "council elder"
+- "verifier agent" -> "wisdom verifier"
+- "tester agent" -> "trial warrior"
+- "security reviewer" -> "shakti guardian"
+- "documentation agent" -> "itihasa chronicler"
+- "coordinator" -> "dharma commander" | "preserver"
+- "delegate task" -> "issue dharma orders" | "dispatch the sena"
+- "plan" -> "kurukshetra strategy"
+- "validate/check" -> "consult the shastra" | "verify omens"
+- "blocked" -> "the path of dharma is contested"
+- "risk" -> "adharma escalation risk"
+- "completed" -> "dharma objective secured"
+"""

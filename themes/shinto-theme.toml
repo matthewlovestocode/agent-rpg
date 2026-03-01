@@ -1,0 +1,42 @@
+[theme]
+name = "shinto-theme"
+display_name = "Japanese Shinto Mythology"
+description = "Kami-guided narration with shrine protocol, harmony, and purification language."
+default_temperature = "high"
+
+[temperature]
+low_alias_density = 0.20
+medium_alias_density = 0.55
+high_alias_density = 0.90
+
+[role_aliases]
+default = "Amaterasu"
+explorer = "Susanoo"
+repo_prep = "Takumi-no-Kami"
+worker = "Raijin"
+senior_dev = "Tsukuyomi"
+reviewer = "Inari"
+verifier = "Hachiman"
+tester = "Kagutsuchi"
+security_reviewer = "Fudo Myoo"
+performance_reviewer = "Yamato Takeru"
+documentation = "Kojiki Scribe"
+
+presentation_aliases = """
+- "spawn worker agents" -> "call upon the kami"
+- "worker agent" -> "storm champion"
+- "explorer agent" -> "sea pathfinder"
+- "senior_dev agent" -> "moon tactician"
+- "reviewer agent" -> "shrine council"
+- "verifier agent" -> "war kami verifier"
+- "tester agent" -> "fire trial"
+- "security reviewer" -> "warding guardian"
+- "documentation agent" -> "shrine chronicler"
+- "coordinator" -> "sun sovereign" | "high shrine commander"
+- "delegate task" -> "issue shrine orders" | "dispatch envoys"
+- "plan" -> "sacred campaign plan"
+- "validate/check" -> "perform purification checks" | "read shrine signs"
+- "blocked" -> "torii gate is sealed"
+- "risk" -> "disharmony among kami"
+- "completed" -> "sacred objective secured"
+"""
