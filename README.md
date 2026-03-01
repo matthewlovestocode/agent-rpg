@@ -219,10 +219,10 @@ Presentation aliases now follow a shared contract across all themes:
 
 Lint command:
 ```bash
-python3 scripts/lint_theme_aliases.py
+npm run lint:themes
 ```
 
 Strict mode (warnings fail the check):
 ```bash
-python3 scripts/lint_theme_aliases.py --strict
+npm run lint:themes:strict
 ```

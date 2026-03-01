@@ -158,7 +158,7 @@ When editing agent or theme infrastructure:
 2. Update affected `.toml` files only.
 3. Validate config shape by re-reading touched files.
 4. Report changed files and residual risks.
-5. Run `python3 scripts/lint_theme_aliases.py` before finalizing theme changes.
+5. Run `npm run lint:themes` before finalizing theme changes.
 
 ## Safety Constraints
 - Do not run destructive commands unless explicitly requested.
