@@ -8,6 +8,7 @@ type Dict = Record<string, unknown>;
 
 const CANONICAL_ROLES = [
   "default",
+  "analyzer",
   "explorer",
   "repo_prep",
   "worker",
@@ -22,6 +23,8 @@ const CANONICAL_ROLES = [
 
 const REQUIRED_ALIAS_KEYS = [
   "spawn worker agents",
+  "analyzer agent",
+  "analyzer agents",
   "worker agent",
   "worker agents",
   "explorer agent",
@@ -53,7 +56,10 @@ const REQUIRED_ALIAS_KEYS = [
   "parallel_fanout",
   "conflict_detected",
   "evidence_request",
-  "final_synthesis"
+  "final_synthesis",
+  "analysis_pass_start",
+  "hypothesis",
+  "contradiction_map"
 ];
 
 const BANNED_PATTERNS = [/\bnon[- ]?consen/i, /\bsexual\b/i, /\berotic\b/i, /\bfetish\b/i];
@@ -156,7 +162,10 @@ function lintTheme(
         "parallel_fanout",
         "conflict_detected",
         "evidence_request",
-        "final_synthesis"
+        "final_synthesis",
+        "analysis_pass_start",
+        "hypothesis",
+        "contradiction_map"
       ]) {
         if (!(key in table)) warnings.push(`${level} tier missing key '${key}'`);
       }
@@ -174,7 +183,16 @@ function lintTheme(
   const variants = (data.alias_variants as Dict) ?? {};
   const effectiveVariants = Object.keys(variants).length > 0 ? variants : baseVariants;
   if (Object.keys(effectiveVariants).length > 0) {
-    for (const key of ["delegation_start", "parallel_fanout", "conflict_detected", "evidence_request", "final_synthesis"]) {
+    for (const key of [
+      "delegation_start",
+      "parallel_fanout",
+      "conflict_detected",
+      "evidence_request",
+      "final_synthesis",
+      "analysis_pass_start",
+      "hypothesis",
+      "contradiction_map"
+    ]) {
       if (!(key in effectiveVariants)) warnings.push(`alias_variants.${key} is recommended for immersion diversity`);
     }
   }

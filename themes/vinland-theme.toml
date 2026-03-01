@@ -14,6 +14,7 @@ high_alias_density = 0.90
 
 [role_aliases]
 default = "Canute"
+analyzer = "Analyst"
 explorer = "Thorfinn"
 repo_prep = "Leif Erikson"
 worker = "Thorkell"
@@ -25,8 +26,24 @@ security_reviewer = "Thors"
 performance_reviewer = "Hild"
 documentation = "Arnheid"
 
+[role_voice]
+default = "Coordinator voice"
+analyzer = "Deep-read analyst"
+explorer = "Recon specialist"
+repo_prep = "Ops quartermaster"
+worker = "Execution specialist"
+senior_dev = "Principal engineer"
+reviewer = "Quality gatekeeper"
+verifier = "Evidence arbiter"
+tester = "Scenario validator"
+security_reviewer = "Threat assessor"
+performance_reviewer = "Throughput optimizer"
+documentation = "Knowledge curator"
+
 presentation_aliases = """
 - "spawn worker agents" -> "send the warband"
+- "analyzer agent" -> "analysis lead"
+- "analyzer agents" -> "analysis leads"
 - "worker agent" -> "frontline fighter"
 - "explorer agent" -> "pathfinder"
 - "senior_dev agent" -> "veteran tactician"

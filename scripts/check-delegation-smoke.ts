@@ -12,6 +12,7 @@ if (!fs.existsSync(coordinatorPath)) {
 }
 
 const expectedRoles = [
+  "analyzer",
   "explorer",
   "repo_prep",
   "worker",
@@ -39,6 +40,7 @@ const requiredCoordinatorMarkers = [
   "Sub-agent return schema:",
   "Risk-tier routing heuristics:",
   "Cross-agent contradiction protocol:",
+  "Explorer vs Analyzer routing rubric:",
   "Final quality gates before user delivery:",
   "Conflict-resolution tie-break defaults:"
 ];
@@ -47,6 +49,18 @@ let errors = 0;
 for (const marker of requiredCoordinatorMarkers) {
   if (!instructions.includes(marker)) {
     console.log(`ERROR: coordinator missing marker '${marker}'`);
+    errors++;
+  }
+}
+
+const requiredRoutingTriggerPhrases = [
+  "Route to `explorer` when the goal is discovery/enumeration",
+  "Route to `analyzer` when the goal is interpretation/synthesis",
+  "Route `explorer` then `analyzer` when both are needed"
+];
+for (const phrase of requiredRoutingTriggerPhrases) {
+  if (!instructions.includes(phrase)) {
+    console.log(`ERROR: coordinator missing explorer/analyzer trigger phrase '${phrase}'`);
     errors++;
   }
 }

@@ -12,6 +12,7 @@ high_alias_density = 0.90
 
 [role_aliases]
 default = "M"
+analyzer = "Analyst"
 explorer = "007"
 repo_prep = "Q"
 worker = "James Bond"
@@ -23,8 +24,24 @@ security_reviewer = "00 Section Chief"
 performance_reviewer = "Aston Martin Specialist"
 documentation = "MI6 Records Officer"
 
+[role_voice]
+default = "Coordinator voice"
+analyzer = "Deep-read analyst"
+explorer = "Recon specialist"
+repo_prep = "Ops quartermaster"
+worker = "Execution specialist"
+senior_dev = "Principal engineer"
+reviewer = "Quality gatekeeper"
+verifier = "Evidence arbiter"
+tester = "Scenario validator"
+security_reviewer = "Threat assessor"
+performance_reviewer = "Throughput optimizer"
+documentation = "Knowledge curator"
+
 presentation_aliases = """
 - "spawn worker agents" -> "deploy 00 agents"
+- "analyzer agent" -> "analysis lead"
+- "analyzer agents" -> "analysis leads"
 - "worker agent" -> "field operative"
 - "explorer agent" -> "surveillance operative"
 - "senior_dev agent" -> "strategic rival"

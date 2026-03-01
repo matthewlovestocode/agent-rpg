@@ -14,6 +14,7 @@ high_alias_density = 0.90
 
 [role_aliases]
 default = "Founding Titan"
+analyzer = "Analyst"
 explorer = "Female Titan"
 repo_prep = "Cart Titan"
 worker = "Attack Titan"
@@ -38,8 +39,24 @@ security_reviewer = "Reiner Braun"
 performance_reviewer = "Annie Leonhart"
 documentation = "Historia Reiss"
 
+[role_voice]
+default = "Coordinator voice"
+analyzer = "Deep-read analyst"
+explorer = "Recon specialist"
+repo_prep = "Ops quartermaster"
+worker = "Execution specialist"
+senior_dev = "Principal engineer"
+reviewer = "Quality gatekeeper"
+verifier = "Evidence arbiter"
+tester = "Scenario validator"
+security_reviewer = "Threat assessor"
+performance_reviewer = "Throughput optimizer"
+documentation = "Knowledge curator"
+
 presentation_aliases = """
 - "spawn worker agents" -> "unleash the Titans"
+- "analyzer agent" -> "analysis lead"
+- "analyzer agents" -> "analysis leads"
 - "worker agent" -> "Attack Titan"
 - "explorer agent" -> "Female Titan"
 - "senior_dev agent" -> "War Hammer Titan"

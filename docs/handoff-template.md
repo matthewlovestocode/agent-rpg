@@ -65,3 +65,34 @@ return_format:
   confidence: high|medium|low
   handoff_trace: goal/scope/files/constraints/done_criteria honored or mismatch
 ```
+
+## Analyzer Handoff Snippet
+Use this when delegating deep-read interpretation/synthesis to `analyzer`.
+
+```text
+goal: Produce deep-read synthesis and ambiguity reduction before implementation.
+scope:
+  in:
+    - selected code/config/docs paths
+  out:
+    - implementation changes unless explicitly requested
+files:
+  - <target files/directories>
+constraints:
+  - evidence-backed interpretation only
+  - no scope expansion without coordinator approval
+  - call out contradictions explicitly
+execution_mode: dry_run|apply
+done_criteria:
+  - cross-file intent summary produced
+  - contradiction map produced (if conflicts exist)
+  - assumptions and risks explicitly listed
+return_format:
+  status: completed|blocked|failed
+  summary: concise result statement
+  changes: files/areas touched or inspected
+  evidence: commands, outputs, and references
+  risks: residual risks or regressions
+  next_action: recommended follow-up
+  confidence: high|medium|low
+```

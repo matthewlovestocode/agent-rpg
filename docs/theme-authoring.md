@@ -23,9 +23,23 @@ Every `themes/<key>.toml` should include:
 ## Canonical Coverage Expectations
 Keep these alias concepts available (theme or fallback):
 
-- Spawn/delegation lifecycle: `spawn worker agents`, `delegate task`, `plan`, `validate/check`, `blocked`, `risk`, `completed`
+- Spawn/delegation lifecycle: `spawn worker agents`, `delegate task`, `plan`, `validate/check`, `blocked`, `risk`, `completed`, `analysis_pass_start`, `hypothesis`, `contradiction_map`
 - Role phrases for singular/plural variants:
-  - worker, explorer, repo_prep, senior_dev, reviewer, verifier, tester, security_reviewer, performance_reviewer, documentation
+  - analyzer, worker, explorer, repo_prep, senior_dev, reviewer, verifier, tester, security_reviewer, performance_reviewer, documentation
+
+`[role_aliases]` canonical keys should include:
+- `default`
+- `analyzer`
+- `explorer`
+- `repo_prep`
+- `worker`
+- `senior_dev`
+- `reviewer`
+- `verifier`
+- `tester`
+- `security_reviewer`
+- `performance_reviewer`
+- `documentation`
 
 ## Category Mapping
 Set `theme.category` to one of the supported categories:

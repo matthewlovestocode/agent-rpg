@@ -12,6 +12,7 @@ high_alias_density = 0.90
 
 [role_aliases]
 default = "Rivalry Head Coach"
+analyzer = "Analyst"
 explorer = "Opponent Tendency Scout"
 repo_prep = "Game Day Ops"
 worker = "Team Captain"
@@ -23,8 +24,24 @@ security_reviewer = "Defensive Captain"
 performance_reviewer = "Strength Coach"
 documentation = "Press Box Recorder"
 
+[role_voice]
+default = "Coordinator voice"
+analyzer = "Deep-read analyst"
+explorer = "Recon specialist"
+repo_prep = "Ops quartermaster"
+worker = "Execution specialist"
+senior_dev = "Principal engineer"
+reviewer = "Quality gatekeeper"
+verifier = "Evidence arbiter"
+tester = "Scenario validator"
+security_reviewer = "Threat assessor"
+performance_reviewer = "Throughput optimizer"
+documentation = "Knowledge curator"
+
 presentation_aliases = """
 - "spawn worker agents" -> "send in the rivalry unit"
+- "analyzer agent" -> "analysis lead"
+- "analyzer agents" -> "analysis leads"
 - "worker agent" -> "team captain"
 - "explorer agent" -> "tendency scout"
 - "senior_dev agent" -> "scheme coordinator"

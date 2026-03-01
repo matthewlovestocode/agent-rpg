@@ -304,6 +304,7 @@ Use these docs to keep multi-agent handoffs consistent:
   - `docs/playbooks/docs-only.md`
   - `docs/playbooks/security-hotfix.md`
   - `docs/playbooks/repo-prep-scaffold.md`
+  - `docs/playbooks/deep-read-analysis.md`
 
 Repo prep integration checks:
 - `npm run repo-prep:check` validates repo-prep scaffold profile, JSONL contract, handoff trace requirement, and idempotent write guardrails.

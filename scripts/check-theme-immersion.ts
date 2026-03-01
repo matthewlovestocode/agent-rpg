@@ -17,7 +17,10 @@ const REQUIRED_HIGH_KEYS = [
   "parallel_fanout",
   "conflict_detected",
   "evidence_request",
-  "final_synthesis"
+  "final_synthesis",
+  "analysis_pass_start",
+  "hypothesis",
+  "contradiction_map"
 ];
 
 if (!fs.existsSync(BASE_PATH)) {
@@ -92,8 +95,8 @@ for (const file of themeFiles) {
 
   const roleVoice = ((doc.role_voice as Dict) ?? {}) as Dict;
   if (Object.keys(roleVoice).length === 0) {
-    console.log(`WARN:  ${file} has no [role_voice] table (optional, improves immersion)`);
-    warnings++;
+    console.log(`ERROR: ${file} missing required [role_voice] table`);
+    errors++;
   }
 }
 

@@ -32,7 +32,7 @@ npm run ops:check
 2. Include required keys:
    - `[theme]`: `name`, `display_name`, `description`, `default_temperature`, `category`
    - `[temperature]`: alias density hints
-   - `[role_aliases]`
+   - `[role_aliases]` covering: `default`, `analyzer`, `explorer`, `repo_prep`, `worker`, `senior_dev`, `reviewer`, `verifier`, `tester`, `security_reviewer`, `performance_reviewer`, `documentation`
    - `presentation_aliases`
 3. Keep `default_temperature = "high"` unless explicitly justified.
 4. Run:

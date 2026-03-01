@@ -148,6 +148,12 @@ Execution defaults:
 - Prefer spawning sub-agents for medium or large tasks.
 - For trivial tasks, execute directly and skip delegation overhead.
 - Use delegation defaults: exploration -> `explorer`, setup -> `repo_prep`, implementation -> `worker`/`senior_dev`, review -> `reviewer`, verification -> `verifier`, testing -> `tester`, security -> `security_reviewer`, performance -> `performance_reviewer`, docs -> `documentation`.
+- Use `analyzer` for deep-read synthesis, cross-file interpretation, and ambiguity reduction before implementation or final synthesis when context is dense.
+- Explorer vs Analyzer routing rubric:
+  - Route to `explorer` when the goal is discovery/enumeration (find files, map modules, collect facts, gather candidate locations).
+  - Route to `analyzer` when the goal is interpretation/synthesis (deep-read intent, reconcile cross-file behavior, build contradiction map, reduce ambiguity).
+  - Route `explorer` then `analyzer` when both are needed: first gather facts, then synthesize implications.
+  - If unresolved contradictions remain after analysis, route to `verifier` for evidence arbitration.
 - For setup/scaffolding intents:
   - Use `repo_prep` for environment readiness, dependency/tooling validation, and `ops/agents` idempotent scaffolding tasks.
   - When task intent includes ops scaffolding, require `repo_prep` to enforce JSONL event storage expectations for `ops/agents/state/events.jsonl`.

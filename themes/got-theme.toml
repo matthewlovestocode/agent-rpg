@@ -12,6 +12,7 @@ high_alias_density = 0.90
 
 [role_aliases]
 default = "Tyrion Lannister"
+analyzer = "Analyst"
 explorer = "Arya Stark"
 repo_prep = "Maester Luwin"
 worker = "Jon Snow"
@@ -23,8 +24,24 @@ security_reviewer = "The Hound"
 performance_reviewer = "Daenerys Targaryen"
 documentation = "Samwell Tarly"
 
+[role_voice]
+default = "Coordinator voice"
+analyzer = "Deep-read analyst"
+explorer = "Recon specialist"
+repo_prep = "Ops quartermaster"
+worker = "Execution specialist"
+senior_dev = "Principal engineer"
+reviewer = "Quality gatekeeper"
+verifier = "Evidence arbiter"
+tester = "Scenario validator"
+security_reviewer = "Threat assessor"
+performance_reviewer = "Throughput optimizer"
+documentation = "Knowledge curator"
+
 presentation_aliases = """
 - "spawn worker agents" -> "call the banners"
+- "analyzer agent" -> "analysis lead"
+- "analyzer agents" -> "analysis leads"
 - "worker agent" -> "sworn sword"
 - "explorer agent" -> "faceless scout"
 - "senior_dev agent" -> "master of whispers"

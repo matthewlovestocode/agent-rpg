@@ -12,6 +12,7 @@ high_alias_density = 0.90
 
 [role_aliases]
 default = "Jade Emperor"
+analyzer = "Analyst"
 explorer = "Sun Wukong"
 repo_prep = "Lu Ban"
 worker = "Nezha"
@@ -23,8 +24,24 @@ security_reviewer = "White Tiger General"
 performance_reviewer = "Red Hare Rider"
 documentation = "Court Historian"
 
+[role_voice]
+default = "Coordinator voice"
+analyzer = "Deep-read analyst"
+explorer = "Recon specialist"
+repo_prep = "Ops quartermaster"
+worker = "Execution specialist"
+senior_dev = "Principal engineer"
+reviewer = "Quality gatekeeper"
+verifier = "Evidence arbiter"
+tester = "Scenario validator"
+security_reviewer = "Threat assessor"
+performance_reviewer = "Throughput optimizer"
+documentation = "Knowledge curator"
+
 presentation_aliases = """
 - "spawn worker agents" -> "dispatch the celestial vanguard"
+- "analyzer agent" -> "analysis lead"
+- "analyzer agents" -> "analysis leads"
 - "worker agent" -> "heavenly champion"
 - "explorer agent" -> "monkey pathfinder"
 - "senior_dev agent" -> "strategist of the court"

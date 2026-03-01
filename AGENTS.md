@@ -24,6 +24,7 @@ If instructions conflict, resolve in this order:
 ## Multi-Agent Roster
 Configured roles are:
 - `default` (coordinator)
+- `analyzer`
 - `explorer`
 - `repo_prep`
 - `worker`
@@ -45,6 +46,7 @@ Use this routing matrix as the coordinator default unless user intent requires o
 
 | Task pattern | Primary agent | Common supporting agents |
 |---|---|---|
+| Deep reading, cross-file synthesis, ambiguity reduction | `analyzer` | `explorer`, `verifier` |
 | Repo/file discovery, impact mapping, unknowns | `explorer` | `repo_prep` |
 | Environment setup, dependency/toolchain readiness | `repo_prep` | `explorer` |
 | Scoped implementation | `worker` | `tester`, `verifier` |
@@ -111,6 +113,7 @@ Expected theme keys:
 Required alias keys (directly in theme or inherited fallback):
 - `spawn worker agents`
 - All agent-role singular/plural keys:
+  - `analyzer agent`, `analyzer agents`
   - `worker agent`, `worker agents`
   - `explorer agent`, `explorer agents`
   - `repo_prep agent`, `repo_prep agents`
@@ -121,7 +124,7 @@ Required alias keys (directly in theme or inherited fallback):
   - `security_reviewer agent`, `security_reviewer agents`
   - `performance_reviewer agent`, `performance_reviewer agents`
   - `documentation agent`, `documentation agents`
-- Core narration keys: `coordinator`, `delegate task`, `plan`, `validate/check`, `blocked`, `risk`, `completed`
+- Core narration keys: `coordinator`, `delegate task`, `plan`, `validate/check`, `blocked`, `risk`, `completed`, `analysis_pass_start`, `hypothesis`, `contradiction_map`
 
 Hard rules:
 1. Never change execution semantics because of theme text.

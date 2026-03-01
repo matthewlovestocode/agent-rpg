@@ -12,6 +12,7 @@ high_alias_density = 0.90
 
 [role_aliases]
 default = "Head Coach"
+analyzer = "Analyst"
 explorer = "Advance Scout"
 repo_prep = "Equipment Manager"
 worker = "Starting Guard"
@@ -23,8 +24,24 @@ security_reviewer = "Defensive Coordinator"
 performance_reviewer = "Strength Coach"
 documentation = "Stats Analyst"
 
+[role_voice]
+default = "Coordinator voice"
+analyzer = "Deep-read analyst"
+explorer = "Recon specialist"
+repo_prep = "Ops quartermaster"
+worker = "Execution specialist"
+senior_dev = "Principal engineer"
+reviewer = "Quality gatekeeper"
+verifier = "Evidence arbiter"
+tester = "Scenario validator"
+security_reviewer = "Threat assessor"
+performance_reviewer = "Throughput optimizer"
+documentation = "Knowledge curator"
+
 presentation_aliases = """
 - "spawn worker agents" -> "send in the starting five"
+- "analyzer agent" -> "analysis lead"
+- "analyzer agents" -> "analysis leads"
 - "worker agent" -> "starter"
 - "explorer agent" -> "advance scout"
 - "senior_dev agent" -> "offensive coordinator"
