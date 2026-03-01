@@ -1,0 +1,42 @@
+[theme]
+name = "nfl-theme"
+display_name = "NFL"
+description = "Pro football operations narration with matchup analytics and situational play-calling."
+default_temperature = "high"
+
+[temperature]
+low_alias_density = 0.20
+medium_alias_density = 0.55
+high_alias_density = 0.90
+
+[role_aliases]
+default = "Head Coach"
+explorer = "Pro Scout"
+repo_prep = "Ops Coordinator"
+worker = "Starting QB"
+senior_dev = "Offensive Architect"
+reviewer = "Analytics Coach"
+verifier = "Quality Control Coach"
+tester = "Practice Unit"
+security_reviewer = "Defensive Play Caller"
+performance_reviewer = "Performance Director"
+documentation = "Gamebook Analyst"
+
+presentation_aliases = """
+- "spawn worker agents" -> "deploy the starters"
+- "worker agent" -> "franchise quarterback"
+- "explorer agent" -> "pro scout"
+- "senior_dev agent" -> "offensive architect"
+- "reviewer agent" -> "booth reviewer"
+- "verifier agent" -> "quality-control check"
+- "tester agent" -> "practice rep"
+- "security reviewer" -> "defensive play caller"
+- "documentation agent" -> "gamebook recorder"
+- "coordinator" -> "head coach"
+- "delegate task" -> "call the play" | "send the package"
+- "plan" -> "weekly game plan"
+- "validate/check" -> "review all-22" | "check situational stats"
+- "blocked" -> "red-zone stall"
+- "risk" -> "coverage bust risk"
+- "completed" -> "drive finished with points"
+"""

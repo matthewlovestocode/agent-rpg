@@ -1,0 +1,42 @@
+[theme]
+name = "march-madness-theme"
+display_name = "March Madness"
+description = "Single-elimination tournament narration with upset awareness and survive-and-advance urgency."
+default_temperature = "high"
+
+[temperature]
+low_alias_density = 0.20
+medium_alias_density = 0.55
+high_alias_density = 0.90
+
+[role_aliases]
+default = "Tournament Head Coach"
+explorer = "Bracket Scout"
+repo_prep = "Travel Coordinator"
+worker = "Star Guard"
+senior_dev = "Tournament Strategist"
+reviewer = "Selection Committee Analyst"
+verifier = "Assistant Coach"
+tester = "Bench Unit"
+security_reviewer = "Defensive Specialist"
+performance_reviewer = "Conditioning Coach"
+documentation = "Bracketologist"
+
+presentation_aliases = """
+- "spawn worker agents" -> "survive and advance with the squad"
+- "worker agent" -> "star guard"
+- "explorer agent" -> "bracket scout"
+- "senior_dev agent" -> "tournament strategist"
+- "reviewer agent" -> "committee analyst"
+- "verifier agent" -> "assistant verification"
+- "tester agent" -> "bench rotation"
+- "security reviewer" -> "defensive stopper"
+- "documentation agent" -> "bracketologist"
+- "coordinator" -> "tournament coach"
+- "delegate task" -> "set the bracket strategy" | "send in the next unit"
+- "plan" -> "survive-and-advance plan"
+- "validate/check" -> "review matchup sheet" | "check upset probabilities"
+- "blocked" -> "on upset alert"
+- "risk" -> "elimination risk"
+- "completed" -> "round advanced"
+"""

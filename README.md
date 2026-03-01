@@ -51,6 +51,12 @@ You will need to login to chatgpt again, as the new configuration acts as a new 
 | Mythology | `shinto-theme` | `$CODEX_HOME/themes/shinto-theme.toml` | Kami-guided shrine protocol and harmony phrasing |
 | Mythology | `chinese-myth-theme` | `$CODEX_HOME/themes/chinese-myth-theme.toml` | Celestial court strategy and omen phrasing |
 | Mythology | `celtic-theme` | `$CODEX_HOME/themes/celtic-theme.toml` | Clan warband and druid-council phrasing |
+| Sports | `ncaa-men-basketball-theme` | `$CODEX_HOME/themes/ncaa-men-basketball-theme.toml` | College hoops game-planning and rotation phrasing |
+| Sports | `college-football-theme` | `$CODEX_HOME/themes/college-football-theme.toml` | College football drive scripting and sideline command phrasing |
+| Sports | `nfl-theme` | `$CODEX_HOME/themes/nfl-theme.toml` | Pro football matchup analytics and play-calling phrasing |
+| Sports | `nba-theme` | `$CODEX_HOME/themes/nba-theme.toml` | Pro basketball pace, spacing, and rotation phrasing |
+| Sports | `march-madness-theme` | `$CODEX_HOME/themes/march-madness-theme.toml` | Single-elimination urgency and bracket strategy phrasing |
+| Sports | `rivalry-week-theme` | `$CODEX_HOME/themes/rivalry-week-theme.toml` | Rivalry intensity, momentum swings, and field-position phrasing |
 
 ## Activate A Theme
 Themes are activated per prompt by adding `Theme` (and optional `Theme temperature`) at the top of your request.
@@ -144,6 +150,48 @@ Draft a validation checklist.
 Theme: celtic-theme
 Theme temperature: high
 Break this project into parallel workstreams.
+```
+
+`ncaa-men-basketball-theme`:
+```text
+Theme: ncaa-men-basketball-theme
+Theme temperature: high
+List the agent roster.
+```
+
+`college-football-theme`:
+```text
+Theme: college-football-theme
+Theme temperature: high
+Build a phased execution game plan.
+```
+
+`nfl-theme`:
+```text
+Theme: nfl-theme
+Theme temperature: high
+Review this implementation for execution risk.
+```
+
+`nba-theme`:
+```text
+Theme: nba-theme
+Theme temperature: high
+Suggest rotation-style parallel workstreams.
+```
+
+`march-madness-theme`:
+```text
+Theme: march-madness-theme
+Theme temperature: high
+Prioritize tasks for survive-and-advance delivery.
+```
+
+`rivalry-week-theme`:
+```text
+Theme: rivalry-week-theme
+Theme temperature: high
+Summarize blockers and momentum shifts.
 ```
 
 Numeric temperature example:

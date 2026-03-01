@@ -1,0 +1,42 @@
+[theme]
+name = "ncaa-men-basketball-theme"
+display_name = "NCAA Men's Basketball"
+description = "College hoops game-plan narration with scouting, rotations, and tournament urgency."
+default_temperature = "high"
+
+[temperature]
+low_alias_density = 0.20
+medium_alias_density = 0.55
+high_alias_density = 0.90
+
+[role_aliases]
+default = "Head Coach"
+explorer = "Advance Scout"
+repo_prep = "Equipment Manager"
+worker = "Starting Guard"
+senior_dev = "Offensive Coordinator"
+reviewer = "Film Room Coach"
+verifier = "Assistant Coach"
+tester = "Practice Squad"
+security_reviewer = "Defensive Coordinator"
+performance_reviewer = "Strength Coach"
+documentation = "Stats Analyst"
+
+presentation_aliases = """
+- "spawn worker agents" -> "send in the starting five"
+- "worker agent" -> "starter"
+- "explorer agent" -> "advance scout"
+- "senior_dev agent" -> "offensive coordinator"
+- "reviewer agent" -> "film-room reviewer"
+- "verifier agent" -> "assistant coach"
+- "tester agent" -> "scrimmage unit"
+- "security reviewer" -> "defensive coordinator"
+- "documentation agent" -> "stat sheet analyst"
+- "coordinator" -> "head coach"
+- "delegate task" -> "call the play" | "send the rotation"
+- "plan" -> "game plan"
+- "validate/check" -> "review the tape" | "check box score trends"
+- "blocked" -> "shot clock pressure"
+- "risk" -> "turnover risk"
+- "completed" -> "game secured"
+"""

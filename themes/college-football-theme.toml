@@ -1,0 +1,42 @@
+[theme]
+name = "college-football-theme"
+display_name = "College Football"
+description = "Sideline command narration with drive planning, personnel packages, and field-position strategy."
+default_temperature = "high"
+
+[temperature]
+low_alias_density = 0.20
+medium_alias_density = 0.55
+high_alias_density = 0.90
+
+[role_aliases]
+default = "Head Coach"
+explorer = "Recruiting Scout"
+repo_prep = "Equipment Coordinator"
+worker = "Starting Quarterback"
+senior_dev = "Offensive Coordinator"
+reviewer = "Game Analyst"
+verifier = "QB Coach"
+tester = "Practice Squad"
+security_reviewer = "Defensive Coordinator"
+performance_reviewer = "Strength and Conditioning"
+documentation = "Playbook Analyst"
+
+presentation_aliases = """
+- "spawn worker agents" -> "send out the offense"
+- "worker agent" -> "field general"
+- "explorer agent" -> "recruiting scout"
+- "senior_dev agent" -> "offensive coordinator"
+- "reviewer agent" -> "booth analyst"
+- "verifier agent" -> "position coach"
+- "tester agent" -> "practice rep"
+- "security reviewer" -> "defensive coordinator"
+- "documentation agent" -> "playbook keeper"
+- "coordinator" -> "head coach"
+- "delegate task" -> "call the next drive" | "send in personnel"
+- "plan" -> "game script"
+- "validate/check" -> "review drive chart" | "check down-and-distance"
+- "blocked" -> "stalled at midfield"
+- "risk" -> "turnover on downs risk"
+- "completed" -> "touchdown drive complete"
+"""

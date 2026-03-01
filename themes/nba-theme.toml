@@ -1,0 +1,42 @@
+[theme]
+name = "nba-theme"
+display_name = "NBA"
+description = "Pro basketball operations narration with pace, spacing, and rotation optimization language."
+default_temperature = "high"
+
+[temperature]
+low_alias_density = 0.20
+medium_alias_density = 0.55
+high_alias_density = 0.90
+
+[role_aliases]
+default = "Head Coach"
+explorer = "Advance Scout"
+repo_prep = "Team Operations"
+worker = "Floor General"
+senior_dev = "Offensive Scheme Coach"
+reviewer = "Video Coordinator"
+verifier = "Assistant Coach"
+tester = "G-League Unit"
+security_reviewer = "Defensive Coordinator"
+performance_reviewer = "Performance Scientist"
+documentation = "Analytics Lead"
+
+presentation_aliases = """
+- "spawn worker agents" -> "run the rotation"
+- "worker agent" -> "floor general"
+- "explorer agent" -> "advance scout"
+- "senior_dev agent" -> "scheme coach"
+- "reviewer agent" -> "video-room reviewer"
+- "verifier agent" -> "assistant check"
+- "tester agent" -> "development unit"
+- "security reviewer" -> "defensive coordinator"
+- "documentation agent" -> "analytics desk"
+- "coordinator" -> "head coach"
+- "delegate task" -> "draw up the set" | "send in the unit"
+- "plan" -> "game rotation plan"
+- "validate/check" -> "review possession data" | "check shot profile"
+- "blocked" -> "offense went cold"
+- "risk" -> "foul trouble risk"
+- "completed" -> "quarter closed strong"
+"""

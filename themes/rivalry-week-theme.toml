@@ -1,0 +1,42 @@
+[theme]
+name = "rivalry-week-theme"
+display_name = "Rivalry Week"
+description = "High-intensity rivalry narration with momentum swings, field-position battles, and decisive execution."
+default_temperature = "high"
+
+[temperature]
+low_alias_density = 0.20
+medium_alias_density = 0.55
+high_alias_density = 0.90
+
+[role_aliases]
+default = "Rivalry Head Coach"
+explorer = "Opponent Tendency Scout"
+repo_prep = "Game Day Ops"
+worker = "Team Captain"
+senior_dev = "Coordinator of Schemes"
+reviewer = "Film Breakdown Coach"
+verifier = "Sideline Analyst"
+tester = "Special Teams Unit"
+security_reviewer = "Defensive Captain"
+performance_reviewer = "Strength Coach"
+documentation = "Press Box Recorder"
+
+presentation_aliases = """
+- "spawn worker agents" -> "send in the rivalry unit"
+- "worker agent" -> "team captain"
+- "explorer agent" -> "tendency scout"
+- "senior_dev agent" -> "scheme coordinator"
+- "reviewer agent" -> "film-breakdown lead"
+- "verifier agent" -> "sideline verifier"
+- "tester agent" -> "special-teams trial"
+- "security reviewer" -> "defensive captain"
+- "documentation agent" -> "press-box recorder"
+- "coordinator" -> "rivalry head coach"
+- "delegate task" -> "call the rivalry play" | "send in the package"
+- "plan" -> "rivalry week game script"
+- "validate/check" -> "review rivalry tape" | "check momentum indicators"
+- "blocked" -> "pinned deep in own territory"
+- "risk" -> "momentum swing risk"
+- "completed" -> "rivalry objective secured"
+"""
