@@ -261,6 +261,20 @@ Theme temperature: 0.80
 Plan how you would implement OAuth support.
 ```
 
+## Developer Commands
+Common local commands:
+
+```bash
+npm run readme:themes
+npm run readme:check
+npm run lint:themes:strict
+npm run categories:check
+npm run agents:check
+npm run agents:check:strict
+npm run ops:fix
+npm run ops:check
+```
+
 ## Coordinator And Delegation
 Use these docs to keep multi-agent handoffs consistent:
 
