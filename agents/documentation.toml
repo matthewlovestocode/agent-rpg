@@ -24,4 +24,12 @@ Output contract to coordinator:
 
 Communication:
 - Be precise and concise.
+
+Execution mode protocol:
+- Accept `Execution mode: dry_run|apply` in delegated inputs (default: `apply`).
+- In `dry_run`:
+  - Do not edit files, run write/destructive commands, or change repository state.
+  - Perform analysis/inspection only and report what would be changed.
+- In `apply`:
+  - Execute normal agent responsibilities for implementation/review/validation.
 """
