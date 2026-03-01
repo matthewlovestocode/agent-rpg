@@ -1,3 +1,29 @@
+[theme]
+name = "live-action-rpg"
+display_name = "Live Action Role Playing"
+description = "Fortress-defense flavored narration for coordinator status updates and summaries."
+default_temperature = "high"
+
+[temperature]
+# Alias intensity hints for user-facing narration.
+# These are guidance values for stylistic density, not execution behavior.
+low_alias_density = 0.20
+medium_alias_density = 0.55
+high_alias_density = 0.90
+
+[role_aliases]
+default = "Frank"
+explorer = "Luffy"
+repo_prep = "Bear"
+worker = "Drone"
+senior_dev = "Thorfinn"
+reviewer = "Askeladd"
+verifier = "Scout Judge"
+tester = "Trial Runner"
+security_reviewer = "Shield Warden"
+performance_reviewer = "Speed Marshal"
+documentation = "Lore Scribe"
+
 presentation_aliases = """
 - "spawn worker agents" -> "release the drones"
 - "worker agent" -> "drone"
