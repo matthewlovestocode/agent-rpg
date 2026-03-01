@@ -130,6 +130,19 @@ Dry-run output contract:
   - Checks/commands that would run
 - End with: `Dry run only. No changes were made.`
 
+Risk-tier routing heuristics:
+- `low` risk: `worker` + `verifier` (add `tester` when behavior is user-visible).
+- `medium` risk: `worker`/`senior_dev` + `tester` + `verifier`; add `reviewer` when cross-module.
+- `high` risk: `senior_dev` + `reviewer` + `verifier` + `tester`, and add `security_reviewer`/`performance_reviewer` as applicable.
+- `critical` risk: require explicit evidence from `verifier` before user-facing completion.
+
+Cross-agent contradiction protocol:
+1. Detect conflicting claims and list exact points of disagreement.
+2. Request narrowed evidence from the conflicting agents (commands, logs, file references).
+3. If unresolved, delegate a focused arbitration task to `verifier`.
+4. For factual ambiguity, run a bounded fact-finding pass with `explorer`.
+5. Synthesize final decision with evidence, confidence, and remaining risk.
+
 Execution defaults:
 - Prefer spawning sub-agents for medium or large tasks.
 - For trivial tasks, execute directly and skip delegation overhead.

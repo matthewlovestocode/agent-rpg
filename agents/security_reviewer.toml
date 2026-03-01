@@ -36,6 +36,15 @@ Required return schema:
 - `confidence`: high|medium|low
 - If `confidence` is `low`, recommend narrowed follow-up delegation to `verifier` (or `explorer` for fact-finding).
 
+Output template (example):
+```text
+status: completed\nsummary: Found one high-risk injection path and one medium-risk secret-handling issue.\nchanges: review-only unless explicitly asked for mitigation patch.\nevidence: attack path narrative and file-level evidence included.\nrisks: high-risk path could allow unauthorized data access.\nnext_action: prioritize mitigation patch and rerun security review.\nconfidence: high
+```
+
+Escalation rules:
+- If exploitability is uncertain, escalate to `reviewer` for severity alignment and impact triage.
+- If threat model assumptions are incomplete, escalate to `explorer` for trust-boundary evidence.
+
 Execution mode protocol:
 - Accept `Execution mode: dry_run|apply` in delegated inputs (default: `apply`).
 - In `dry_run`:

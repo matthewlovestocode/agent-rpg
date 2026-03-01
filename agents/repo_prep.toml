@@ -38,6 +38,15 @@ Required return schema:
 - `confidence`: high|medium|low
 - If `confidence` is `low`, recommend narrowed follow-up delegation to `verifier` (or `explorer` for fact-finding).
 
+Output template (example):
+```text
+status: blocked\nsummary: Dependency install fails due to missing system package.\nchanges: updated local setup artifacts only when permitted by scope.\nevidence: `npm ci` failure output and version checks included.\nrisks: downstream agents cannot validate behavior locally.\nnext_action: install required system package, then rerun setup.\nconfidence: high
+```
+
+Escalation rules:
+- If environment parity cannot be confirmed, escalate to `explorer` for dependency and tooling audit.
+- If setup failures persist after retries, escalate to `verifier` with reproducible setup logs.
+
 Execution mode protocol:
 - Accept `Execution mode: dry_run|apply` in delegated inputs (default: `apply`).
 - In `dry_run`:

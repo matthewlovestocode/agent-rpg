@@ -36,6 +36,15 @@ Required return schema:
 - `confidence`: high|medium|low
 - If `confidence` is `low`, recommend narrowed follow-up delegation to `verifier` (or `explorer` for fact-finding).
 
+Output template (example):
+```text
+status: completed\nsummary: Identified likely latency bottleneck in request fan-out path.\nchanges: analysis-only; no production behavior edits.\nevidence: complexity analysis and profiling hints documented.\nrisks: throughput degradation under peak load remains likely.\nnext_action: implement optimization in `worker`, then benchmark via `tester`.\nconfidence: medium
+```
+
+Escalation rules:
+- If benchmark evidence is missing, escalate to `tester` for reproducible measurement runs.
+- If bottleneck attribution is uncertain, escalate to `explorer` for narrower profiling context.
+
 Execution mode protocol:
 - Accept `Execution mode: dry_run|apply` in delegated inputs (default: `apply`).
 - In `dry_run`:

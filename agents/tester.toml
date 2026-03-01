@@ -36,6 +36,15 @@ Required return schema:
 - `confidence`: high|medium|low
 - If `confidence` is `low`, recommend narrowed follow-up delegation to `verifier` (or `explorer` for fact-finding).
 
+Output template (example):
+```text
+status: blocked\nsummary: Core regression suite passes, but one flaky test remains inconclusive.\nchanges: added targeted test case under delegated scope.\nevidence: test command history and flaky repro logs attached.\nrisks: intermittent failure may mask real regressions.\nnext_action: delegate to `verifier` for independent repro and gating decision.\nconfidence: low
+```
+
+Escalation rules:
+- If tests are flaky or inconclusive, escalate to `verifier` with reproduction details.
+- If gaps require product decisions, escalate to coordinator with explicit coverage tradeoff.
+
 Execution mode protocol:
 - Accept `Execution mode: dry_run|apply` in delegated inputs (default: `apply`).
 - In `dry_run`:

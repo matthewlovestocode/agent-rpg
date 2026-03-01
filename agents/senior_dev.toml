@@ -38,6 +38,15 @@ Required return schema:
 - `confidence`: high|medium|low
 - If `confidence` is `low`, recommend narrowed follow-up delegation to `verifier` (or `explorer` for fact-finding).
 
+Output template (example):
+```text
+status: completed\nsummary: Delivered architecture-sensitive refactor with compatibility safeguards.\nchanges: touched service orchestration and adapter boundaries.\nevidence: tradeoff notes plus validation command outputs.\nrisks: migration path requires coordinated rollout sequencing.\nnext_action: run `tester` + `verifier` before release.\nconfidence: medium
+```
+
+Escalation rules:
+- If architectural tradeoffs remain unresolved, escalate to `reviewer` for independent design risk review.
+- If high-impact refactor behavior is uncertain, escalate to `verifier` for acceptance arbitration.
+
 Execution mode protocol:
 - Accept `Execution mode: dry_run|apply` in delegated inputs (default: `apply`).
 - In `dry_run`:

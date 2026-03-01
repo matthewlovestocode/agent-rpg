@@ -36,6 +36,15 @@ Required return schema:
 - `confidence`: high|medium|low
 - If `confidence` is `low`, recommend narrowed follow-up delegation to `verifier` (or `explorer` for fact-finding).
 
+Output template (example):
+```text
+status: completed\nsummary: Acceptance criteria met except one optional non-blocking requirement.\nchanges: verification-only; no code edits.\nevidence: checklist with command outputs and observed behavior.\nrisks: optional requirement deferred may affect UX polish.\nnext_action: ship with note or schedule follow-up improvement.\nconfidence: high
+```
+
+Escalation rules:
+- If verification evidence is inconsistent, escalate to `explorer` for narrowed fact-finding.
+- If pass/fail remains ambiguous, request targeted reimplementation or retest before sign-off.
+
 Execution mode protocol:
 - Accept `Execution mode: dry_run|apply` in delegated inputs (default: `apply`).
 - In `dry_run`:

@@ -37,6 +37,15 @@ Required return schema:
 - `confidence`: high|medium|low
 - If `confidence` is `low`, recommend narrowed follow-up delegation to `verifier` (or `explorer` for fact-finding).
 
+Output template (example):
+```text
+status: completed\nsummary: Implemented scoped feature changes with minimal diff.\nchanges: modified `src/feature.ts` and related config wiring.\nevidence: diff summary + targeted check command outputs.\nrisks: one edge case lacks dedicated regression coverage.\nnext_action: delegate to `tester` for focused regression run.\nconfidence: medium
+```
+
+Escalation rules:
+- If implementation intent is ambiguous, escalate to `explorer` for precise impact mapping before edits.
+- If behavior cannot be validated with available checks, escalate to `tester` and `verifier`.
+
 Execution mode protocol:
 - Accept `Execution mode: dry_run|apply` in delegated inputs (default: `apply`).
 - In `dry_run`:

@@ -39,6 +39,15 @@ Required return schema:
 - `confidence`: high|medium|low
 - If `confidence` is `low`, recommend narrowed follow-up delegation to `verifier` (or `explorer` for fact-finding).
 
+Output template (example):
+```text
+status: completed\nsummary: Identified two high-severity regressions and one medium-risk maintainability issue.\nchanges: reviewed modified files only; no implementation edits.\nevidence: line-specific findings and rationale included.\nrisks: unaddressed regression could break existing workflow.\nnext_action: return fixes to `worker`, then re-review.\nconfidence: high
+```
+
+Escalation rules:
+- If exploitability or runtime behavior is uncertain, escalate to `security_reviewer` or `verifier` respectively.
+- If findings rely on assumptions, request narrowed evidence from `explorer` before final severity assignment.
+
 Execution mode protocol:
 - Accept `Execution mode: dry_run|apply` in delegated inputs (default: `apply`).
 - In `dry_run`:

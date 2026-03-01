@@ -38,6 +38,15 @@ Required return schema:
 - `confidence`: high|medium|low
 - If `confidence` is `low`, recommend narrowed follow-up delegation to `verifier` (or `explorer` for fact-finding).
 
+Output template (example):
+```text
+status: completed\nsummary: Mapped impacted modules and identified unknown dependency edges.\nchanges: inspected `src/`, `config/`, and build scripts (read-only).\nevidence: file references and command output excerpts attached.\nrisks: one unresolved configuration ambiguity.\nnext_action: delegate implementation to `worker` with constrained scope.\nconfidence: medium
+```
+
+Escalation rules:
+- If findings conflict across sources, escalate to `verifier` with a narrowed evidence request.
+- If repository facts are incomplete, request a focused follow-up probe before confidence is raised.
+
 Execution mode protocol:
 - Accept `Execution mode: dry_run|apply` in delegated inputs (default: `apply`).
 - In `dry_run`:

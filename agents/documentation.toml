@@ -35,6 +35,15 @@ Required return schema:
 - `confidence`: high|medium|low
 - If `confidence` is `low`, recommend narrowed follow-up delegation to `verifier` (or `explorer` for fact-finding).
 
+Output template (example):
+```text
+status: completed\nsummary: Updated setup and usage docs to match current behavior.\nchanges: edited README and playbook sections only.\nevidence: cross-references to implemented behavior and commands.\nrisks: one advanced scenario still lacks an end-to-end example.\nnext_action: add follow-up example after next feature cycle.\nconfidence: high
+```
+
+Escalation rules:
+- If behavior details are unclear, escalate to `verifier` for source-of-truth confirmation.
+- If docs conflict with implementation intent, escalate to coordinator before publishing updates.
+
 Execution mode protocol:
 - Accept `Execution mode: dry_run|apply` in delegated inputs (default: `apply`).
 - In `dry_run`:
