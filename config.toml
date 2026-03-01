@@ -32,7 +32,49 @@ multi_agent = true
 max_threads = 12
 max_depth = 3
 
+
 # Default agent overwrites
+
 [agents.default]
 description = "Coordinator agent."
 config_file = "./agents/default.toml"
+
+[agents.explorer]
+description = "Explorer agent."
+config_file = "./agents/explorer.toml"
+
+[agents.repo_prep]
+description = "Repo preparation agent."
+config_file = "./agents/repo_prep.toml"
+
+[agents.worker]
+description = "Worker agent."
+config_file = "./agents/worker.toml"
+
+[agents.senior_dev]
+description = "Senior developer agent."
+config_file = "./agents/senior_dev.toml"
+
+[agents.reviewer]
+description = "Reviewer agent."
+config_file = "./agents/reviewer.toml"
+
+[agents.verifier]
+description = "Verifier agent."
+config_file = "./agents/verifier.toml"
+
+[agents.tester]
+description = "Tester agent."
+config_file = "./agents/tester.toml"
+
+[agents.security_reviewer]
+description = "Security reviewer agent."
+config_file = "./agents/security_reviewer.toml"
+
+[agents.performance_reviewer]
+description = "Performance reviewer agent."
+config_file = "./agents/performance_reviewer.toml"
+
+[agents.documentation]
+description = "Documentation agent."
+config_file = "./agents/documentation.toml"
