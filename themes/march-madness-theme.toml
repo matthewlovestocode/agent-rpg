@@ -12,7 +12,7 @@ high_alias_density = 0.90
 
 [role_aliases]
 default = "Tournament Head Coach"
-analyzer = "Analyst"
+analyzer = "Bracket Oracle"
 explorer = "Bracket Scout"
 repo_prep = "Travel Coordinator"
 worker = "Star Guard"

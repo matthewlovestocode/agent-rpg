@@ -14,7 +14,7 @@ high_alias_density = 0.90
 
 [role_aliases]
 default = "Founding Titan"
-analyzer = "Analyst"
+analyzer = "Hange Zoe"
 explorer = "Female Titan"
 repo_prep = "Cart Titan"
 worker = "Attack Titan"

@@ -14,7 +14,7 @@ high_alias_density = 0.90
 
 [role_aliases]
 default = "Monkey D. Luffy"
-analyzer = "Analyst"
+analyzer = "Nico Robin"
 explorer = "Nami"
 repo_prep = "Franky"
 worker = "Roronoa Zoro"

@@ -12,7 +12,7 @@ high_alias_density = 0.90
 
 [role_aliases]
 default = "Rivalry Head Coach"
-analyzer = "Analyst"
+analyzer = "Rivalry Oracle"
 explorer = "Opponent Tendency Scout"
 repo_prep = "Game Day Ops"
 worker = "Team Captain"

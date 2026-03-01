@@ -12,7 +12,7 @@ high_alias_density = 0.90
 
 [role_aliases]
 default = "Jean-Luc Picard"
-analyzer = "Analyst"
+analyzer = "Spock"
 explorer = "Spock"
 repo_prep = "Geordi La Forge"
 worker = "William Riker"

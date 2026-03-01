@@ -12,7 +12,7 @@ high_alias_density = 0.90
 
 [role_aliases]
 default = "Tyrion Lannister"
-analyzer = "Analyst"
+analyzer = "Citadel Maester"
 explorer = "Arya Stark"
 repo_prep = "Maester Luwin"
 worker = "Jon Snow"

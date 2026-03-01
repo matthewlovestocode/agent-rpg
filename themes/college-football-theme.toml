@@ -12,7 +12,7 @@ high_alias_density = 0.90
 
 [role_aliases]
 default = "Head Coach"
-analyzer = "Analyst"
+analyzer = "Film Room Oracle"
 explorer = "Recruiting Scout"
 repo_prep = "Equipment Coordinator"
 worker = "Starting Quarterback"

@@ -12,7 +12,7 @@ high_alias_density = 0.90
 
 [role_aliases]
 default = "Head Coach"
-analyzer = "Analyst"
+analyzer = "Chalkboard Oracle"
 explorer = "Advance Scout"
 repo_prep = "Equipment Manager"
 worker = "Starting Guard"

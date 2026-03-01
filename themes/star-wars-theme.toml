@@ -12,7 +12,7 @@ high_alias_density = 0.90
 
 [role_aliases]
 default = "Yoda"
-analyzer = "Analyst"
+analyzer = "Jedi Archivist"
 explorer = "Ahsoka Tano"
 repo_prep = "R2-D2"
 worker = "Luke Skywalker"

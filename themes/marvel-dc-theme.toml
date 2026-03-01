@@ -12,7 +12,7 @@ high_alias_density = 0.90
 
 [role_aliases]
 default = "Nick Fury"
-analyzer = "Analyst"
+analyzer = "The Watcher"
 explorer = "Doctor Strange"
 repo_prep = "Batman"
 worker = "Spider-Man"

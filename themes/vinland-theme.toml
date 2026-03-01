@@ -14,7 +14,7 @@ high_alias_density = 0.90
 
 [role_aliases]
 default = "Canute"
-analyzer = "Analyst"
+analyzer = "Runescribe"
 explorer = "Thorfinn"
 repo_prep = "Leif Erikson"
 worker = "Thorkell"

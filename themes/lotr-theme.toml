@@ -14,7 +14,7 @@ high_alias_density = 0.85
 
 [role_aliases]
 default = "Gandalf"
-analyzer = "Analyst"
+analyzer = "Elrond"
 explorer = "Ranger of the North"
 repo_prep = "Steward of Records"
 worker = "Dwarf Artisan"

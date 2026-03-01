@@ -14,7 +14,7 @@ high_alias_density = 0.90
 
 [role_aliases]
 default = "Frank"
-analyzer = "Analyst"
+analyzer = "War Scholar"
 explorer = "Luffy"
 repo_prep = "Bear"
 worker = "Drone"

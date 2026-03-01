@@ -44,6 +44,10 @@ theme_file = "./themes/vinland-theme.toml"
 description = "Explorer agent."
 config_file = "./agents/explorer.toml"
 
+[agents.analyzer]
+description = "Analyzer agent."
+config_file = "./agents/analyzer.toml"
+
 [agents.repo_prep]
 description = "Repo preparation agent."
 config_file = "./agents/repo_prep.toml"

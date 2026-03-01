@@ -12,7 +12,7 @@ high_alias_density = 0.90
 
 [role_aliases]
 default = "Jupiter"
-analyzer = "Analyst"
+analyzer = "Augur"
 explorer = "Mercury"
 repo_prep = "Vulcan"
 worker = "Mars"

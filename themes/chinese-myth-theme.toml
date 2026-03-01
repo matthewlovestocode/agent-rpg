@@ -12,7 +12,7 @@ high_alias_density = 0.90
 
 [role_aliases]
 default = "Jade Emperor"
-analyzer = "Analyst"
+analyzer = "Court Astrologer"
 explorer = "Sun Wukong"
 repo_prep = "Lu Ban"
 worker = "Nezha"

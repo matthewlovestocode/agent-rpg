@@ -12,7 +12,7 @@ high_alias_density = 0.90
 
 [role_aliases]
 default = "Paul Atreides"
-analyzer = "Analyst"
+analyzer = "Imperial Mentat"
 explorer = "Duncan Idaho"
 repo_prep = "Thufir Hawat"
 worker = "Gurney Halleck"

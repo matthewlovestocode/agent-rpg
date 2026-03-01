@@ -12,7 +12,7 @@ high_alias_density = 0.90
 
 [role_aliases]
 default = "Morpheus"
-analyzer = "Analyst"
+analyzer = "The Oracle"
 explorer = "Trinity"
 repo_prep = "Tank"
 worker = "Neo"
