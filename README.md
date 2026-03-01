@@ -201,6 +201,17 @@ Theme temperature: 0.80
 Plan how you would implement OAuth support.
 ```
 
+## Coordinator And Delegation
+Use these docs to keep multi-agent handoffs consistent:
+
+- Handoff template: `docs/handoff-template.md`
+- Playbooks:
+  - `docs/playbooks/feature-delivery.md`
+  - `docs/playbooks/bugfix.md`
+  - `docs/playbooks/refactor.md`
+  - `docs/playbooks/docs-only.md`
+  - `docs/playbooks/security-hotfix.md`
+
 ## Alias Framework (All Themes)
 Presentation aliases now follow a shared contract across all themes:
 

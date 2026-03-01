@@ -37,6 +37,7 @@ Required return schema:
 - `risks`: residual risks or regressions
 - `next_action`: recommended follow-up
 - `confidence`: high|medium|low
+- If `confidence` is `low`, recommend narrowed follow-up delegation to `verifier` (or `explorer` for fact-finding).
 
 Execution mode protocol:
 - Accept `Execution mode: dry_run|apply` in delegated inputs (default: `apply`).
